@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2012956938	Play_testttt			\Default Work Unit\Play_testttt	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	255825772	testttt	C:\Users\Torbjørn\Desktop\Bearmuda\Bearmuda_WwiseProject\.cache\Mac\SFX\HORSE Gelding Snort_EA6BB4C2.wem		\Actor-Mixer Hierarchy\Torb\testttt		149732
+

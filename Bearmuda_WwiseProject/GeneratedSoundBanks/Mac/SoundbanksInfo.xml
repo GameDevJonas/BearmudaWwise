@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>C:\Users\Torbjørn\Desktop\Bearmuda\Bearmuda_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Torbjørn\Desktop\Bearmuda\Bearmuda_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Torbjørn\Desktop\Bearmuda\Bearmuda_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\Torbjørn\Desktop\Bearmuda\Bearmuda_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="2754342975">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="2880737896" Language="SFX" Hash="3807994527">
+			<ObjectPath>\SoundBanks\Default Work Unit\MainBank</ObjectPath>
+			<ShortName>MainBank</ShortName>
+			<Path>MainBank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2012956938" Name="Play_testttt" ObjectPath="\Events\Default Work Unit\Play_testttt" DurationType="OneShot" DurationMin="0.77952" DurationMax="0.77952">
+					<IncludedMemoryFiles>
+						<File Id="255825772" Language="SFX">
+							<ShortName>HORSE Gelding Snort.wav</ShortName>
+							<Path>SFX\HORSE Gelding Snort_EA6BB4C2.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
