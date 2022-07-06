@@ -1,23 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class TriggerEventOnInterract : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public UnityEvent OnInteract;
+
+    private List<GameObject> _objectsInsideCollider = new List<GameObject>();
+
+    private void Awake()
     {
-        
+        PlayerManager.InteractPushed.AddListener(OnInteractMe);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnInteractMe(GameObject whereFrom)
     {
-        
+        if (_objectsInsideCollider.Contains(whereFrom)) OnInteract.Invoke();
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        
+        _objectsInsideCollider.Add(other.gameObject);
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        _objectsInsideCollider.Remove(other.gameObject);
     }
 }

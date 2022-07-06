@@ -56,6 +56,9 @@ public class BoatController : MonoBehaviour
 
         movement.Enable();
 
+        inputActions.Boat.Interact.performed += DoInteractButton;
+        inputActions.Boat.Interact.Enable();
+
         inputActions.Boat.TiltLeft.started += TiltLeft;
         inputActions.Boat.TiltLeft.canceled += TiltLeft;
 
@@ -65,6 +68,11 @@ public class BoatController : MonoBehaviour
         inputActions.Boat.TiltRight.canceled += TiltRight;
 
         inputActions.Boat.TiltRight.Enable();
+    }
+
+    private void DoInteractButton(InputAction.CallbackContext obj)
+    {
+        PlayerManager.InteractPushed.Invoke(this.gameObject);
     }
 
     private void TiltLeft(InputAction.CallbackContext obj)
@@ -182,6 +190,7 @@ public class BoatController : MonoBehaviour
     private void OnDisable()
     {
         movement.Disable();
+        inputActions.Boat.Interact.Disable();
         inputActions.Boat.TiltLeft.Disable();
         inputActions.Boat.TiltRight.Disable();
     }
