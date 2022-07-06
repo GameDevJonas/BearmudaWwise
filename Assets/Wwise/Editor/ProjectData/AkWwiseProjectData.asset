@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 0c805e5342ae8e46a2592a06f996cd81
     GuidInternal: 
-    m_lastTime: -8585444871444074691
+    m_lastTime: -8585444866717896351
     List:
     - name: Play_bonk
       guid: f109baf7f42fd342bad8623edb708ca8
@@ -130,6 +130,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.77952
       minDuration: 0.77952
+    - name: Play_whoosh
+      guid: 418c3f615e611e449d4c128b1bef1992
+      id: 148817996
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0c805e5342ae8e46a2592a06f996cd81
+      - ElementName: Play_whoosh
+        ObjectType: 3
+        guid: 418c3f615e611e449d4c128b1bef1992
+      Path: Events\Default Work Unit\Play_whoosh
+      maxAttenuation: 0
+      maxDuration: 0.166667
+      minDuration: 0.166667
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -186,9 +203,9 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585444872410839284
     List: []
-  ExpandedFileSystemItemIds: 
+  ExpandedFileSystemItemIds: 0100000002000000030000000b0000000c000000
   ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
-  currentDataSource: 0
+  currentDataSource: 1
   CurrentPluginConfig: 
