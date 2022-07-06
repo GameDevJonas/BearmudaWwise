@@ -4,6 +4,13 @@
 		<WorkUnit Name="Torb" ID="{BF2D29B7-58D5-4DA9-985B-6FD720B30510}" PersistMode="Standalone">
 			<ChildrenList>
 				<Sound Name="testttt" ID="{922B81AE-7740-4308-946E-54206F9026B0}" ShortID="674715119">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-1</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
@@ -32,6 +39,13 @@
 					</ActiveSourceList>
 				</Sound>
 				<RandomSequenceContainer Name="bonk" ID="{1182DF1B-A16A-44AA-A557-54A9BA85067A}" ShortID="168647062">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-1</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
@@ -160,6 +174,13 @@
 					<ObjectLists/>
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="whoosh" ID="{69CAA721-3F3F-4E35-A39F-EFC875A5145C}" ShortID="234654472">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-2</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
