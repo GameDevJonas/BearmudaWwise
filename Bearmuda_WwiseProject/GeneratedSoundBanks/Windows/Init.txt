@@ -1,3 +1,10 @@
+Switch Group	ID	Name			Wwise Object Path	Notes
+	2385628198	footsteps			\Default Work Unit\player\footsteps	
+
+Switch	ID	Name	Switch Group			Notes
+	803837735	sand	footsteps			
+	2058049674	wood	footsteps			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 

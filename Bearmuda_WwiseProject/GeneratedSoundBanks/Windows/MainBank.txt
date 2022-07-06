@@ -1,17 +1,42 @@
 Event	ID	Name			Wwise Object Path	Notes
 	148817996	Play_whoosh			\Default Work Unit\Play_whoosh	
 	1374297326	Play_bonk			\Default Work Unit\Play_bonk	
+	1724675634	Play_Player_Footstep			\Default Work Unit\Play_Player_Footstep	
 	2012956938	Play_testttt			\Default Work Unit\Play_testttt	
 
+Switch Group	ID	Name			Wwise Object Path	Notes
+	2385628198	footsteps			\Default Work Unit\player\footsteps	
+
+Switch	ID	Name	Switch Group			Notes
+	803837735	sand	footsteps			
+	2058049674	wood	footsteps			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	103953880	RTPC_Player_Footsteps			\Default Work Unit\player\RTPC_Player_Footsteps	
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	101159414	madeline_footstep_wood_6	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Windows\SFX\madeline_footstep_wood_6_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\Footstep\wood\madeline_footstep_wood_6		49932
+	240070842	madeline_footstep_snow_5	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Windows\SFX\madeline_footstep_snow_5_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\Footstep\sand\madeline_footstep_snow_5		41620
 	255825772	testttt	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Windows\SFX\HORSE Gelding Snort_6DADE084.wem		\Actor-Mixer Hierarchy\Torb\testttt		149732
 	309816871	SFX_Ball_Hit_3	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Windows\SFX\SFX_Ball_Hit_3_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\bonk\SFX_Ball_Hit_3		14764
+	312586702	madeline_footstep_wood_3	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Windows\SFX\madeline_footstep_wood_3_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\Footstep\wood\madeline_footstep_wood_3		49932
 	336436786	SFX_Ball_Hit_2	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Windows\SFX\SFX_Ball_Hit_2_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\bonk\SFX_Ball_Hit_2		18438
 	347213577	SFX_Ball_whoosh_4	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Windows\SFX\SFX_Ball_whoosh_4_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\whoosh\SFX_Ball_whoosh_4		14764
 	375339462	SFX_Ball_whoosh_3	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Windows\SFX\SFX_Ball_whoosh_3_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\whoosh\SFX_Ball_whoosh_3		14764
 	433534442	SFX_Ball_whoosh_2	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Windows\SFX\SFX_Ball_whoosh_2_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\whoosh\SFX_Ball_whoosh_2		14764
+	546117711	madeline_footstep_wood_1	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Windows\SFX\madeline_footstep_wood_1_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\Footstep\wood\madeline_footstep_wood_1		49932
+	555677550	madeline_footstep_snow_7	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Windows\SFX\madeline_footstep_snow_7_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\Footstep\sand\madeline_footstep_snow_7		41620
+	560670604	madeline_footstep_wood_5	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Windows\SFX\madeline_footstep_wood_5_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\Footstep\wood\madeline_footstep_wood_5		49932
 	577113049	SFX_Ball_Hit_1	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Windows\SFX\SFX_Ball_Hit_1_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\bonk\SFX_Ball_Hit_1		18438
 	597925539	SFX_Ball_whoosh_1	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Windows\SFX\SFX_Ball_whoosh_1_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\whoosh\SFX_Ball_whoosh_1		14764
+	748872080	madeline_footstep_wood_7	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Windows\SFX\madeline_footstep_wood_7_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\Footstep\wood\madeline_footstep_wood_7		49932
 	759557008	SFX_Ball_Hit_5	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Windows\SFX\SFX_Ball_Hit_5_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\bonk\SFX_Ball_Hit_5		18438
+	863091198	madeline_footstep_snow_2	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Windows\SFX\madeline_footstep_snow_2_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\Footstep\sand\madeline_footstep_snow_2		41620
 	887544290	SFX_Ball_Hit_4	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Windows\SFX\SFX_Ball_Hit_4_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\bonk\SFX_Ball_Hit_4		14764
+	908007120	madeline_footstep_wood_4	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Windows\SFX\madeline_footstep_wood_4_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\Footstep\wood\madeline_footstep_wood_4		49932
+	948546167	madeline_footstep_snow_3	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Windows\SFX\madeline_footstep_snow_3_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\Footstep\sand\madeline_footstep_snow_3		41620
+	994591352	madeline_footstep_snow_4	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Windows\SFX\madeline_footstep_snow_4_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\Footstep\sand\madeline_footstep_snow_4		41620
+	1019952375	madeline_footstep_wood_2	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Windows\SFX\madeline_footstep_wood_2_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\Footstep\wood\madeline_footstep_wood_2		49932
+	1035214761	madeline_footstep_snow_1	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Windows\SFX\madeline_footstep_snow_1_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\Footstep\sand\madeline_footstep_snow_1		41620
+	1043352087	madeline_footstep_snow_6	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Windows\SFX\madeline_footstep_snow_6_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\Footstep\sand\madeline_footstep_snow_6		41620
 

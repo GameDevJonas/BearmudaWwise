@@ -44,6 +44,16 @@
 							<ValueList>
 								<Value>-1</Value>
 							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{D7CE847E-D616-4DFC-B625-A6EE5FD8FF04}">
+										<PropertyList>
+											<Property Name="Max" Type="Real64" Value="6"/>
+											<Property Name="Min" Type="Real64" Value="-12"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
 						</Property>
 					</PropertyList>
 					<ReferenceList>
@@ -285,6 +295,397 @@
 					</ChildrenList>
 					<ObjectLists/>
 				</RandomSequenceContainer>
+				<SwitchContainer Name="Footstep" ID="{43FE02AF-6F71-4844-A203-801C2AA6B2B2}" ShortID="33365713">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="sand" ID="{876FA16C-90F1-4633-BE1D-63BE19A4DBF5}" WorkUnitID="{734EA414-0A13-4987-998D-FA4AA969A02A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="footsteps" ID="{A43464AD-067A-4F77-9BEC-615D84FC768C}" WorkUnitID="{734EA414-0A13-4987-998D-FA4AA969A02A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="wood" ID="{A34BD34C-85B1-42BD-8096-D9699F4DF7AB}" ShortID="465771773">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="madeline_footstep_wood_1" ID="{91BCCB76-2E92-47B9-AA3D-44088E59FE38}" ShortID="542909974">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="madeline_footstep_wood_1" ID="{157EEAA2-4C57-49F2-A6ED-31D25F316AA5}">
+											<Language>SFX</Language>
+											<AudioFile>madeline_footstep_wood_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="546117711"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="madeline_footstep_wood_1" ID="{157EEAA2-4C57-49F2-A6ED-31D25F316AA5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="madeline_footstep_wood_2" ID="{8CA42832-4DA2-45AC-8E18-DA61AE20580A}" ShortID="389328956">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="madeline_footstep_wood_2" ID="{B0BEF596-51D4-421A-9161-360A8C41A4B6}">
+											<Language>SFX</Language>
+											<AudioFile>madeline_footstep_wood_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1019952375"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="madeline_footstep_wood_2" ID="{B0BEF596-51D4-421A-9161-360A8C41A4B6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="madeline_footstep_wood_3" ID="{47FCCFD9-B016-4C19-AEDD-5D0ADDE2EE78}" ShortID="1018230164">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="madeline_footstep_wood_3" ID="{EC256D3A-E7DF-400D-8F69-D18C2A8FA611}">
+											<Language>SFX</Language>
+											<AudioFile>madeline_footstep_wood_3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="312586702"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="madeline_footstep_wood_3" ID="{EC256D3A-E7DF-400D-8F69-D18C2A8FA611}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="madeline_footstep_wood_4" ID="{A40EE858-AEE7-41D2-BC63-B4A18935CFEC}" ShortID="156429267">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="madeline_footstep_wood_4" ID="{D17A0814-7064-4F8F-8092-8C8861719AAC}">
+											<Language>SFX</Language>
+											<AudioFile>madeline_footstep_wood_4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="908007120"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="madeline_footstep_wood_4" ID="{D17A0814-7064-4F8F-8092-8C8861719AAC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="madeline_footstep_wood_5" ID="{24D2C9FE-28E7-4E82-B2FA-88EBEEA6FE90}" ShortID="753246716">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="madeline_footstep_wood_5" ID="{170AFE97-0CE2-4198-88B4-6638F39ADB27}">
+											<Language>SFX</Language>
+											<AudioFile>madeline_footstep_wood_5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="560670604"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="madeline_footstep_wood_5" ID="{170AFE97-0CE2-4198-88B4-6638F39ADB27}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="madeline_footstep_wood_6" ID="{977DCF64-2C72-4E71-B692-15192B732AD7}" ShortID="738162899">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="madeline_footstep_wood_6" ID="{B7923F4C-9C81-44F1-B537-D1AEC65DB2DA}">
+											<Language>SFX</Language>
+											<AudioFile>madeline_footstep_wood_6.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="101159414"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="madeline_footstep_wood_6" ID="{B7923F4C-9C81-44F1-B537-D1AEC65DB2DA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="madeline_footstep_wood_7" ID="{C95CA5AC-5DA0-4483-BB9D-63B12FA7F775}" ShortID="913829451">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="madeline_footstep_wood_7" ID="{2A15BF86-974B-4311-B7E7-2486BDBD80CA}">
+											<Language>SFX</Language>
+											<AudioFile>madeline_footstep_wood_7.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="748872080"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="madeline_footstep_wood_7" ID="{2A15BF86-974B-4311-B7E7-2486BDBD80CA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="sand" ID="{B40B4E01-9BF8-4B43-9B07-B6983099ABCB}" ShortID="584927883">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="madeline_footstep_snow_1" ID="{94643E5A-5C0C-4C9B-840E-890E5CB500C6}" ShortID="210024929">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="madeline_footstep_snow_1" ID="{6AEFC420-FF36-4C62-967E-6292D5DAC548}">
+											<Language>SFX</Language>
+											<AudioFile>madeline_footstep_snow_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1035214761"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="madeline_footstep_snow_1" ID="{6AEFC420-FF36-4C62-967E-6292D5DAC548}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="madeline_footstep_snow_2" ID="{756EBE8F-629F-4D50-8BDC-F25569321C6E}" ShortID="552824996">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="madeline_footstep_snow_2" ID="{1A0B93F3-464B-4AEE-AAE1-8768C6044BB5}">
+											<Language>SFX</Language>
+											<AudioFile>madeline_footstep_snow_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="863091198"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="madeline_footstep_snow_2" ID="{1A0B93F3-464B-4AEE-AAE1-8768C6044BB5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="madeline_footstep_snow_3" ID="{153E67B4-482B-4044-B95F-D22BC5EF0671}" ShortID="747105662">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="madeline_footstep_snow_3" ID="{0A09EA30-4894-4E56-987C-CEC8F71EF64A}">
+											<Language>SFX</Language>
+											<AudioFile>madeline_footstep_snow_3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="948546167"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="madeline_footstep_snow_3" ID="{0A09EA30-4894-4E56-987C-CEC8F71EF64A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="madeline_footstep_snow_4" ID="{19DA1CED-C91B-4654-8127-314B6730AC74}" ShortID="572984440">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="madeline_footstep_snow_4" ID="{32E73B0A-5AE2-4C9D-9A86-4600A94C7757}">
+											<Language>SFX</Language>
+											<AudioFile>madeline_footstep_snow_4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="994591352"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="madeline_footstep_snow_4" ID="{32E73B0A-5AE2-4C9D-9A86-4600A94C7757}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="madeline_footstep_snow_5" ID="{2C317BE1-66DF-4791-B1BD-E834CF8118D6}" ShortID="897492494">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="madeline_footstep_snow_5" ID="{7A9C4768-D8C1-4F89-BAAE-F7C9C1F8BFAB}">
+											<Language>SFX</Language>
+											<AudioFile>madeline_footstep_snow_5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="240070842"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="madeline_footstep_snow_5" ID="{7A9C4768-D8C1-4F89-BAAE-F7C9C1F8BFAB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="madeline_footstep_snow_6" ID="{318A88DC-A99E-4371-9BA1-01BD3492BAB1}" ShortID="142605979">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="madeline_footstep_snow_6" ID="{5088B47B-77F2-4D00-99F9-EEEC38F99DB4}">
+											<Language>SFX</Language>
+											<AudioFile>madeline_footstep_snow_6.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1043352087"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="madeline_footstep_snow_6" ID="{5088B47B-77F2-4D00-99F9-EEEC38F99DB4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="madeline_footstep_snow_7" ID="{6A2BED9A-F392-4812-9CA0-AA8549583C5F}" ShortID="803866963">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="madeline_footstep_snow_7" ID="{5017E47B-EF3F-434A-BD1C-3C1528BCA0CA}">
+											<Language>SFX</Language>
+											<AudioFile>madeline_footstep_snow_7.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="555677550"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="madeline_footstep_snow_7" ID="{5017E47B-EF3F-434A-BD1C-3C1528BCA0CA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<ObjectLists/>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="sand" ID="{B40B4E01-9BF8-4B43-9B07-B6983099ABCB}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="wood" ID="{A34BD34C-85B1-42BD-8096-D9699F4DF7AB}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="sand" ID="{876FA16C-90F1-4633-BE1D-63BE19A4DBF5}"/>
+								<ItemList>
+									<ItemRef Name="sand" ID="{B40B4E01-9BF8-4B43-9B07-B6983099ABCB}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="wood" ID="{F9BF6270-09AC-4AC2-BA00-E96D7E381E69}"/>
+								<ItemList>
+									<ItemRef Name="wood" ID="{A34BD34C-85B1-42BD-8096-D9699F4DF7AB}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

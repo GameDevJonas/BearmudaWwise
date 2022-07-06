@@ -11,12 +11,12 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3690994985">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1532598150">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2880737896" Language="SFX" Hash="573979810">
+		<SoundBank Id="2880737896" Language="SFX" Hash="126167934">
 			<ObjectPath>\SoundBanks\Default Work Unit\MainBank</ObjectPath>
 			<ShortName>MainBank</ShortName>
 			<Path>MainBank.bnk</Path>
@@ -44,6 +44,91 @@
 							<Path>SFX\SFX_Ball_Hit_4_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1724675634" Name="Play_Player_Footstep" ObjectPath="\Events\Default Work Unit\Play_Player_Footstep" DurationType="OneShot" DurationMin="0.235578" DurationMax="0.282698">
+					<IncludedMemoryFiles>
+						<File Id="101159414" Language="SFX">
+							<ShortName>madeline_footstep_wood_6.wav</ShortName>
+							<Path>SFX\madeline_footstep_wood_6_10C4C929.wem</Path>
+						</File>
+						<File Id="240070842" Language="SFX">
+							<ShortName>madeline_footstep_snow_5.wav</ShortName>
+							<Path>SFX\madeline_footstep_snow_5_10C4C929.wem</Path>
+						</File>
+						<File Id="312586702" Language="SFX">
+							<ShortName>madeline_footstep_wood_3.wav</ShortName>
+							<Path>SFX\madeline_footstep_wood_3_10C4C929.wem</Path>
+						</File>
+						<File Id="546117711" Language="SFX">
+							<ShortName>madeline_footstep_wood_1.wav</ShortName>
+							<Path>SFX\madeline_footstep_wood_1_10C4C929.wem</Path>
+						</File>
+						<File Id="555677550" Language="SFX">
+							<ShortName>madeline_footstep_snow_7.wav</ShortName>
+							<Path>SFX\madeline_footstep_snow_7_10C4C929.wem</Path>
+						</File>
+						<File Id="560670604" Language="SFX">
+							<ShortName>madeline_footstep_wood_5.wav</ShortName>
+							<Path>SFX\madeline_footstep_wood_5_10C4C929.wem</Path>
+						</File>
+						<File Id="748872080" Language="SFX">
+							<ShortName>madeline_footstep_wood_7.wav</ShortName>
+							<Path>SFX\madeline_footstep_wood_7_10C4C929.wem</Path>
+						</File>
+						<File Id="863091198" Language="SFX">
+							<ShortName>madeline_footstep_snow_2.wav</ShortName>
+							<Path>SFX\madeline_footstep_snow_2_10C4C929.wem</Path>
+						</File>
+						<File Id="908007120" Language="SFX">
+							<ShortName>madeline_footstep_wood_4.wav</ShortName>
+							<Path>SFX\madeline_footstep_wood_4_10C4C929.wem</Path>
+						</File>
+						<File Id="948546167" Language="SFX">
+							<ShortName>madeline_footstep_snow_3.wav</ShortName>
+							<Path>SFX\madeline_footstep_snow_3_10C4C929.wem</Path>
+						</File>
+						<File Id="994591352" Language="SFX">
+							<ShortName>madeline_footstep_snow_4.wav</ShortName>
+							<Path>SFX\madeline_footstep_snow_4_10C4C929.wem</Path>
+						</File>
+						<File Id="1019952375" Language="SFX">
+							<ShortName>madeline_footstep_wood_2.wav</ShortName>
+							<Path>SFX\madeline_footstep_wood_2_10C4C929.wem</Path>
+						</File>
+						<File Id="1035214761" Language="SFX">
+							<ShortName>madeline_footstep_snow_1.wav</ShortName>
+							<Path>SFX\madeline_footstep_snow_1_10C4C929.wem</Path>
+						</File>
+						<File Id="1043352087" Language="SFX">
+							<ShortName>madeline_footstep_snow_6.wav</ShortName>
+							<Path>SFX\madeline_footstep_snow_6_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{876FA16C-90F1-4633-BE1D-63BE19A4DBF5}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{876FA16C-90F1-4633-BE1D-63BE19A4DBF5}">
+							<Media>
+								<File Id="240070842"/>
+								<File Id="555677550"/>
+								<File Id="863091198"/>
+								<File Id="948546167"/>
+								<File Id="994591352"/>
+								<File Id="1035214761"/>
+								<File Id="1043352087"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{F9BF6270-09AC-4AC2-BA00-E96D7E381E69}">
+							<Media>
+								<File Id="101159414"/>
+								<File Id="312586702"/>
+								<File Id="546117711"/>
+								<File Id="560670604"/>
+								<File Id="748872080"/>
+								<File Id="908007120"/>
+								<File Id="1019952375"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
 				<Event Id="2012956938" Name="Play_testttt" ObjectPath="\Events\Default Work Unit\Play_testttt" DurationType="OneShot" DurationMin="0.77952" DurationMax="0.77952">
 					<IncludedMemoryFiles>
@@ -74,6 +159,17 @@
 					</IncludedMemoryFiles>
 				</Event>
 			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="103953880" Name="RTPC_Player_Footsteps" ObjectPath="\Game Parameters\Default Work Unit\player\RTPC_Player_Footsteps"/>
+			</GameParameters>
+			<SwitchGroups>
+				<SwitchGroup Id="2385628198" Name="footsteps" ObjectPath="\Switches\Default Work Unit\player\footsteps" GUID="{A43464AD-067A-4F77-9BEC-615D84FC768C}">
+					<Switches>
+						<Switch Id="803837735" Name="sand" ObjectPath="\Switches\Default Work Unit\player\footsteps\sand" GUID="{876FA16C-90F1-4633-BE1D-63BE19A4DBF5}"/>
+						<Switch Id="2058049674" Name="wood" ObjectPath="\Switches\Default Work Unit\player\footsteps\wood" GUID="{F9BF6270-09AC-4AC2-BA00-E96D7E381E69}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

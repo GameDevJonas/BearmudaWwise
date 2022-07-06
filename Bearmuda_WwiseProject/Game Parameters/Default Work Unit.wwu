@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{D114BCBE-DB69-4947-B965-9E409E25AB92}" SchemaVersion="103">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{D114BCBE-DB69-4947-B965-9E409E25AB92}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{D114BCBE-DB69-4947-B965-9E409E25AB92}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="player" ID="{4C466630-139D-4398-A9D2-07B68C1A9187}" ShortID="5838924">
+					<ChildrenList>
+						<GameParameter Name="RTPC_Player_Footsteps" ID="{592BAB48-3408-4E1A-BB77-DAAAEC7194BF}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="5"/>
+								<Property Name="Max" Type="Real64" Value="5"/>
+								<Property Name="Min" Type="Real64" Value="1"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>
