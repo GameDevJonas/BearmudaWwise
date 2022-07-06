@@ -10,12 +10,26 @@ public class PlayerManager : MonoBehaviour
     public enum ActivePlayerState { GroundPlayer, BoatPlayer };
     public static ActivePlayerState PlayerState;
 
+    [SerializeField] private ActivePlayerState startingState;
+
     [SerializeField] private GroundPlayerVariables GroundPlayerVariables;
     [SerializeField] private BoatPlayerVariables BoatPlayerVariables;
 
     public static UnityEvent<GameObject> InteractPushed = new();
 
     private void Start()
+    {
+        SwitchPlayerState(startingState);
+    }
+
+    [ContextMenu("Change to boat")]
+    public void ChangeToBoatInspector()
+    {
+        SwitchPlayerState(ActivePlayerState.BoatPlayer);
+    }
+
+    [ContextMenu("Change to ground")]
+    public void ChangeToGroundInspector()
     {
         SwitchPlayerState(ActivePlayerState.GroundPlayer);
     }
@@ -53,7 +67,7 @@ public class PlayerManager : MonoBehaviour
             case true:
                 TurnOnOffBoatVariables(false);
                 PlayerState = ActivePlayerState.GroundPlayer;
-                Debug.Log("Ground mode on");
+                //Debug.Log("Ground mode on");
 
                 GroundPlayerVariables.Controller.enabled = turnOn;
                 GroundPlayerVariables.Visuals.SetActive(turnOn);
@@ -61,7 +75,7 @@ public class PlayerManager : MonoBehaviour
 
                 break;
             case false:
-                Debug.Log("Ground mode off");
+                //Debug.Log("Ground mode off");
 
                 GroundPlayerVariables.Controller.enabled = turnOn;
                 GroundPlayerVariables.Visuals.SetActive(turnOn);
@@ -77,14 +91,14 @@ public class PlayerManager : MonoBehaviour
             case true:
                 TurnOnOffGroundVariables(false);
                 PlayerState = ActivePlayerState.BoatPlayer;
-                Debug.Log("Boat mode on");
+                //Debug.Log("Boat mode on");
 
                 BoatPlayerVariables.BoatController.enabled = turnOn;
                 BoatPlayerVariables.Visuals.SetActive(turnOn);
                 BoatPlayerVariables.CinemachineFreeLook.Priority = 11;
                 break;
             case false:
-                Debug.Log("Boat mode off");
+                //Debug.Log("Boat mode off");
 
                 BoatPlayerVariables.BoatController.enabled = turnOn;
                 BoatPlayerVariables.Visuals.SetActive(turnOn);
