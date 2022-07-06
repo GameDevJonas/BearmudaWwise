@@ -37,7 +37,7 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                     ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""Jump"",
+                    ""name"": ""Interact"",
                     ""type"": ""Button"",
                     ""id"": ""92b7ae82-8ad8-4808-86ec-c1d3fc715544"",
                     ""expectedControlType"": ""Button"",
@@ -54,7 +54,7 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Jump"",
+                    ""action"": ""Interact"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -65,7 +65,7 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Jump"",
+                    ""action"": ""Interact"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -163,6 +163,15 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                     ""name"": ""TiltRight"",
                     ""type"": ""Button"",
                     ""id"": ""9dcd3535-078a-47ea-a74e-c8ae205ba82f"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Interact"",
+                    ""type"": ""Button"",
+                    ""id"": ""31f1a3b6-a352-4d0f-95d4-1e9a6bf48047"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -279,6 +288,17 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                     ""action"": ""TiltRight"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a1fbd1e3-8273-4e60-aa6b-be502a40a7df"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -288,12 +308,13 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
         // Player
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_Movement = m_Player.FindAction("Movement", throwIfNotFound: true);
-        m_Player_Jump = m_Player.FindAction("Jump", throwIfNotFound: true);
+        m_Player_Interact = m_Player.FindAction("Interact", throwIfNotFound: true);
         // Boat
         m_Boat = asset.FindActionMap("Boat", throwIfNotFound: true);
         m_Boat_Movement = m_Boat.FindAction("Movement", throwIfNotFound: true);
         m_Boat_TiltLeft = m_Boat.FindAction("TiltLeft", throwIfNotFound: true);
         m_Boat_TiltRight = m_Boat.FindAction("TiltRight", throwIfNotFound: true);
+        m_Boat_Interact = m_Boat.FindAction("Interact", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -354,13 +375,13 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
     private readonly InputActionMap m_Player;
     private IPlayerActions m_PlayerActionsCallbackInterface;
     private readonly InputAction m_Player_Movement;
-    private readonly InputAction m_Player_Jump;
+    private readonly InputAction m_Player_Interact;
     public struct PlayerActions
     {
         private @PlayerInputs m_Wrapper;
         public PlayerActions(@PlayerInputs wrapper) { m_Wrapper = wrapper; }
         public InputAction @Movement => m_Wrapper.m_Player_Movement;
-        public InputAction @Jump => m_Wrapper.m_Player_Jump;
+        public InputAction @Interact => m_Wrapper.m_Player_Interact;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -373,9 +394,9 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                 @Movement.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMovement;
                 @Movement.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMovement;
                 @Movement.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMovement;
-                @Jump.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
-                @Jump.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
-                @Jump.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
+                @Interact.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInteract;
+                @Interact.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInteract;
+                @Interact.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInteract;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -383,9 +404,9 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                 @Movement.started += instance.OnMovement;
                 @Movement.performed += instance.OnMovement;
                 @Movement.canceled += instance.OnMovement;
-                @Jump.started += instance.OnJump;
-                @Jump.performed += instance.OnJump;
-                @Jump.canceled += instance.OnJump;
+                @Interact.started += instance.OnInteract;
+                @Interact.performed += instance.OnInteract;
+                @Interact.canceled += instance.OnInteract;
             }
         }
     }
@@ -397,6 +418,7 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
     private readonly InputAction m_Boat_Movement;
     private readonly InputAction m_Boat_TiltLeft;
     private readonly InputAction m_Boat_TiltRight;
+    private readonly InputAction m_Boat_Interact;
     public struct BoatActions
     {
         private @PlayerInputs m_Wrapper;
@@ -404,6 +426,7 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
         public InputAction @Movement => m_Wrapper.m_Boat_Movement;
         public InputAction @TiltLeft => m_Wrapper.m_Boat_TiltLeft;
         public InputAction @TiltRight => m_Wrapper.m_Boat_TiltRight;
+        public InputAction @Interact => m_Wrapper.m_Boat_Interact;
         public InputActionMap Get() { return m_Wrapper.m_Boat; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -422,6 +445,9 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                 @TiltRight.started -= m_Wrapper.m_BoatActionsCallbackInterface.OnTiltRight;
                 @TiltRight.performed -= m_Wrapper.m_BoatActionsCallbackInterface.OnTiltRight;
                 @TiltRight.canceled -= m_Wrapper.m_BoatActionsCallbackInterface.OnTiltRight;
+                @Interact.started -= m_Wrapper.m_BoatActionsCallbackInterface.OnInteract;
+                @Interact.performed -= m_Wrapper.m_BoatActionsCallbackInterface.OnInteract;
+                @Interact.canceled -= m_Wrapper.m_BoatActionsCallbackInterface.OnInteract;
             }
             m_Wrapper.m_BoatActionsCallbackInterface = instance;
             if (instance != null)
@@ -435,6 +461,9 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                 @TiltRight.started += instance.OnTiltRight;
                 @TiltRight.performed += instance.OnTiltRight;
                 @TiltRight.canceled += instance.OnTiltRight;
+                @Interact.started += instance.OnInteract;
+                @Interact.performed += instance.OnInteract;
+                @Interact.canceled += instance.OnInteract;
             }
         }
     }
@@ -442,12 +471,13 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
     public interface IPlayerActions
     {
         void OnMovement(InputAction.CallbackContext context);
-        void OnJump(InputAction.CallbackContext context);
+        void OnInteract(InputAction.CallbackContext context);
     }
     public interface IBoatActions
     {
         void OnMovement(InputAction.CallbackContext context);
         void OnTiltLeft(InputAction.CallbackContext context);
         void OnTiltRight(InputAction.CallbackContext context);
+        void OnInteract(InputAction.CallbackContext context);
     }
 }

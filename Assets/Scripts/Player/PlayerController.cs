@@ -27,13 +27,13 @@ public class PlayerController : MonoBehaviour
         movement = inputActions.Player.Movement;
         movement.Enable();
 
-        inputActions.Player.Jump.performed += DoJump;
-        inputActions.Player.Jump.Enable();
+        inputActions.Player.Interact.performed += DoInteractButton;
+        inputActions.Player.Interact.Enable();
     }
 
-    private void DoJump(InputAction.CallbackContext obj)
+    private void DoInteractButton(InputAction.CallbackContext obj)
     {
-        //Debug.Log("JUMP!");
+        PlayerManager.InteractPushed.Invoke(this.gameObject);
 
     }
 
@@ -61,10 +61,9 @@ public class PlayerController : MonoBehaviour
         agent.SetDestination(navObject.position);
     }
 
-
     private void OnDisable()
     {
         movement.Disable();
-        inputActions.Player.Jump.Disable();
+        inputActions.Player.Interact.Disable();
     }
 }

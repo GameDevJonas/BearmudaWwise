@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 57d5f0e632a6db4b8d3244fbf54bd714
     GuidInternal: 
-    m_lastTime: -8585444872410839284
+    m_lastTime: -8585444901897596174
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 5c7658dc4ef2494fa936123b11804268
     GuidInternal: 
-    m_lastTime: -8585444872410889296
+    m_lastTime: -8585444851678782778
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -54,6 +54,63 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+    - name: Reverb_Outside_Big
+      guid: 00487f5499e3024cbb241a7431897b5f
+      id: 1401104826
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5c7658dc4ef2494fa936123b11804268
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Reverbs
+        ObjectType: 2
+        guid: 8ccd4f2b5cbbb84aa9826b1f22e5071e
+      - ElementName: Reverb_Outside_Big
+        ObjectType: 1
+        guid: 00487f5499e3024cbb241a7431897b5f
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs\Reverb_Outside_Big
+    - name: Reverb_Outside_Small
+      guid: bebda8cec394e6419cc3b2c46a3562ec
+      id: 2636462861
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5c7658dc4ef2494fa936123b11804268
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Reverbs
+        ObjectType: 2
+        guid: 8ccd4f2b5cbbb84aa9826b1f22e5071e
+      - ElementName: Reverb_Outside_Small
+        ObjectType: 1
+        guid: bebda8cec394e6419cc3b2c46a3562ec
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs\Reverb_Outside_Small
+    - name: Reverbs
+      guid: 8ccd4f2b5cbbb84aa9826b1f22e5071e
+      id: 3545700988
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5c7658dc4ef2494fa936123b11804268
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Reverbs
+        ObjectType: 2
+        guid: 8ccd4f2b5cbbb84aa9826b1f22e5071e
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -66,7 +123,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 87fe6e58c7007a478f0ec3970104b7c4
     GuidInternal: 
-    m_lastTime: -8585444872410879294
+    m_lastTime: -8585444901898495280
     List:
     - name: MainBank
       guid: be2de4e137f60642bf7a81a6e7b7fc03
@@ -94,7 +151,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 0c805e5342ae8e46a2592a06f996cd81
     GuidInternal: 
-    m_lastTime: -8585444856487567282
+    m_lastTime: -8585444856211949468
     List:
     - name: Play_bonk
       guid: f109baf7f42fd342bad8623edb708ca8
@@ -127,7 +184,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: d8f5c6f2422e634da608097a8ded1c80
       Path: Events\Default Work Unit\Play_Player_Footstep
-      maxAttenuation: 0
+      maxAttenuation: 100
       maxDuration: 0.282698
       minDuration: 0.235578
     - name: Play_testttt
@@ -176,7 +233,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: bebc14d169db4749b9659e409e25ab92
     GuidInternal: 
-    m_lastTime: -8585444857431965962
+    m_lastTime: -8585444856211939355
     List:
     - name: player
       guid: 3066464c9d139843a9d207b68c1a9187
@@ -221,7 +278,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: e3d9c3c49f1e5248bbfbf03d6fb1f425
     GuidInternal: 
-    m_lastTime: -8585444872410859290
+    m_lastTime: -8585444901898144691
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -235,7 +292,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 14a44e73130a8749998dfa4aa969a02a
     GuidInternal: 
-    m_lastTime: -8585444857431665778
+    m_lastTime: -8585444851678782778
     List:
     - name: footsteps
       guid: ad6434a47a06774f9bec615d84fc768c
@@ -255,6 +312,25 @@ MonoBehaviour:
         guid: ad6434a47a06774f9bec615d84fc768c
       Path: Switches\Default Work Unit\player\footsteps
       values:
+      - name: grass
+        guid: 89623ac8eaf41e458d82739a22576c55
+        id: 4248645337
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 14a44e73130a8749998dfa4aa969a02a
+        - ElementName: player
+          ObjectType: 4
+          guid: c01af3960a97274eb800299d8d9b1885
+        - ElementName: footsteps
+          ObjectType: 11
+          guid: ad6434a47a06774f9bec615d84fc768c
+        - ElementName: grass
+          ObjectType: 10
+          guid: 89623ac8eaf41e458d82739a22576c55
       - name: sand
         guid: 6ca16f87f1903346be1d63be19a4dbf5
         id: 803837735
@@ -326,11 +402,11 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: a8d8877960652740a5fc7fcd5864ae22
     GuidInternal: 
-    m_lastTime: -8585444872410839284
+    m_lastTime: -8585444901897775647
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000600000007000000
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
-  currentDataSource: 0
+  currentDataSource: 1
   CurrentPluginConfig: 
