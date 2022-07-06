@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>C:\Users\Torbjørn\Desktop\Bearmuda\Bearmuda_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\Torbjørn\Desktop\Bearmuda\Bearmuda_WwiseProject\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\Torbjørn\Desktop\Bearmuda\Bearmuda_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\Torbjørn\Desktop\Bearmuda\Bearmuda_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -16,16 +16,40 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2880737896" Language="SFX" Hash="3807994527">
+		<SoundBank Id="2880737896" Language="SFX" Hash="3282424379">
 			<ObjectPath>\SoundBanks\Default Work Unit\MainBank</ObjectPath>
 			<ShortName>MainBank</ShortName>
 			<Path>MainBank.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1374297326" Name="Play_bonk" ObjectPath="\Events\Default Work Unit\Play_bonk" DurationType="OneShot" DurationMin="0.166667" DurationMax="0.208322">
+					<IncludedMemoryFiles>
+						<File Id="309816871" Language="SFX">
+							<ShortName>SFX_Ball_Hit_3.wav</ShortName>
+							<Path>SFX\SFX_Ball_Hit_3_10C4C929.wem</Path>
+						</File>
+						<File Id="336436786" Language="SFX">
+							<ShortName>SFX_Ball_Hit_2.wav</ShortName>
+							<Path>SFX\SFX_Ball_Hit_2_10C4C929.wem</Path>
+						</File>
+						<File Id="577113049" Language="SFX">
+							<ShortName>SFX_Ball_Hit_1.wav</ShortName>
+							<Path>SFX\SFX_Ball_Hit_1_10C4C929.wem</Path>
+						</File>
+						<File Id="759557008" Language="SFX">
+							<ShortName>SFX_Ball_Hit_5.wav</ShortName>
+							<Path>SFX\SFX_Ball_Hit_5_10C4C929.wem</Path>
+						</File>
+						<File Id="887544290" Language="SFX">
+							<ShortName>SFX_Ball_Hit_4.wav</ShortName>
+							<Path>SFX\SFX_Ball_Hit_4_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="2012956938" Name="Play_testttt" ObjectPath="\Events\Default Work Unit\Play_testttt" DurationType="OneShot" DurationMin="0.77952" DurationMax="0.77952">
 					<IncludedMemoryFiles>
 						<File Id="255825772" Language="SFX">
 							<ShortName>HORSE Gelding Snort.wav</ShortName>
-							<Path>SFX\HORSE Gelding Snort_EA6BB4C2.wem</Path>
+							<Path>SFX\HORSE Gelding Snort_6DADE084.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

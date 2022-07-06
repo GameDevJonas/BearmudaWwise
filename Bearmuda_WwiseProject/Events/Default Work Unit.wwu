@@ -14,6 +14,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_bonk" ID="{F7BA09F1-2FF4-42D3-BAD8-623EDB708CA8}">
+					<ChildrenList>
+						<Action Name="" ID="{8181CCBC-C601-4C6A-A7DC-9F88D0567744}" ShortID="36687226">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="bonk" ID="{1182DF1B-A16A-44AA-A557-54A9BA85067A}" WorkUnitID="{BF2D29B7-58D5-4DA9-985B-6FD720B30510}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
