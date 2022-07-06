@@ -11,6 +11,7 @@ public class BoatSeatings : MonoBehaviour
     {
         if (seatingsTaken == seatings.Length) return;
 
+        person.GetComponent<Collider>().enabled = false;
         seatings[seatingsTaken].savedPerson = person;
         person.SetParent(seatings[seatingsTaken].seat);
         person.localRotation = Quaternion.identity;
