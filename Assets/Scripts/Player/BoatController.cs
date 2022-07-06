@@ -130,10 +130,10 @@ public class BoatController : MonoBehaviour
         right.Normalize();
 
         Vector3 desiredMoveDir = new Vector3(moveDirection.x, 0, moveDirection.z);
-        rb.velocity = (forward * desiredMoveDir.z) + (right * desiredMoveDir.x);
+        //rb.velocity = (forward * desiredMoveDir.z) + (right * desiredMoveDir.x);
 
         //Vector3 desiredMoveDir = new Vector3(moveDirection.x, 0, moveDirection.z);
-        //rb.velocity = new Vector3(desiredMoveDir.x, 0, desiredMoveDir.z);
+        rb.velocity = new Vector3(desiredMoveDir.x, 0, desiredMoveDir.z);
     }
 
     private void Update()
