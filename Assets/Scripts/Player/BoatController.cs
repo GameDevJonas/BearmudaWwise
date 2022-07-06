@@ -30,7 +30,7 @@ public class BoatController : MonoBehaviour
 
     //Tilt variables
     private Animator anim;
-    private bool isTiltLeft, isTiltRight;
+    [SerializeField] private CheckForCollidersInsideTrigger leftCollectTrigger, rightCollectTrigger;
 
     private void Awake()
     {
@@ -45,6 +45,8 @@ public class BoatController : MonoBehaviour
         isAccelerating = false;
         isDecelerating = true;
         accelTimer = 0;
+        leftCollectTrigger.gameObject.SetActive(false);
+        rightCollectTrigger.gameObject.SetActive(false);
         //lookAtPoint.SetParent(null);
     }
 
@@ -88,6 +90,36 @@ public class BoatController : MonoBehaviour
         int inputValue = (int)tilt.ReadValue<float>();
 
         anim.SetInteger("TiltValue", inputValue);
+
+        if(inputValue < 0) //left tilt
+        {
+            leftCollectTrigger.gameObject.SetActive(true);
+        }
+        else if(inputValue > 0) // right tilt
+        {
+            rightCollectTrigger.gameObject.SetActive(true);
+        }
+        else //centered
+        {
+            if(leftCollectTrigger.CollidersInsideMe.Count > 0)
+            {
+                HoistPerson(leftCollectTrigger.CollidersInsideMe[0]);
+            }
+            else if(rightCollectTrigger.CollidersInsideMe.Count > 0)
+            {
+                HoistPerson(rightCollectTrigger.CollidersInsideMe[0]);
+            }
+
+            leftCollectTrigger.gameObject.SetActive(false);
+            rightCollectTrigger.gameObject.SetActive(false);
+        }
+    }
+
+    private void HoistPerson(Collider hoistie)
+    {
+        Debug.Log(hoistie.name + "Was hoisted");
+        hoistie.enabled = false;
+        GetComponent<BoatSeatings>().AddPerson(hoistie.transform);
     }
 
     private void StopMovement(InputAction.CallbackContext obj)
@@ -132,7 +164,6 @@ public class BoatController : MonoBehaviour
         else if (isDecelerating && (movementSpeed >= 0))
         {
             movementSpeed = Mathf.Lerp(startAccelValue, 0, accelTimer / 1);
-            Debug.Log("TETS");
             accelTimer += Time.deltaTime;
         }
     }
