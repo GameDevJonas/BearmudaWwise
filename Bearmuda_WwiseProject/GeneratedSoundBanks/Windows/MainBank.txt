@@ -1,4 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
+	148817996	Play_whoosh			\Default Work Unit\Play_whoosh	
 	1374297326	Play_bonk			\Default Work Unit\Play_bonk	
 	2012956938	Play_testttt			\Default Work Unit\Play_testttt	
 
@@ -6,7 +7,11 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	255825772	testttt	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Windows\SFX\HORSE Gelding Snort_6DADE084.wem		\Actor-Mixer Hierarchy\Torb\testttt		149732
 	309816871	SFX_Ball_Hit_3	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Windows\SFX\SFX_Ball_Hit_3_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\bonk\SFX_Ball_Hit_3		14764
 	336436786	SFX_Ball_Hit_2	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Windows\SFX\SFX_Ball_Hit_2_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\bonk\SFX_Ball_Hit_2		18438
+	347213577	SFX_Ball_whoosh_4	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Windows\SFX\SFX_Ball_whoosh_4_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\whoosh\SFX_Ball_whoosh_4		14764
+	375339462	SFX_Ball_whoosh_3	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Windows\SFX\SFX_Ball_whoosh_3_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\whoosh\SFX_Ball_whoosh_3		14764
+	433534442	SFX_Ball_whoosh_2	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Windows\SFX\SFX_Ball_whoosh_2_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\whoosh\SFX_Ball_whoosh_2		14764
 	577113049	SFX_Ball_Hit_1	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Windows\SFX\SFX_Ball_Hit_1_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\bonk\SFX_Ball_Hit_1		18438
+	597925539	SFX_Ball_whoosh_1	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Windows\SFX\SFX_Ball_whoosh_1_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\whoosh\SFX_Ball_whoosh_1		14764
 	759557008	SFX_Ball_Hit_5	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Windows\SFX\SFX_Ball_Hit_5_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\bonk\SFX_Ball_Hit_5		18438
 	887544290	SFX_Ball_Hit_4	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Windows\SFX\SFX_Ball_Hit_4_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\bonk\SFX_Ball_Hit_4		14764
 

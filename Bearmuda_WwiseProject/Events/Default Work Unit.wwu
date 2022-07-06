@@ -25,6 +25,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_whoosh" ID="{613F8C41-615E-441E-9D4C-128B1BEF1992}">
+					<ChildrenList>
+						<Action Name="" ID="{FD99E73E-C700-46ED-B0A0-73FC01F514BC}" ShortID="697600692">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="whoosh" ID="{69CAA721-3F3F-4E35-A39F-EFC875A5145C}" WorkUnitID="{BF2D29B7-58D5-4DA9-985B-6FD720B30510}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

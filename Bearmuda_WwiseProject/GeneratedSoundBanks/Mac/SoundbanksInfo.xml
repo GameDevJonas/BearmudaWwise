@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2880737896" Language="SFX" Hash="3282424379">
+		<SoundBank Id="2880737896" Language="SFX" Hash="1486895883">
 			<ObjectPath>\SoundBanks\Default Work Unit\MainBank</ObjectPath>
 			<ShortName>MainBank</ShortName>
 			<Path>MainBank.bnk</Path>
@@ -50,6 +50,26 @@
 						<File Id="255825772" Language="SFX">
 							<ShortName>HORSE Gelding Snort.wav</ShortName>
 							<Path>SFX\HORSE Gelding Snort_6DADE084.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="148817996" Name="Play_whoosh" ObjectPath="\Events\Default Work Unit\Play_whoosh" DurationType="OneShot" DurationMin="0.166667" DurationMax="0.166667">
+					<IncludedMemoryFiles>
+						<File Id="347213577" Language="SFX">
+							<ShortName>SFX_Ball_whoosh_4.wav</ShortName>
+							<Path>SFX\SFX_Ball_whoosh_4_10C4C929.wem</Path>
+						</File>
+						<File Id="375339462" Language="SFX">
+							<ShortName>SFX_Ball_whoosh_3.wav</ShortName>
+							<Path>SFX\SFX_Ball_whoosh_3_10C4C929.wem</Path>
+						</File>
+						<File Id="433534442" Language="SFX">
+							<ShortName>SFX_Ball_whoosh_2.wav</ShortName>
+							<Path>SFX\SFX_Ball_whoosh_2_10C4C929.wem</Path>
+						</File>
+						<File Id="597925539" Language="SFX">
+							<ShortName>SFX_Ball_whoosh_1.wav</ShortName>
+							<Path>SFX\SFX_Ball_whoosh_1_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
