@@ -10,6 +10,8 @@ public class PlayerManager : MonoBehaviour
     public enum ActivePlayerState { GroundPlayer, BoatPlayer };
     public static ActivePlayerState PlayerState;
 
+    [SerializeField] private ActivePlayerState startingState;
+
     [SerializeField] private GroundPlayerVariables GroundPlayerVariables;
     [SerializeField] private BoatPlayerVariables BoatPlayerVariables;
 
@@ -17,7 +19,7 @@ public class PlayerManager : MonoBehaviour
 
     private void Start()
     {
-        SwitchPlayerState(ActivePlayerState.GroundPlayer);
+        SwitchPlayerState(startingState);
     }
 
     [ContextMenu("Change to boat")]
