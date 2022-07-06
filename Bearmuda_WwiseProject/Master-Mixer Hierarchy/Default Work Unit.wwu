@@ -9,6 +9,29 @@
 							<ObjectRef Name="System" ID="{F824B52D-02D7-47B8-A161-9D83753241EF}" WorkUnitID="{A5B61FE2-A3F2-4968-9168-59095FABF6E8}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Reverbs" ID="{2B4FCD8C-BB5C-4AB8-A982-6B1F22E5071E}">
+							<ChildrenList>
+								<AuxBus Name="Reverb_Outside_Big" ID="{547F4800-E399-4C02-BB24-1A7431897B5F}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Have_U_Ever_Been_Outside" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</AuxBus>
+								<AuxBus Name="Reverb_Outside_Small" ID="{CEA8BDBE-94C3-41E6-9CC3-B2C46A3562EC}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Have_U_Ever_Been_Outside" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</AuxBus>
+							</ChildrenList>
+							<ObjectLists/>
+						</Bus>
+					</ChildrenList>
 					<ObjectLists/>
 				</Bus>
 			</ChildrenList>

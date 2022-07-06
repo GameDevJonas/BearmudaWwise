@@ -12,6 +12,7 @@
 							<ChildrenList>
 								<Switch Name="sand" ID="{876FA16C-90F1-4633-BE1D-63BE19A4DBF5}"/>
 								<Switch Name="wood" ID="{F9BF6270-09AC-4AC2-BA00-E96D7E381E69}"/>
+								<Switch Name="grass" ID="{C83A6289-F4EA-451E-8D82-739A22576C55}"/>
 							</ChildrenList>
 							<SwitchOnRTPC>
 								<GameParameterRef Name="RTPC_Player_Footsteps" ID="{592BAB48-3408-4E1A-BB77-DAAAEC7194BF}"/>
@@ -28,6 +29,11 @@
 										<Point>
 											<XPos>2</XPos>
 											<YPos>2</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>3</XPos>
+											<YPos>3</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>

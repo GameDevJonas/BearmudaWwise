@@ -296,7 +296,19 @@
 					<ObjectLists/>
 				</RandomSequenceContainer>
 				<SwitchContainer Name="Footstep" ID="{43FE02AF-6F71-4844-A203-801C2AA6B2B2}" ShortID="33365713">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Player" ID="{56399B75-BA8B-44A6-A185-605FB2C2ED17}" WorkUnitID="{AD69011C-562C-4248-9F3C-F3CC7E57A872}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
 						</Reference>
@@ -659,6 +671,17 @@
 							</ChildrenList>
 							<ObjectLists/>
 						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="grass" ID="{F91331CA-99BC-4EB2-9CC5-5D281A3CA8E8}" ShortID="67140215">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
 					</ChildrenList>
 					<ObjectLists/>
 					<GroupingInfo>
@@ -668,6 +691,9 @@
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="wood" ID="{A34BD34C-85B1-42BD-8096-D9699F4DF7AB}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="grass" ID="{F91331CA-99BC-4EB2-9CC5-5D281A3CA8E8}"/>
 							</GroupingBehavior>
 						</GroupingBehaviorList>
 						<GroupingList>

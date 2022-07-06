@@ -11,12 +11,16 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1532598150">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1889744057">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+			<IncludedAuxBusses>
+				<AuxBus Id="1401104826" Name="Reverb_Outside_Big" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs\Reverb_Outside_Big"/>
+				<AuxBus Id="2636462861" Name="Reverb_Outside_Small" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs\Reverb_Outside_Small"/>
+			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="2880737896" Language="SFX" Hash="126167934">
+		<SoundBank Id="2880737896" Language="SFX" Hash="1173457709">
 			<ObjectPath>\SoundBanks\Default Work Unit\MainBank</ObjectPath>
 			<ShortName>MainBank</ShortName>
 			<Path>MainBank.bnk</Path>
@@ -45,7 +49,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1724675634" Name="Play_Player_Footstep" ObjectPath="\Events\Default Work Unit\Play_Player_Footstep" DurationType="OneShot" DurationMin="0.235578" DurationMax="0.282698">
+				<Event Id="1724675634" Name="Play_Player_Footstep" ObjectPath="\Events\Default Work Unit\Play_Player_Footstep" MaxAttenuation="100." DurationType="OneShot" DurationMin="0.235578" DurationMax="0.282698">
 					<IncludedMemoryFiles>
 						<File Id="101159414" Language="SFX">
 							<ShortName>madeline_footstep_wood_6.wav</ShortName>
@@ -167,6 +171,7 @@
 					<Switches>
 						<Switch Id="803837735" Name="sand" ObjectPath="\Switches\Default Work Unit\player\footsteps\sand" GUID="{876FA16C-90F1-4633-BE1D-63BE19A4DBF5}"/>
 						<Switch Id="2058049674" Name="wood" ObjectPath="\Switches\Default Work Unit\player\footsteps\wood" GUID="{F9BF6270-09AC-4AC2-BA00-E96D7E381E69}"/>
+						<Switch Id="4248645337" Name="grass" ObjectPath="\Switches\Default Work Unit\player\footsteps\grass" GUID="{C83A6289-F4EA-451E-8D82-739A22576C55}"/>
 					</Switches>
 				</SwitchGroup>
 			</SwitchGroups>

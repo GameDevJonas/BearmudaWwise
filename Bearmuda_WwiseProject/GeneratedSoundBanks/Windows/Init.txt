@@ -4,9 +4,18 @@ Switch Group	ID	Name			Wwise Object Path	Notes
 Switch	ID	Name	Switch Group			Notes
 	803837735	sand	footsteps			
 	2058049674	wood	footsteps			
+	4248645337	grass	footsteps			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	3545700988	Reverbs			\Default Work Unit\Master Audio Bus\Reverbs	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	1401104826	Reverb_Outside_Big			\Default Work Unit\Master Audio Bus\Reverbs\Reverb_Outside_Big	
+	2636462861	Reverb_Outside_Small			\Default Work Unit\Master Audio Bus\Reverbs\Reverb_Outside_Small	
+
+Effect plug-ins	ID	Name	Type				Notes
+	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

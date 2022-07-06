@@ -10,6 +10,7 @@ Switch Group	ID	Name			Wwise Object Path	Notes
 Switch	ID	Name	Switch Group			Notes
 	803837735	sand	footsteps			
 	2058049674	wood	footsteps			
+	4248645337	grass	footsteps			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	103953880	RTPC_Player_Footsteps			\Default Work Unit\player\RTPC_Player_Footsteps	
