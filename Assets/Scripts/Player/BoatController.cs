@@ -9,6 +9,7 @@ public class BoatController : MonoBehaviour
     //Input system
     private PlayerInputs inputActions;
     private InputAction movement;
+    private InputAction tilt;
 
     //Movement variables
     [SerializeField] private float maxSpeed;
@@ -27,9 +28,9 @@ public class BoatController : MonoBehaviour
     private Transform mainCam;
     [SerializeField] private Transform lookAtPoint;
 
-    //NOT BELONG HERE JUST TEST
+    //Tilt variables
     private Animator anim;
-    private bool isTiltLeft, isTiltRight;
+    [SerializeField] private CheckForCollidersInsideTrigger leftCollectTrigger, rightCollectTrigger;
 
     private void Awake()
     {
@@ -44,6 +45,8 @@ public class BoatController : MonoBehaviour
         isAccelerating = false;
         isDecelerating = true;
         accelTimer = 0;
+        leftCollectTrigger.gameObject.SetActive(false);
+        rightCollectTrigger.gameObject.SetActive(false);
         //lookAtPoint.SetParent(null);
     }
 
@@ -56,16 +59,15 @@ public class BoatController : MonoBehaviour
 
         movement.Enable();
 
+        tilt = inputActions.Boat.Tilt;
+
+        tilt.started += DoTilt;
+        tilt.canceled += DoTilt;
+
+        tilt.Enable();
+
         inputActions.Boat.Interact.performed += DoInteractButton;
         inputActions.Boat.Interact.Enable();
-
-        inputActions.Boat.TiltLeft.started += TiltLeft;
-        inputActions.Boat.TiltLeft.canceled += TiltLeft;
-
-        inputActions.Boat.TiltLeft.Enable();
-
-        inputActions.Boat.TiltRight.started += TiltRight;
-        inputActions.Boat.TiltRight.canceled += TiltRight;
 
         inputActions.Boat.TiltRight.Enable();
     }
@@ -75,40 +77,49 @@ public class BoatController : MonoBehaviour
         PlayerManager.InteractPushed.Invoke(this.gameObject);
     }
 
-    private void TiltLeft(InputAction.CallbackContext obj)
-    {
-        if(!isTiltLeft && !isTiltRight)
-        {
-            isTiltLeft = true;
-            anim.SetBool("TiltLeft", isTiltLeft);
-        }
-        else if(isTiltLeft && !isTiltRight)
-        {
-            isTiltLeft = false;
-            anim.SetBool("TiltLeft", isTiltLeft);
-        }
-    }
-
-    private void TiltRight(InputAction.CallbackContext obj)
-    {
-        if (!isTiltRight && !isTiltLeft)
-        {
-            isTiltRight = true;
-            anim.SetBool("TiltRight", isTiltRight);
-        }
-        else if (isTiltRight && !isTiltLeft)
-        {
-            isTiltRight = false;
-            anim.SetBool("TiltRight", isTiltRight);
-        }
-    }
-
     private void StartMovement(InputAction.CallbackContext obj)
     {
         startAccelValue = movementSpeed;
         isDecelerating = false;
         isAccelerating = true;
         accelTimer = 0;
+    }
+
+    private void DoTilt(InputAction.CallbackContext obj)
+    {
+        int inputValue = (int)tilt.ReadValue<float>();
+
+        anim.SetInteger("TiltValue", inputValue);
+
+        if(inputValue < 0) //left tilt
+        {
+            leftCollectTrigger.gameObject.SetActive(true);
+        }
+        else if(inputValue > 0) // right tilt
+        {
+            rightCollectTrigger.gameObject.SetActive(true);
+        }
+        else //centered
+        {
+            if(leftCollectTrigger.CollidersInsideMe.Count > 0)
+            {
+                HoistPerson(leftCollectTrigger.CollidersInsideMe[0]);
+            }
+            else if(rightCollectTrigger.CollidersInsideMe.Count > 0)
+            {
+                HoistPerson(rightCollectTrigger.CollidersInsideMe[0]);
+            }
+
+            leftCollectTrigger.gameObject.SetActive(false);
+            rightCollectTrigger.gameObject.SetActive(false);
+        }
+    }
+
+    private void HoistPerson(Collider hoistie)
+    {
+        Debug.Log(hoistie.name + "Was hoisted");
+        hoistie.enabled = false;
+        GetComponent<BoatSeatings>().AddPerson(hoistie.transform);
     }
 
     private void StopMovement(InputAction.CallbackContext obj)
@@ -168,7 +179,7 @@ public class BoatController : MonoBehaviour
         }
 
         if (!isDecelerating) moveDirection = new Vector3(inputAxis.x * movementSpeed, 0, inputAxis.y * movementSpeed) + mainCam.forward;
-        else moveDirection = new Vector2(fakeX * movementSpeed, fakeY * movementSpeed);
+        else moveDirection = new Vector3(fakeX * movementSpeed, 0, fakeY * movementSpeed);
     }
 
     private void RotateWithMovement()
@@ -190,6 +201,7 @@ public class BoatController : MonoBehaviour
     private void OnDisable()
     {
         movement.Disable();
+        tilt.Disable();
         inputActions.Boat.Interact.Disable();
         inputActions.Boat.TiltLeft.Disable();
         inputActions.Boat.TiltRight.Disable();

@@ -176,6 +176,15 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Tilt"",
+                    ""type"": ""Value"",
+                    ""id"": ""3eb36e4b-f44d-49f0-9992-4ef790a1158c"",
+                    ""expectedControlType"": ""Axis"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
@@ -299,6 +308,83 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                     ""action"": ""Interact"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""425db48f-e8db-410b-81a0-5f6c5ed59bef"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""Gamepad"",
+                    ""id"": ""e0f56bed-9711-4357-9bab-eff190221932"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Tilt"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""64e4a28f-0f94-41cb-86e9-a495db3c73f2"",
+                    ""path"": ""<Gamepad>/leftShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Tilt"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""dd954419-848b-428c-87e6-1864740ad560"",
+                    ""path"": ""<Gamepad>/rightShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Tilt"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""Keyboard"",
+                    ""id"": ""4f580e86-1ad2-4c16-917a-e369af1b1f14"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Tilt"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""127f9a99-c543-46d3-9ed7-f3c1cc4ee1df"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Tilt"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""9a098f5a-8017-4ddd-9ded-c11c1fb9aa1b"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Tilt"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
                 }
             ]
         }
@@ -315,6 +401,7 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
         m_Boat_TiltLeft = m_Boat.FindAction("TiltLeft", throwIfNotFound: true);
         m_Boat_TiltRight = m_Boat.FindAction("TiltRight", throwIfNotFound: true);
         m_Boat_Interact = m_Boat.FindAction("Interact", throwIfNotFound: true);
+        m_Boat_Tilt = m_Boat.FindAction("Tilt", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -419,6 +506,7 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
     private readonly InputAction m_Boat_TiltLeft;
     private readonly InputAction m_Boat_TiltRight;
     private readonly InputAction m_Boat_Interact;
+    private readonly InputAction m_Boat_Tilt;
     public struct BoatActions
     {
         private @PlayerInputs m_Wrapper;
@@ -427,6 +515,7 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
         public InputAction @TiltLeft => m_Wrapper.m_Boat_TiltLeft;
         public InputAction @TiltRight => m_Wrapper.m_Boat_TiltRight;
         public InputAction @Interact => m_Wrapper.m_Boat_Interact;
+        public InputAction @Tilt => m_Wrapper.m_Boat_Tilt;
         public InputActionMap Get() { return m_Wrapper.m_Boat; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -448,6 +537,9 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                 @Interact.started -= m_Wrapper.m_BoatActionsCallbackInterface.OnInteract;
                 @Interact.performed -= m_Wrapper.m_BoatActionsCallbackInterface.OnInteract;
                 @Interact.canceled -= m_Wrapper.m_BoatActionsCallbackInterface.OnInteract;
+                @Tilt.started -= m_Wrapper.m_BoatActionsCallbackInterface.OnTilt;
+                @Tilt.performed -= m_Wrapper.m_BoatActionsCallbackInterface.OnTilt;
+                @Tilt.canceled -= m_Wrapper.m_BoatActionsCallbackInterface.OnTilt;
             }
             m_Wrapper.m_BoatActionsCallbackInterface = instance;
             if (instance != null)
@@ -464,6 +556,9 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                 @Interact.started += instance.OnInteract;
                 @Interact.performed += instance.OnInteract;
                 @Interact.canceled += instance.OnInteract;
+                @Tilt.started += instance.OnTilt;
+                @Tilt.performed += instance.OnTilt;
+                @Tilt.canceled += instance.OnTilt;
             }
         }
     }
@@ -479,5 +574,6 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
         void OnTiltLeft(InputAction.CallbackContext context);
         void OnTiltRight(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
+        void OnTilt(InputAction.CallbackContext context);
     }
 }
