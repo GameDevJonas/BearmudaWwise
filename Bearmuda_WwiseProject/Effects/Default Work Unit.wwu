@@ -27,13 +27,90 @@
 										<PointList>
 											<Point>
 												<XPos>0</XPos>
-												<YPos>-12.34843</YPos>
+												<YPos>-18.2372</YPos>
 												<Flags>5</Flags>
 												<SegmentShape>Exp2</SegmentShape>
 											</Point>
 											<Point>
+												<XPos>9.94659</XPos>
+												<YPos>-8.35454</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>20</XPos>
+												<YPos>-2.42453</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+				</Effect>
+				<Effect Name="wind_boat_bed" ID="{9A442280-48E8-407E-8868-EEC560E8CA80}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FilterTypeBand1" Type="int32" Value="1"/>
+						<Property Name="FrequencyBand1" Type="Real32" Value="404">
+							<RTPCList>
+								<RTPC Name="" ID="{B4939651-3455-48F3-AAC9-F647B50852E0}" ShortID="616967851">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="RTPC_Boat_Speed" ID="{97986E75-9A56-4694-A2AF-BAD3B4683264}" WorkUnitID="{D114BCBE-DB69-4947-B965-9E409E25AB92}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{7F052666-FDEB-4E19-9B99-357B6CADADED}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="5"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>400</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>5</XPos>
+												<YPos>400</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
 												<XPos>10</XPos>
-												<YPos>0</YPos>
+												<YPos>100</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>20</XPos>
+												<YPos>100</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+						<Property Name="FrequencyBand3" Type="Real32" Value="1215"/>
+						<Property Name="GainBand3" Type="Real32" Value="-8.5">
+							<RTPCList>
+								<RTPC Name="" ID="{2519F345-B2AA-4EF5-91A8-D0D3694F0FDB}" ShortID="877854802">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="RTPC_Boat_Speed" ID="{97986E75-9A56-4694-A2AF-BAD3B4683264}" WorkUnitID="{D114BCBE-DB69-4947-B965-9E409E25AB92}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{8D59E0D2-FD43-4B25-BB1F-5BDA519296F6}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-24</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>10</XPos>
+												<YPos>0.07286</YPos>
 												<Flags>0</Flags>
 											</Point>
 											<Point>

@@ -806,6 +806,9 @@
 					<ObjectLists/>
 				</ActorMixer>
 				<ActorMixer Name="ambx" ID="{3ADCB576-ACF4-43F1-91D5-12D0765D81AD}" ShortID="364564146">
+					<PropertyList>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
@@ -814,9 +817,550 @@
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<SwitchContainer Name="AMBX_Main" ID="{8FE8BA02-E329-4490-9C2D-6400ABE1FFC4}" ShortID="293544566">
+							<PropertyList>
+								<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="boat" ID="{E7C7726F-3344-4F3F-903F-97C72FCAD5F4}" WorkUnitID="{734EA414-0A13-4987-998D-FA4AA969A02A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="Ambx" ID="{6A358311-6FCF-4F95-B142-05B47B1D08B8}" WorkUnitID="{734EA414-0A13-4987-998D-FA4AA969A02A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<BlendContainer Name="ambx_boat" ID="{9F5F32FB-9A5F-4DBD-96ED-AA722265FEAA}" ShortID="711552748">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="ambx_bed" ID="{8DF4ACB7-94EF-4858-AD82-6039258D224D}" ShortID="354309680">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<ObjectRef Name="wind_boat_bed" ID="{9A442280-48E8-407E-8868-EEC560E8CA80}" WorkUnitID="{25F376E1-291A-4ADE-9A86-D51967783889}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ambx_waves_from_boat_main" ID="{F074897D-C6A2-4723-A5BA-935B2BD08BB0}">
+													<Language>SFX</Language>
+													<AudioFile>ambx_waves_from_boat_main.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="542809095"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="ambx_waves_from_boat_main" ID="{F074897D-C6A2-4723-A5BA-935B2BD08BB0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ambx_waves_from_boat_calm" ID="{7A3B4E57-89CE-4A21-9A85-280564C2FAC2}" ShortID="706132052">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ambx_waves_from_boat_calm" ID="{A43B53A7-9488-4A20-BCBD-7503C7E3E2C6}">
+													<Language>SFX</Language>
+													<AudioFile>ambx_waves_from_boat_calm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="996347894"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="ambx_waves_from_boat_calm" ID="{A43B53A7-9488-4A20-BCBD-7503C7E3E2C6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<RandomSequenceContainer Name="ambx_windgusts" ID="{FA3F0AF2-1561-48F3-AB19-81B57AC81761}" ShortID="459657871">
+											<PropertyList>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<RTPCList>
+														<RTPC Name="" ID="{89E91515-257E-4947-B775-C4EDB9F79265}" ShortID="560178182">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="RTPC_Boat_Speed" ID="{97986E75-9A56-4694-A2AF-BAD3B4683264}" WorkUnitID="{D114BCBE-DB69-4947-B965-9E409E25AB92}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{6D9B28F6-18B9-4D9D-8062-B359FE02CB65}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>10</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>Log2</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>20</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="ambx_wind_on_boat_gust_01" ID="{1DEBBB47-29E2-4160-A780-84419199001C}" ShortID="187125066">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ambx_wind_on_boat_gust_01" ID="{D90BC2CB-B33E-4D43-B7E3-F6C8CBE95E12}">
+															<Language>SFX</Language>
+															<AudioFile>ambx_wind_on_boat_gust_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="333654543"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="ambx_wind_on_boat_gust_01" ID="{D90BC2CB-B33E-4D43-B7E3-F6C8CBE95E12}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="ambx_wind_on_boat_gust_02" ID="{4ACAAF23-3042-4714-B9D0-822836C77706}" ShortID="613253401">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ambx_wind_on_boat_gust_02" ID="{843196C8-A6D6-40E3-9D05-760D56E98D0A}">
+															<Language>SFX</Language>
+															<AudioFile>ambx_wind_on_boat_gust_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="185627170"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="ambx_wind_on_boat_gust_02" ID="{843196C8-A6D6-40E3-9D05-760D56E98D0A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="ambx_wind_on_boat_gust_03" ID="{DB95FFB6-82DD-4050-BECA-5ADB6791326C}" ShortID="454763126">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ambx_wind_on_boat_gust_03" ID="{AFDF5AAB-8FD2-47DE-83AC-27BFA924E496}">
+															<Language>SFX</Language>
+															<AudioFile>ambx_wind_on_boat_gust_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="873436168"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="ambx_wind_on_boat_gust_03" ID="{AFDF5AAB-8FD2-47DE-83AC-27BFA924E496}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="ambx_wind_on_boat_gust_04" ID="{4933E187-4C03-460E-8C58-93EB49326ABE}" ShortID="453258212">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ambx_wind_on_boat_gust_04" ID="{51941923-DB2A-46C0-B9C0-7CCBF2E7EDE1}">
+															<Language>SFX</Language>
+															<AudioFile>ambx_wind_on_boat_gust_04.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1055280920"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="ambx_wind_on_boat_gust_04" ID="{51941923-DB2A-46C0-B9C0-7CCBF2E7EDE1}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="ambx_wind_on_boat_gust_05" ID="{9A57891F-B100-4CF5-AAD5-1376B49F48E6}" ShortID="740548929">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ambx_wind_on_boat_gust_05" ID="{B1CE4D36-C781-4791-B744-CBC5741979DC}">
+															<Language>SFX</Language>
+															<AudioFile>ambx_wind_on_boat_gust_05.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="85993444"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="ambx_wind_on_boat_gust_05" ID="{B1CE4D36-C781-4791-B744-CBC5741979DC}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="ambx_wind_on_boat_gust_06" ID="{63C6AB2B-2F32-4706-BEA9-CA2F2EE261A8}" ShortID="150489023">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ambx_wind_on_boat_gust_06" ID="{D544F781-C4FF-4ADF-9B94-C3BF080D824F}">
+															<Language>SFX</Language>
+															<AudioFile>ambx_wind_on_boat_gust_06.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="390340548"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="ambx_wind_on_boat_gust_06" ID="{D544F781-C4FF-4ADF-9B94-C3BF080D824F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="ambx_wind_on_boat_gust_07" ID="{7A902C60-615B-4DD4-AAD0-87DCF58FBA90}" ShortID="71362078">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ambx_wind_on_boat_gust_07" ID="{40BC1D00-59F6-4256-8F78-D211DF7BA670}">
+															<Language>SFX</Language>
+															<AudioFile>ambx_wind_on_boat_gust_07.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="436736175"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="ambx_wind_on_boat_gust_07" ID="{40BC1D00-59F6-4256-8F78-D211DF7BA670}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<Sound Name="ambx_beach_wind" ID="{3276DD7C-BCC6-46D6-AFCE-B6F629A0C7C8}" ShortID="827886855">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ambx_beach_wind" ID="{19CCB67B-A230-43CD-B61C-04C2C33E1766}">
+													<Language>SFX</Language>
+													<AudioFile>ambx_beach_wind.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="962980403"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="ambx_beach_wind" ID="{19CCB67B-A230-43CD-B61C-04C2C33E1766}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+									<BlendTrackList>
+										<BlendTrack Name="main" ID="{B718F558-90DF-4DE6-BD96-B1335071EB8B}" ShortID="923504030">
+											<PropertyList>
+												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="LayerCrossFadeControlInput">
+													<ObjectRef Name="RTPC_Boat_Speed" ID="{97986E75-9A56-4694-A2AF-BAD3B4683264}" WorkUnitID="{D114BCBE-DB69-4947-B965-9E409E25AB92}"/>
+												</Reference>
+											</ReferenceList>
+											<BlendTrackAssocList>
+												<BlendTrackAssoc>
+													<ItemRef Name="ambx_waves_from_boat_calm" ID="{7A3B4E57-89CE-4A21-9A85-280564C2FAC2}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>0</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>9.99401961883408</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+												<BlendTrackAssoc>
+													<ItemRef Name="ambx_bed" ID="{8DF4ACB7-94EF-4858-AD82-6039258D224D}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>0.930243273542598</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>20</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+										<BlendTrack Name="extra gusts" ID="{52F51DDE-55A0-4B65-8880-76126F501A01}" ShortID="994267322">
+											<PropertyList>
+												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="LayerCrossFadeControlInput">
+													<ObjectRef Name="RTPC_Boat_Speed" ID="{97986E75-9A56-4694-A2AF-BAD3B4683264}" WorkUnitID="{D114BCBE-DB69-4947-B965-9E409E25AB92}"/>
+												</Reference>
+											</ReferenceList>
+											<BlendTrackAssocList>
+												<BlendTrackAssoc>
+													<ItemRef Name="ambx_beach_wind" ID="{3276DD7C-BCC6-46D6-AFCE-B6F629A0C7C8}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>0</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>12.5650224215247</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+												<BlendTrackAssoc>
+													<ItemRef Name="ambx_windgusts" ID="{FA3F0AF2-1561-48F3-AB19-81B57AC81761}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>7.82486210762332</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>20</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+									</BlendTrackList>
+								</BlendContainer>
+								<Sound Name="ambx_beach_waves" ID="{C7432CF2-2192-4B86-8B62-17C39EC27221}" ShortID="302884397">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ambx_beach_waves" ID="{E8AC653B-2D66-4E83-96FF-5B21173FD278}">
+											<Language>SFX</Language>
+											<AudioFile>ambx_beach_waves.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="95723522"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="ambx_beach_waves" ID="{E8AC653B-2D66-4E83-96FF-5B21173FD278}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ambx_beach_wind" ID="{0FF266FC-E4F6-4EF4-8271-008D5DCD73BF}" ShortID="251114516">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ambx_beach_wind" ID="{06F82868-ECAF-4968-87EC-15D412A395E9}">
+											<Language>SFX</Language>
+											<AudioFile>ambx_beach_wind.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="962980403"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="ambx_beach_wind" ID="{06F82868-ECAF-4968-87EC-15D412A395E9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="ambx_beach_waves" ID="{C7432CF2-2192-4B86-8B62-17C39EC27221}"/>
+										<PropertyList>
+											<Property Name="ContinuePlay" Type="bool" Value="True"/>
+											<Property Name="FadeInTime" Type="Real64">
+												<ValueList>
+													<Value>1</Value>
+												</ValueList>
+											</Property>
+											<Property Name="FadeOutTime" Type="Real64">
+												<ValueList>
+													<Value>1</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="ambx_boat" ID="{9F5F32FB-9A5F-4DBD-96ED-AA722265FEAA}"/>
+										<PropertyList>
+											<Property Name="ContinuePlay" Type="bool" Value="True"/>
+											<Property Name="FadeInTime" Type="Real64">
+												<ValueList>
+													<Value>1</Value>
+												</ValueList>
+											</Property>
+											<Property Name="FadeOutTime" Type="Real64">
+												<ValueList>
+													<Value>1</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="ambx_beach_wind" ID="{0FF266FC-E4F6-4EF4-8271-008D5DCD73BF}"/>
+										<PropertyList>
+											<Property Name="ContinuePlay" Type="bool" Value="True"/>
+											<Property Name="FadeInTime" Type="Real64">
+												<ValueList>
+													<Value>1</Value>
+												</ValueList>
+											</Property>
+											<Property Name="FadeOutTime" Type="Real64">
+												<ValueList>
+													<Value>1</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="boat" ID="{E7C7726F-3344-4F3F-903F-97C72FCAD5F4}"/>
+										<ItemList>
+											<ItemRef Name="ambx_boat" ID="{9F5F32FB-9A5F-4DBD-96ED-AA722265FEAA}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="land" ID="{83A75DE7-A4B9-438C-8F83-3FF8CCB9A8CA}"/>
+										<ItemList>
+											<ItemRef Name="ambx_beach_wind" ID="{0FF266FC-E4F6-4EF4-8271-008D5DCD73BF}"/>
+											<ItemRef Name="ambx_beach_waves" ID="{C7432CF2-2192-4B86-8B62-17C39EC27221}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+					</ChildrenList>
 					<ObjectLists/>
 				</ActorMixer>
 				<ActorMixer Name="boat" ID="{DBCB3F0E-291A-4204-A320-35A6DF9D7D64}" ShortID="454219824">
+					<PropertyList>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
@@ -875,7 +1419,7 @@
 										<Property Name="OverrideEffect" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>7</Value>
+												<Value>4</Value>
 											</ValueList>
 											<RTPCList>
 												<RTPC Name="" ID="{66B64D7B-FDE1-44A2-B21D-F3C823D7E52F}" ShortID="1070237208">
@@ -1103,6 +1647,17 @@
 							</BlendTrackList>
 						</BlendContainer>
 					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
+				<ActorMixer Name="people" ID="{7F583E9B-EB2C-486B-BBF2-1D72921294F0}" ShortID="90787089">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+						</Reference>
+					</ReferenceList>
 					<ObjectLists/>
 				</ActorMixer>
 			</ChildrenList>

@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="196421893">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2114530975">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -20,11 +20,82 @@
 				<AuxBus Id="2636462861" Name="Reverb_Outside_Small" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs\Reverb_Outside_Small"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="2880737896" Language="SFX" Hash="1576814460">
+		<SoundBank Id="2880737896" Language="SFX" Hash="1997039127">
 			<ObjectPath>\SoundBanks\Default Work Unit\MainBank</ObjectPath>
 			<ShortName>MainBank</ShortName>
 			<Path>MainBank.bnk</Path>
 			<IncludedEvents>
+				<Event Id="2254812530" Name="Play_AMBX_Main" ObjectPath="\Events\Default Work Unit\Play_AMBX_Main" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="85993444" Language="SFX">
+							<ShortName>ambx_wind_on_boat_gust_05.wav</ShortName>
+							<Path>SFX\ambx_wind_on_boat_gust_05_10C4C929.wem</Path>
+						</File>
+						<File Id="95723522" Language="SFX">
+							<ShortName>ambx_beach_waves.wav</ShortName>
+							<Path>SFX\ambx_beach_waves_D79FB2B7.wem</Path>
+						</File>
+						<File Id="185627170" Language="SFX">
+							<ShortName>ambx_wind_on_boat_gust_02.wav</ShortName>
+							<Path>SFX\ambx_wind_on_boat_gust_02_10C4C929.wem</Path>
+						</File>
+						<File Id="333654543" Language="SFX">
+							<ShortName>ambx_wind_on_boat_gust_01.wav</ShortName>
+							<Path>SFX\ambx_wind_on_boat_gust_01_10C4C929.wem</Path>
+						</File>
+						<File Id="390340548" Language="SFX">
+							<ShortName>ambx_wind_on_boat_gust_06.wav</ShortName>
+							<Path>SFX\ambx_wind_on_boat_gust_06_10C4C929.wem</Path>
+						</File>
+						<File Id="436736175" Language="SFX">
+							<ShortName>ambx_wind_on_boat_gust_07.wav</ShortName>
+							<Path>SFX\ambx_wind_on_boat_gust_07_10C4C929.wem</Path>
+						</File>
+						<File Id="542809095" Language="SFX">
+							<ShortName>ambx_waves_from_boat_main.wav</ShortName>
+							<Path>SFX\ambx_waves_from_boat_main_D79FB2B7.wem</Path>
+						</File>
+						<File Id="873436168" Language="SFX">
+							<ShortName>ambx_wind_on_boat_gust_03.wav</ShortName>
+							<Path>SFX\ambx_wind_on_boat_gust_03_10C4C929.wem</Path>
+						</File>
+						<File Id="962980403" Language="SFX">
+							<ShortName>ambx_beach_wind.wav</ShortName>
+							<Path>SFX\ambx_beach_wind_D79FB2B7.wem</Path>
+						</File>
+						<File Id="996347894" Language="SFX">
+							<ShortName>ambx_waves_from_boat_calm.wav</ShortName>
+							<Path>SFX\ambx_waves_from_boat_calm_D79FB2B7.wem</Path>
+						</File>
+						<File Id="1055280920" Language="SFX">
+							<ShortName>ambx_wind_on_boat_gust_04.wav</ShortName>
+							<Path>SFX\ambx_wind_on_boat_gust_04_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{E7C7726F-3344-4F3F-903F-97C72FCAD5F4}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{E7C7726F-3344-4F3F-903F-97C72FCAD5F4}">
+							<Media>
+								<File Id="85993444"/>
+								<File Id="185627170"/>
+								<File Id="333654543"/>
+								<File Id="390340548"/>
+								<File Id="436736175"/>
+								<File Id="542809095"/>
+								<File Id="873436168"/>
+								<File Id="962980403"/>
+								<File Id="996347894"/>
+								<File Id="1055280920"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{83A75DE7-A4B9-438C-8F83-3FF8CCB9A8CA}">
+							<Media>
+								<File Id="95723522"/>
+								<File Id="962980403"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
 				<Event Id="1391074924" Name="Play_Boat" ObjectPath="\Events\Default Work Unit\Play_Boat" MaxAttenuation="100." DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="92580302" Language="SFX">
@@ -201,6 +272,7 @@
 			<GameParameters>
 				<GameParameter Id="103953880" Name="RTPC_Player_Footsteps" ObjectPath="\Game Parameters\Default Work Unit\player\RTPC_Player_Footsteps"/>
 				<GameParameter Id="640542493" Name="RTPC_Boat_Speed" ObjectPath="\Game Parameters\Default Work Unit\boat\RTPC_Boat_Speed"/>
+				<GameParameter Id="4226707187" Name="RTPC_Ambx_Location" ObjectPath="\Game Parameters\Default Work Unit\AMBX\RTPC_Ambx_Location"/>
 			</GameParameters>
 			<SwitchGroups>
 				<SwitchGroup Id="2385628198" Name="footsteps" ObjectPath="\Switches\Default Work Unit\player\footsteps" GUID="{A43464AD-067A-4F77-9BEC-615D84FC768C}">
@@ -208,6 +280,12 @@
 						<Switch Id="803837735" Name="sand" ObjectPath="\Switches\Default Work Unit\player\footsteps\sand" GUID="{876FA16C-90F1-4633-BE1D-63BE19A4DBF5}"/>
 						<Switch Id="2058049674" Name="wood" ObjectPath="\Switches\Default Work Unit\player\footsteps\wood" GUID="{F9BF6270-09AC-4AC2-BA00-E96D7E381E69}"/>
 						<Switch Id="4248645337" Name="grass" ObjectPath="\Switches\Default Work Unit\player\footsteps\grass" GUID="{C83A6289-F4EA-451E-8D82-739A22576C55}"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="3537656749" Name="Ambx" ObjectPath="\Switches\Default Work Unit\AMBX\Ambx" GUID="{6A358311-6FCF-4F95-B142-05B47B1D08B8}">
+					<Switches>
+						<Switch Id="674522502" Name="land" ObjectPath="\Switches\Default Work Unit\AMBX\Ambx\land" GUID="{83A75DE7-A4B9-438C-8F83-3FF8CCB9A8CA}"/>
+						<Switch Id="1795056175" Name="boat" ObjectPath="\Switches\Default Work Unit\AMBX\Ambx\boat" GUID="{E7C7726F-3344-4F3F-903F-97C72FCAD5F4}"/>
 					</Switches>
 				</SwitchGroup>
 			</SwitchGroups>

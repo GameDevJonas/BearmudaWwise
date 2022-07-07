@@ -24,6 +24,17 @@
 						</GameParameter>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="AMBX" ID="{E2C9BD66-234F-48EF-8AF7-FC536B65DDA0}" ShortID="62944178">
+					<ChildrenList>
+						<GameParameter Name="RTPC_Ambx_Location" ID="{239B14AB-41FE-408C-83D4-BDCD9DB18CDA}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="1"/>
+								<Property Name="Max" Type="Real64" Value="3"/>
+								<Property Name="Min" Type="Real64" Value="1"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

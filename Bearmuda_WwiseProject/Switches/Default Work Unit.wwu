@@ -38,7 +38,45 @@
 										</Point>
 										<Point>
 											<XPos>5</XPos>
-											<YPos>0</YPos>
+											<YPos>1</YPos>
+											<Flags>37</Flags>
+										</Point>
+									</PointList>
+								</Curve>
+							</SwitchOnRTPC>
+						</SwitchGroup>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="AMBX" ID="{2CBB9B1D-42A1-4C55-A594-853107098AFC}" ShortID="159345126">
+					<ChildrenList>
+						<SwitchGroup Name="Ambx" ID="{6A358311-6FCF-4F95-B142-05B47B1D08B8}">
+							<PropertyList>
+								<Property Name="UseGameParameter" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Switch Name="land" ID="{83A75DE7-A4B9-438C-8F83-3FF8CCB9A8CA}"/>
+								<Switch Name="boat" ID="{E7C7726F-3344-4F3F-903F-97C72FCAD5F4}"/>
+							</ChildrenList>
+							<SwitchOnRTPC>
+								<GameParameterRef Name="RTPC_Ambx_Location" ID="{239B14AB-41FE-408C-83D4-BDCD9DB18CDA}"/>
+								<Curve Name="" ID="{2CAF6040-166D-4015-B021-3E881ADC829B}">
+									<PropertyList>
+										<Property Name="Flags" Type="int32" Value="65537"/>
+									</PropertyList>
+									<PointList>
+										<Point>
+											<XPos>1</XPos>
+											<YPos>1</YPos>
+											<Flags>5</Flags>
+										</Point>
+										<Point>
+											<XPos>2</XPos>
+											<YPos>2</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>3</XPos>
+											<YPos>2</YPos>
 											<Flags>37</Flags>
 										</Point>
 									</PointList>

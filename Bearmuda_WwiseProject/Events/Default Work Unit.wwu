@@ -58,6 +58,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_AMBX_Main" ID="{052E35FF-DD12-4246-8DE2-C2705494DE55}">
+					<ChildrenList>
+						<Action Name="" ID="{592DED91-C889-4AFB-B7AC-00E472DB9186}" ShortID="1003147521">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AMBX_Main" ID="{8FE8BA02-E329-4490-9C2D-6400ABE1FFC4}" WorkUnitID="{BF2D29B7-58D5-4DA9-985B-6FD720B30510}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

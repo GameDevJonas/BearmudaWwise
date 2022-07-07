@@ -1,6 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{57860A15-B943-4626-B0B2-25A280D5F673}" SchemaVersion="103">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{57860A15-B943-4626-B0B2-25A280D5F673}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{57860A15-B943-4626-B0B2-25A280D5F673}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="playground" ID="{BB9AED49-CBCF-403A-8694-8212E5B258D8}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_AMBX_Main" ID="{052E35FF-DD12-4246-8DE2-C2705494DE55}" WorkUnitID="{535E800C-AE42-468E-A259-2A06F996CD81}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Boat" ID="{34D07E89-644B-4DA2-B813-4D4046F7EACF}" WorkUnitID="{535E800C-AE42-468E-A259-2A06F996CD81}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_Ambx_Location" ID="{239B14AB-41FE-408C-83D4-BDCD9DB18CDA}"/>
+							<Value>2.305</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_Boat_Speed" ID="{97986E75-9A56-4694-A2AF-BAD3B4683264}"/>
+							<Value>4.61883408071749</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_Player_Footsteps" ID="{592BAB48-3408-4E1A-BB77-DAAAEC7194BF}"/>
+							<Value>2</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="grass" ID="{C83A6289-F4EA-451E-8D82-739A22576C55}"/>
+						<CurrentSwitchRef Name="boat" ID="{E7C7726F-3344-4F3F-903F-97C72FCAD5F4}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

@@ -1,10 +1,13 @@
 Switch Group	ID	Name			Wwise Object Path	Notes
 	2385628198	footsteps			\Default Work Unit\player\footsteps	
+	3537656749	Ambx			\Default Work Unit\AMBX\Ambx	
 
 Switch	ID	Name	Switch Group			Notes
 	803837735	sand	footsteps			
 	2058049674	wood	footsteps			
 	4248645337	grass	footsteps			
+	674522502	land	Ambx			
+	1795056175	boat	Ambx			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3545700988	Reverbs			\Default Work Unit\Master Audio Bus\Reverbs	
