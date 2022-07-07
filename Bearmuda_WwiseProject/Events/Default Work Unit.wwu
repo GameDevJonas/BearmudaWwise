@@ -47,6 +47,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Boat" ID="{34D07E89-644B-4DA2-B813-4D4046F7EACF}">
+					<ChildrenList>
+						<Action Name="" ID="{5221FC0E-E54D-47CF-A45B-9A4F007A9FF6}" ShortID="210235070">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="boatwaves" ID="{E24FEC66-C582-4C0C-ACFB-222577A45C21}" WorkUnitID="{BF2D29B7-58D5-4DA9-985B-6FD720B30510}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

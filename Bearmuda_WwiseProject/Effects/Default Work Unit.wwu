@@ -9,6 +9,45 @@
 						<Property Name="GainBand3" Type="Real32" Value="-3"/>
 					</PropertyList>
 				</Effect>
+				<Effect Name="boat_medium_speed" ID="{AB335E83-9C54-4A2D-A6FF-7814FEFB03EB}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FrequencyBand3" Type="Real32" Value="300"/>
+						<Property Name="GainBand3" Type="Real32">
+							<RTPCList>
+								<RTPC Name="" ID="{A0377AE2-E0CF-4206-BFE1-255721C1B35A}" ShortID="368109584">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="RTPC_Boat_Speed" ID="{97986E75-9A56-4694-A2AF-BAD3B4683264}" WorkUnitID="{D114BCBE-DB69-4947-B965-9E409E25AB92}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{4B4EC343-0B29-49AB-9B72-FE4A11CEB41E}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-12.34843</YPos>
+												<Flags>5</Flags>
+												<SegmentShape>Exp2</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>10</XPos>
+												<YPos>0</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>20</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+				</Effect>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>
