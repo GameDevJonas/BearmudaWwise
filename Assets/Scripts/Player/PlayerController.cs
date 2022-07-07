@@ -15,11 +15,14 @@ public class PlayerController : MonoBehaviour
 
     private Transform mainCam;
 
+    private Animator anim;
+
     private void Awake()
     {
         inputActions = new PlayerInputs();
         agent = GetComponent<NavMeshAgent>();
         mainCam = Camera.main.transform;
+        anim = GetComponentInChildren<Animator>();
     }
 
     private void OnEnable()
@@ -59,6 +62,8 @@ public class PlayerController : MonoBehaviour
         navObject.parent.rotation = Quaternion.LookRotation(forward);
 
         agent.SetDestination(navObject.position);
+
+        anim.SetBool("IsWalking", movement.ReadValue<Vector2>() != Vector2.zero);
     }
 
     private void OnDisable()
