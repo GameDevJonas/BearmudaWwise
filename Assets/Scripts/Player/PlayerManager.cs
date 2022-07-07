@@ -69,6 +69,8 @@ public class PlayerManager : MonoBehaviour
                 PlayerState = ActivePlayerState.GroundPlayer;
                 //Debug.Log("Ground mode on");
 
+                AkSoundEngine.SetRTPCValue("RTPC_Ambx_Location", 1);
+
                 GroundPlayerVariables.Controller.enabled = turnOn;
                 GroundPlayerVariables.Visuals.SetActive(turnOn);
                 GroundPlayerVariables.CinemachineFreeLook.Priority = 11;
@@ -92,6 +94,8 @@ public class PlayerManager : MonoBehaviour
                 TurnOnOffGroundVariables(false);
                 PlayerState = ActivePlayerState.BoatPlayer;
                 //Debug.Log("Boat mode on");
+
+                AkSoundEngine.SetRTPCValue("RTPC_Ambx_Location", 2);
 
                 BoatPlayerVariables.BoatController.enabled = turnOn;
                 BoatPlayerVariables.Visuals.SetActive(turnOn);

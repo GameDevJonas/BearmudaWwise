@@ -3,21 +3,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using AK.Wwise;
 
 public class BoatController : MonoBehaviour
 {
     //Input system
+    
     private PlayerInputs inputActions;
     private InputAction movement;
     private InputAction tilt;
 
     //Movement variables
+    [Header("Movement variables")]
     [SerializeField] private float maxSpeed;
     private Vector3 moveDirection;
     private float movementSpeed;
     private Rigidbody rb;
 
     //Acceleration variables
+    [Header("Acceleration variables")]
     [SerializeField] private float accelerationValue;
     private bool isAccelerating, isDecelerating;
     private float accelTimer;
@@ -25,12 +29,15 @@ public class BoatController : MonoBehaviour
     private float fakeX, fakeY;
 
     //Rotation variables
+    [Header("Rotation variables")]
     private Transform mainCam;
     [SerializeField] private Transform lookAtPoint;
 
     //Tilt variables
+    [Header("Tilt Variables")]
     private Animator anim;
     [SerializeField] private CheckForCollidersInsideTrigger leftCollectTrigger, rightCollectTrigger;
+    [SerializeField] private AK.Wwise.Event TiltEventStart, TiltEventStop;
 
     private void Awake()
     {
@@ -94,13 +101,17 @@ public class BoatController : MonoBehaviour
         if(inputValue < 0) //left tilt
         {
             leftCollectTrigger.gameObject.SetActive(true);
+            AkSoundEngine.PostEvent(TiltEventStart.Id, gameObject);
+            
         }
         else if(inputValue > 0) // right tilt
         {
             rightCollectTrigger.gameObject.SetActive(true);
+            AkSoundEngine.PostEvent(TiltEventStart.Id, gameObject);
         }
         else //centered
         {
+            AkSoundEngine.PostEvent(TiltEventStop.Id, gameObject);
             if(leftCollectTrigger.CollidersInsideMe.Count > 0)
             {
                 HoistPerson(leftCollectTrigger.CollidersInsideMe[0]);
@@ -151,6 +162,8 @@ public class BoatController : MonoBehaviour
         MovementSpeedCalc();
         AccelerationCalc();
         if (movement.ReadValue<Vector2>() != Vector2.zero) RotateWithMovement();
+
+        AkSoundEngine.SetRTPCValue("RTPC_Boat_Speed", movementSpeed);
     }
 
     private void AccelerationCalc()
