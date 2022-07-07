@@ -20,7 +20,7 @@
 				<AuxBus Id="2636462861" Name="Reverb_Outside_Small" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs\Reverb_Outside_Small"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="2880737896" Language="SFX" Hash="1997039127">
+		<SoundBank Id="2880737896" Language="SFX" Hash="39184560">
 			<ObjectPath>\SoundBanks\Default Work Unit\MainBank</ObjectPath>
 			<ShortName>MainBank</ShortName>
 			<Path>MainBank.bnk</Path>
@@ -96,7 +96,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="1391074924" Name="Play_Boat" ObjectPath="\Events\Default Work Unit\Play_Boat" MaxAttenuation="100." DurationType="Infinite">
+				<Event Id="1391074924" Name="Play_Boat" ObjectPath="\Events\Default Work Unit\Play_Boat" MaxAttenuation="40." DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="92580302" Language="SFX">
 							<ShortName>sfx_watersplashes_hittin_boat_medium.wav</ShortName>
@@ -109,6 +109,38 @@
 						<File Id="985225514" Language="SFX">
 							<ShortName>sfx_watersplashes_hittin_boat_on_land.wav</ShortName>
 							<Path>SFX\sfx_watersplashes_hittin_boat_on_land_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4048235234" Name="Play_boat_sideways" ObjectPath="\Events\Default Work Unit\Play_boat_sideways" MaxAttenuation="40." DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="71689500" Language="SFX">
+							<ShortName>sfx_watersplashes_boat_sideways_impact_05.wav</ShortName>
+							<Path>SFX\sfx_watersplashes_boat_sideways_impact_05_10C4C929.wem</Path>
+						</File>
+						<File Id="151790038" Language="SFX">
+							<ShortName>sfx_watersplashes_boat_sideways_impact_03.wav</ShortName>
+							<Path>SFX\sfx_watersplashes_boat_sideways_impact_03_10C4C929.wem</Path>
+						</File>
+						<File Id="304770181" Language="SFX">
+							<ShortName>sfx_watersplashes_boat_sideways_impact_06.wav</ShortName>
+							<Path>SFX\sfx_watersplashes_boat_sideways_impact_06_10C4C929.wem</Path>
+						</File>
+						<File Id="364657304" Language="SFX">
+							<ShortName>sfx_watersplashes_boat_sideways_impact_02.wav</ShortName>
+							<Path>SFX\sfx_watersplashes_boat_sideways_impact_02_10C4C929.wem</Path>
+						</File>
+						<File Id="443706508" Language="SFX">
+							<ShortName>sfx_watersplashes_boat_sideways_loop.wav</ShortName>
+							<Path>SFX\sfx_watersplashes_boat_sideways_loop_D79FB2B7.wem</Path>
+						</File>
+						<File Id="586427741" Language="SFX">
+							<ShortName>sfx_watersplashes_boat_sideways_impact_01.wav</ShortName>
+							<Path>SFX\sfx_watersplashes_boat_sideways_impact_01_10C4C929.wem</Path>
+						</File>
+						<File Id="702053611" Language="SFX">
+							<ShortName>sfx_watersplashes_boat_sideways_impact_04.wav</ShortName>
+							<Path>SFX\sfx_watersplashes_boat_sideways_impact_04_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -265,6 +297,26 @@
 						<File Id="597925539" Language="SFX">
 							<ShortName>SFX_Ball_whoosh_1.wav</ShortName>
 							<Path>SFX\SFX_Ball_whoosh_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="821116764" Name="Stop_boat_sideways" ObjectPath="\Events\Default Work Unit\Stop_boat_sideways" MaxAttenuation="40." DurationType="OneShot" DurationMin="0.563327" DurationMax="0.855362">
+					<IncludedMemoryFiles>
+						<File Id="246944576" Language="SFX">
+							<ShortName>sfx_watersplashes_boat_sideways_backup_02.wav</ShortName>
+							<Path>SFX\sfx_watersplashes_boat_sideways_backup_02_10C4C929.wem</Path>
+						</File>
+						<File Id="392994332" Language="SFX">
+							<ShortName>sfx_watersplashes_boat_sideways_backup_01.wav</ShortName>
+							<Path>SFX\sfx_watersplashes_boat_sideways_backup_01_10C4C929.wem</Path>
+						</File>
+						<File Id="474060865" Language="SFX">
+							<ShortName>sfx_watersplashes_boat_sideways_backup_03.wav</ShortName>
+							<Path>SFX\sfx_watersplashes_boat_sideways_backup_03_10C4C929.wem</Path>
+						</File>
+						<File Id="749057517" Language="SFX">
+							<ShortName>sfx_watersplashes_boat_sideways_backup_04.wav</ShortName>
+							<Path>SFX\sfx_watersplashes_boat_sideways_backup_04_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

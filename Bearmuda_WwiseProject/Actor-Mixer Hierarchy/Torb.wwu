@@ -1362,6 +1362,9 @@
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Player" ID="{56399B75-BA8B-44A6-A185-605FB2C2ED17}" WorkUnitID="{AD69011C-562C-4248-9F3C-F3CC7E57A872}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
 						</Reference>
@@ -1373,7 +1376,6 @@
 						<BlendContainer Name="boatwaves" ID="{E24FEC66-C582-4C0C-ACFB-222577A45C21}" ShortID="936257955">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -1646,6 +1648,326 @@
 								</BlendTrack>
 							</BlendTrackList>
 						</BlendContainer>
+						<ActorMixer Name="sideways" ID="{3178194F-FE1B-46CE-9CDE-AEFAA0EFEF42}" ShortID="557828670">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="duck_into_water" ID="{76B370C9-BFE8-4451-84D3-E9A8B15DCA6A}" ShortID="491231246">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sfx_watersplashes_boat_sideways_impact_01" ID="{93286619-5168-4FA5-AEC7-ECC52BE8C88B}" ShortID="284111688">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_watersplashes_boat_sideways_impact_01" ID="{5D9BFB6D-DCAC-4BF4-9B17-C86FB8E87C32}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_watersplashes_boat_sideways_impact_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="586427741"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_watersplashes_boat_sideways_impact_01" ID="{5D9BFB6D-DCAC-4BF4-9B17-C86FB8E87C32}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_watersplashes_boat_sideways_impact_02" ID="{CD225F12-ED36-4503-A9B6-7F03EC566403}" ShortID="226847035">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_watersplashes_boat_sideways_impact_02" ID="{F82E75D1-9ED0-4CAA-B31B-FDF1273B8150}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_watersplashes_boat_sideways_impact_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="364657304"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_watersplashes_boat_sideways_impact_02" ID="{F82E75D1-9ED0-4CAA-B31B-FDF1273B8150}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_watersplashes_boat_sideways_impact_03" ID="{D242EF96-622F-462C-803C-7102C1AFCAF3}" ShortID="444280124">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_watersplashes_boat_sideways_impact_03" ID="{3EA9F91C-A8ED-47CC-9F5B-4566565803FD}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_watersplashes_boat_sideways_impact_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="151790038"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_watersplashes_boat_sideways_impact_03" ID="{3EA9F91C-A8ED-47CC-9F5B-4566565803FD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_watersplashes_boat_sideways_impact_04" ID="{6E01E6AA-96F6-4273-8D5B-49BB1FAD090A}" ShortID="618914548">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_watersplashes_boat_sideways_impact_04" ID="{1EE90320-EB51-45AB-8AE6-FAAE6CE321A3}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_watersplashes_boat_sideways_impact_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="702053611"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_watersplashes_boat_sideways_impact_04" ID="{1EE90320-EB51-45AB-8AE6-FAAE6CE321A3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_watersplashes_boat_sideways_impact_05" ID="{E269443A-C8A7-4E1F-8383-2D9565EA51FD}" ShortID="447240751">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_watersplashes_boat_sideways_impact_05" ID="{06CDB8B5-1BFA-48B1-92D5-E361F55FEC73}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_watersplashes_boat_sideways_impact_05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="71689500"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_watersplashes_boat_sideways_impact_05" ID="{06CDB8B5-1BFA-48B1-92D5-E361F55FEC73}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_watersplashes_boat_sideways_impact_06" ID="{278EA40D-EE51-4007-B35C-F7351B5F2136}" ShortID="716728840">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_watersplashes_boat_sideways_impact_06" ID="{CC728196-6D25-4DB0-94A2-F6CA73C69D15}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_watersplashes_boat_sideways_impact_06.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="304770181"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_watersplashes_boat_sideways_impact_06" ID="{CC728196-6D25-4DB0-94A2-F6CA73C69D15}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<Sound Name="sfx_watersplashes_boat_sideways_loop" ID="{8A2E9B39-EF0B-4581-9130-C150F6E6F3A2}" ShortID="109177117">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>25</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_watersplashes_boat_sideways_loop" ID="{721DD0A6-225A-44FE-A2B2-2E60A601CC53}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_watersplashes_boat_sideways_loop.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="443706508"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_watersplashes_boat_sideways_loop" ID="{721DD0A6-225A-44FE-A2B2-2E60A601CC53}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="backup_from_water" ID="{58538B64-C46E-481D-B255-D828105858FD}" ShortID="378812177">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{90C967E1-7E7E-47EE-9D76-35E9CFFE0074}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="200"/>
+															<Property Name="Min" Type="Real64" Value="-200"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sfx_watersplashes_boat_sideways_backup_01" ID="{755950C5-A98F-4915-AA65-AD8AE1F8456D}" ShortID="146536382">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_watersplashes_boat_sideways_backup_01" ID="{4E210F3A-0C3A-433B-8743-F29627CCA2FB}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_watersplashes_boat_sideways_backup_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="392994332"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_watersplashes_boat_sideways_backup_01" ID="{4E210F3A-0C3A-433B-8743-F29627CCA2FB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_watersplashes_boat_sideways_backup_02" ID="{077BBB08-183F-4FAC-A752-66ADA7694B45}" ShortID="290449482">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_watersplashes_boat_sideways_backup_02" ID="{75264393-B868-4A15-AADE-FDFEDBF5F5D9}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_watersplashes_boat_sideways_backup_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="246944576"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_watersplashes_boat_sideways_backup_02" ID="{75264393-B868-4A15-AADE-FDFEDBF5F5D9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_watersplashes_boat_sideways_backup_03" ID="{34A0CADC-4395-492B-9D07-FB6D4F810C59}" ShortID="215384912">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_watersplashes_boat_sideways_backup_03" ID="{D9EDB061-CD32-4C00-B0FC-B005AB5653DC}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_watersplashes_boat_sideways_backup_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="474060865"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_watersplashes_boat_sideways_backup_03" ID="{D9EDB061-CD32-4C00-B0FC-B005AB5653DC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_watersplashes_boat_sideways_backup_04" ID="{B9873DF9-4916-4135-9998-4E4B6546E7B8}" ShortID="344571267">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_watersplashes_boat_sideways_backup_04" ID="{5BABC425-3588-4E78-9954-1EDEB665819C}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_watersplashes_boat_sideways_backup_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="749057517"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_watersplashes_boat_sideways_backup_04" ID="{5BABC425-3588-4E78-9954-1EDEB665819C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<ObjectLists/>
+						</ActorMixer>
 					</ChildrenList>
 					<ObjectLists/>
 				</ActorMixer>

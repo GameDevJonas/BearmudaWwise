@@ -62,3 +62,7 @@ sysinfo.txt
 crashlytics-build.properties
 
 UserSettings/EditorUserSettings.asset
+
+Bearmuda_WwiseProject/.cache/
+
+*.akd

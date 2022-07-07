@@ -69,6 +69,56 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_boat_sideways" ID="{F05D3A60-42A1-40E1-83BF-31C2F28B2E4E}">
+					<ChildrenList>
+						<Action Name="" ID="{A916577A-0BDA-4B41-970A-85D5DE1EC11D}" ShortID="437329229">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="duck_into_water" ID="{76B370C9-BFE8-4451-84D3-E9A8B15DCA6A}" WorkUnitID="{BF2D29B7-58D5-4DA9-985B-6FD720B30510}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{DAD2E626-B604-4EA0-A68F-095C4DCDFB2E}" ShortID="402999250">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_watersplashes_boat_sideways_loop" ID="{8A2E9B39-EF0B-4581-9130-C150F6E6F3A2}" WorkUnitID="{BF2D29B7-58D5-4DA9-985B-6FD720B30510}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_boat_sideways" ID="{450B8F7F-9DC1-400B-85D9-DCE7BD719DEB}">
+					<ChildrenList>
+						<Action Name="" ID="{9D8CEC15-23E7-444D-851A-A7D4FF680C52}" ShortID="1034389670">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Delay" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_watersplashes_boat_sideways_loop" ID="{8A2E9B39-EF0B-4581-9130-C150F6E6F3A2}" WorkUnitID="{BF2D29B7-58D5-4DA9-985B-6FD720B30510}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{2E11C16C-383B-46C1-80FA-4F68721EBD8B}" ShortID="177195538">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="duck_into_water" ID="{76B370C9-BFE8-4451-84D3-E9A8B15DCA6A}" WorkUnitID="{BF2D29B7-58D5-4DA9-985B-6FD720B30510}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{C2F83A9D-24C4-4EC6-9C76-B9A18EFEBC8D}" ShortID="602042679">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="backup_from_water" ID="{58538B64-C46E-481D-B255-D828105858FD}" WorkUnitID="{BF2D29B7-58D5-4DA9-985B-6FD720B30510}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
