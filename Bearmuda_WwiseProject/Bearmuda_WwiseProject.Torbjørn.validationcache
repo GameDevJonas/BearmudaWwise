@@ -2,7 +2,7 @@
 <ValidationCache Version="1" SchemaVersion="103">
 	<ValidationCacheItem File="C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="1657119644" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1657119644" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1657119644" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1657121546" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\States\Default Work Unit.wwu" DateLow="1657119644" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1657119644" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1657119644" DateHigh="0"/>
@@ -13,21 +13,21 @@
 	<ValidationCacheItem File="C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\Modulators\Default Work Unit.wwu" DateLow="1657119644" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="1657119644" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\Metadata\Default Work Unit.wwu" DateLow="1657119644" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1657119644" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1657121624" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1657119644" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1657119644" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\Events\Default Work Unit.wwu" DateLow="1657120110" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\Effects\Factory Effects.wwu" DateLow="1657119644" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1657121142" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\Events\Default Work Unit.wwu" DateLow="1657121236" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\Effects\Factory Effects.wwu" DateLow="1657121624" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1657119644" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1657119644" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1657119644" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\Conversion Settings\Default Work Unit.wwu" DateLow="1657119644" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1657119644" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\Bearmuda_WwiseProject.wproj" DateLow="1657119644" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\Bearmuda_WwiseProject.Torbjørn.wsettings" DateLow="1657119644" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\Bearmuda_WwiseProject.Torbjørn.wsettings" DateLow="1657140054" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1657119644" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1657119644" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\Actor-Mixer Hierarchy\Torb.wwu" DateLow="1657120110" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1657121546" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\Actor-Mixer Hierarchy\Torb.wwu" DateLow="1657121652" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\Actor-Mixer Hierarchy\Maren.wwu" DateLow="1657119644" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1657119644" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Torbjørn\Desktop\Bearmuda_WwiseIntegrationTemp\Bearmuda_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="1657115139" DateHigh="0"/>

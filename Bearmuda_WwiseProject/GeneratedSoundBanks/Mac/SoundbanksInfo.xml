@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3627065295">
+		<SoundBank Id="1355168291" Language="SFX" Hash="664964927">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -20,7 +20,7 @@
 				<AuxBus Id="2636462861" Name="Reverb_Outside_Small" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs\Reverb_Outside_Small"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="2880737896" Language="SFX" Hash="1173457709">
+		<SoundBank Id="2880737896" Language="SFX" Hash="1712332265">
 			<ObjectPath>\SoundBanks\Default Work Unit\MainBank</ObjectPath>
 			<ShortName>MainBank</ShortName>
 			<Path>MainBank.bnk</Path>
@@ -49,87 +49,106 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1724675634" Name="Play_Player_Footstep" ObjectPath="\Events\Default Work Unit\Play_Player_Footstep" MaxAttenuation="100." DurationType="OneShot" DurationMin="0.235578" DurationMax="0.282698">
+				<Event Id="1724675634" Name="Play_Player_Footstep" ObjectPath="\Events\Default Work Unit\Play_Player_Footstep" MaxAttenuation="100." DurationType="OneShot" DurationMin="0.232222" DurationMax="0.500839">
 					<IncludedMemoryFiles>
-						<File Id="101159414" Language="SFX">
-							<ShortName>madeline_footstep_wood_6.wav</ShortName>
-							<Path>SFX\madeline_footstep_wood_6_10C4C929.wem</Path>
+						<File Id="86936168" Language="SFX">
+							<ShortName>sfx_player_fts_wood_04.wav</ShortName>
+							<Path>SFX\sfx_player_fts_wood_04_10C4C929.wem</Path>
 						</File>
-						<File Id="240070842" Language="SFX">
-							<ShortName>madeline_footstep_snow_5.wav</ShortName>
-							<Path>SFX\madeline_footstep_snow_5_10C4C929.wem</Path>
+						<File Id="196119321" Language="SFX">
+							<ShortName>sfx_player_fts_grass_04.wav</ShortName>
+							<Path>SFX\sfx_player_fts_grass_04_10C4C929.wem</Path>
 						</File>
-						<File Id="312586702" Language="SFX">
-							<ShortName>madeline_footstep_wood_3.wav</ShortName>
-							<Path>SFX\madeline_footstep_wood_3_10C4C929.wem</Path>
+						<File Id="216717300" Language="SFX">
+							<ShortName>sfx_player_fts_sand_03.wav</ShortName>
+							<Path>SFX\sfx_player_fts_sand_03_10C4C929.wem</Path>
 						</File>
-						<File Id="546117711" Language="SFX">
-							<ShortName>madeline_footstep_wood_1.wav</ShortName>
-							<Path>SFX\madeline_footstep_wood_1_10C4C929.wem</Path>
+						<File Id="337945395" Language="SFX">
+							<ShortName>sfx_player_fts_wood_05.wav</ShortName>
+							<Path>SFX\sfx_player_fts_wood_05_10C4C929.wem</Path>
 						</File>
-						<File Id="555677550" Language="SFX">
-							<ShortName>madeline_footstep_snow_7.wav</ShortName>
-							<Path>SFX\madeline_footstep_snow_7_10C4C929.wem</Path>
+						<File Id="341993209" Language="SFX">
+							<ShortName>sfx_player_fts_sand_05.wav</ShortName>
+							<Path>SFX\sfx_player_fts_sand_05_10C4C929.wem</Path>
 						</File>
-						<File Id="560670604" Language="SFX">
-							<ShortName>madeline_footstep_wood_5.wav</ShortName>
-							<Path>SFX\madeline_footstep_wood_5_10C4C929.wem</Path>
+						<File Id="348220899" Language="SFX">
+							<ShortName>sfx_player_fts_grass_02.wav</ShortName>
+							<Path>SFX\sfx_player_fts_grass_02_10C4C929.wem</Path>
 						</File>
-						<File Id="748872080" Language="SFX">
-							<ShortName>madeline_footstep_wood_7.wav</ShortName>
-							<Path>SFX\madeline_footstep_wood_7_10C4C929.wem</Path>
+						<File Id="458018787" Language="SFX">
+							<ShortName>sfx_player_fts_grass_03.wav</ShortName>
+							<Path>SFX\sfx_player_fts_grass_03_10C4C929.wem</Path>
 						</File>
-						<File Id="863091198" Language="SFX">
-							<ShortName>madeline_footstep_snow_2.wav</ShortName>
-							<Path>SFX\madeline_footstep_snow_2_10C4C929.wem</Path>
+						<File Id="470861783" Language="SFX">
+							<ShortName>sfx_player_fts_wood_03.wav</ShortName>
+							<Path>SFX\sfx_player_fts_wood_03_10C4C929.wem</Path>
 						</File>
-						<File Id="908007120" Language="SFX">
-							<ShortName>madeline_footstep_wood_4.wav</ShortName>
-							<Path>SFX\madeline_footstep_wood_4_10C4C929.wem</Path>
+						<File Id="523984763" Language="SFX">
+							<ShortName>sfx_player_fts_wood_02.wav</ShortName>
+							<Path>SFX\sfx_player_fts_wood_02_10C4C929.wem</Path>
 						</File>
-						<File Id="948546167" Language="SFX">
-							<ShortName>madeline_footstep_snow_3.wav</ShortName>
-							<Path>SFX\madeline_footstep_snow_3_10C4C929.wem</Path>
+						<File Id="592955165" Language="SFX">
+							<ShortName>sfx_player_fts_sand_02.wav</ShortName>
+							<Path>SFX\sfx_player_fts_sand_02_10C4C929.wem</Path>
 						</File>
-						<File Id="994591352" Language="SFX">
-							<ShortName>madeline_footstep_snow_4.wav</ShortName>
-							<Path>SFX\madeline_footstep_snow_4_10C4C929.wem</Path>
+						<File Id="595275068" Language="SFX">
+							<ShortName>sfx_player_fts_grass_06.wav</ShortName>
+							<Path>SFX\sfx_player_fts_grass_06_10C4C929.wem</Path>
 						</File>
-						<File Id="1019952375" Language="SFX">
-							<ShortName>madeline_footstep_wood_2.wav</ShortName>
-							<Path>SFX\madeline_footstep_wood_2_10C4C929.wem</Path>
+						<File Id="750065658" Language="SFX">
+							<ShortName>sfx_player_fts_sand_04.wav</ShortName>
+							<Path>SFX\sfx_player_fts_sand_04_10C4C929.wem</Path>
 						</File>
-						<File Id="1035214761" Language="SFX">
-							<ShortName>madeline_footstep_snow_1.wav</ShortName>
-							<Path>SFX\madeline_footstep_snow_1_10C4C929.wem</Path>
+						<File Id="843426940" Language="SFX">
+							<ShortName>sfx_player_fts_grass_01.wav</ShortName>
+							<Path>SFX\sfx_player_fts_grass_01_10C4C929.wem</Path>
 						</File>
-						<File Id="1043352087" Language="SFX">
-							<ShortName>madeline_footstep_snow_6.wav</ShortName>
-							<Path>SFX\madeline_footstep_snow_6_10C4C929.wem</Path>
+						<File Id="968215707" Language="SFX">
+							<ShortName>sfx_player_fts_sand_01.wav</ShortName>
+							<Path>SFX\sfx_player_fts_sand_01_10C4C929.wem</Path>
+						</File>
+						<File Id="983213203" Language="SFX">
+							<ShortName>sfx_player_fts_wood_06.wav</ShortName>
+							<Path>SFX\sfx_player_fts_wood_06_10C4C929.wem</Path>
+						</File>
+						<File Id="1007438298" Language="SFX">
+							<ShortName>sfx_player_fts_grass_05.wav</ShortName>
+							<Path>SFX\sfx_player_fts_grass_05_10C4C929.wem</Path>
+						</File>
+						<File Id="1025550419" Language="SFX">
+							<ShortName>sfx_player_fts_wood_01.wav</ShortName>
+							<Path>SFX\sfx_player_fts_wood_01_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<DefaultSwitchValue>{876FA16C-90F1-4633-BE1D-63BE19A4DBF5}</DefaultSwitchValue>
 					<SwitchContainers>
 						<SwitchContainer SwitchValue="{876FA16C-90F1-4633-BE1D-63BE19A4DBF5}">
 							<Media>
-								<File Id="240070842"/>
-								<File Id="555677550"/>
-								<File Id="863091198"/>
-								<File Id="948546167"/>
-								<File Id="994591352"/>
-								<File Id="1035214761"/>
-								<File Id="1043352087"/>
+								<File Id="216717300"/>
+								<File Id="341993209"/>
+								<File Id="592955165"/>
+								<File Id="750065658"/>
+								<File Id="968215707"/>
 							</Media>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{F9BF6270-09AC-4AC2-BA00-E96D7E381E69}">
 							<Media>
-								<File Id="101159414"/>
-								<File Id="312586702"/>
-								<File Id="546117711"/>
-								<File Id="560670604"/>
-								<File Id="748872080"/>
-								<File Id="908007120"/>
-								<File Id="1019952375"/>
+								<File Id="86936168"/>
+								<File Id="337945395"/>
+								<File Id="470861783"/>
+								<File Id="523984763"/>
+								<File Id="983213203"/>
+								<File Id="1025550419"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{C83A6289-F4EA-451E-8D82-739A22576C55}">
+							<Media>
+								<File Id="196119321"/>
+								<File Id="348220899"/>
+								<File Id="458018787"/>
+								<File Id="595275068"/>
+								<File Id="843426940"/>
+								<File Id="1007438298"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
