@@ -106,7 +106,7 @@ Material:
     - _ReflectionTurbulenceDistortionIntensity: 0.8
     - _ReflectionTurbulenceScale: 1
     - _ReflectionTurbulenceTiling: 0
-    - _ReflectionsIntensity: 0.083
+    - _ReflectionsIntensity: 1.55
     - _ReflectionsIntensity1: 1
     - _RefractionDepth: 3.84
     - _RefractionDepth1: 3.31
@@ -126,8 +126,8 @@ Material:
     - _WaveTile: 33
     - _WaveTile1: 0
     - _WaveTile2: 20
-    - _WaveTiling01: 16
-    - _WaveTiling02: 8
+    - _WaveTiling01: 35
+    - _WaveTiling02: 17
     - _WorldtoObjectPosition: 0
     - __dirty: 0
     m_Colors:
