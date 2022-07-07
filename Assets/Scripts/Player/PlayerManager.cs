@@ -16,6 +16,8 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private BoatPlayerVariables BoatPlayerVariables;
 
     public static UnityEvent<GameObject> InteractPushed = new();
+    public static UnityEvent SwitchedToPlayer = new();
+    public static UnityEvent SwitchedToBoat = new();
 
     private void Start()
     {
@@ -66,19 +68,19 @@ public class PlayerManager : MonoBehaviour
         {
             case true:
                 TurnOnOffBoatVariables(false);
-                PlayerState = ActivePlayerState.GroundPlayer;
-                //Debug.Log("Ground mode on");
+                SwitchedToPlayer.Invoke();
 
                 AkSoundEngine.SetRTPCValue("RTPC_Ambx_Location", 1);
+
+                PlayerState = ActivePlayerState.GroundPlayer;
+                //Debug.Log("Ground mode on");
 
                 GroundPlayerVariables.Controller.enabled = turnOn;
                 GroundPlayerVariables.Visuals.SetActive(turnOn);
                 GroundPlayerVariables.CinemachineFreeLook.Priority = 11;
-
                 break;
             case false:
                 //Debug.Log("Ground mode off");
-
                 GroundPlayerVariables.Controller.enabled = turnOn;
                 GroundPlayerVariables.Visuals.SetActive(turnOn);
                 GroundPlayerVariables.CinemachineFreeLook.Priority = 9;
@@ -92,10 +94,12 @@ public class PlayerManager : MonoBehaviour
         {
             case true:
                 TurnOnOffGroundVariables(false);
-                PlayerState = ActivePlayerState.BoatPlayer;
-                //Debug.Log("Boat mode on");
+                SwitchedToBoat.Invoke();
 
                 AkSoundEngine.SetRTPCValue("RTPC_Ambx_Location", 2);
+
+                PlayerState = ActivePlayerState.BoatPlayer;
+                //Debug.Log("Boat mode on");
 
                 BoatPlayerVariables.BoatController.enabled = turnOn;
                 BoatPlayerVariables.Visuals.SetActive(turnOn);
@@ -103,7 +107,6 @@ public class PlayerManager : MonoBehaviour
                 break;
             case false:
                 //Debug.Log("Boat mode off");
-
                 BoatPlayerVariables.BoatController.enabled = turnOn;
                 BoatPlayerVariables.Visuals.SetActive(turnOn);
                 BoatPlayerVariables.CinemachineFreeLook.Priority = 9;

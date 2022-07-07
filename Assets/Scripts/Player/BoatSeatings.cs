@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class BoatSeatings : MonoBehaviour
 {
-    [SerializeField] private BoatSeating[] seatings;
-    [SerializeField] private int seatingsTaken;
+    public BoatSeating[] seatings;
+    public int seatingsTaken;
 
     public void AddPerson(Transform person)
     {
