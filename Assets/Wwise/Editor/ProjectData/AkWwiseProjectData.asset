@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 57d5f0e632a6db4b8d3244fbf54bd714
     GuidInternal: 
-    m_lastTime: -8585444901897596174
+    m_lastTime: -8585444872410839284
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 5c7658dc4ef2494fa936123b11804268
     GuidInternal: 
-    m_lastTime: -8585444851678782778
+    m_lastTime: -8585444852607501547
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -123,7 +123,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 87fe6e58c7007a478f0ec3970104b7c4
     GuidInternal: 
-    m_lastTime: -8585444901898495280
+    m_lastTime: -8585444872410879294
     List:
     - name: MainBank
       guid: be2de4e137f60642bf7a81a6e7b7fc03
@@ -151,7 +151,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 0c805e5342ae8e46a2592a06f996cd81
     GuidInternal: 
-    m_lastTime: -8585443882113772922
+    m_lastTime: -8585443832811137101
     List:
     - name: Play_AMBX_Main
       guid: ff352e0512dd46428de2c2705494de55
@@ -184,7 +184,24 @@ MonoBehaviour:
         ObjectType: 3
         guid: 897ed0344b64a24db8134d4046f7eacf
       Path: Events\Default Work Unit\Play_Boat
-      maxAttenuation: 100
+      maxAttenuation: 40
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_boat_sideways
+      guid: 603a5df0a142e14083bf31c2f28b2e4e
+      id: 4048235234
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0c805e5342ae8e46a2592a06f996cd81
+      - ElementName: Play_boat_sideways
+        ObjectType: 3
+        guid: 603a5df0a142e14083bf31c2f28b2e4e
+      Path: Events\Default Work Unit\Play_boat_sideways
+      maxAttenuation: 40
       maxDuration: -1
       minDuration: -1
     - name: Play_bonk
@@ -255,6 +272,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.166667
       minDuration: 0.166667
+    - name: Stop_boat_sideways
+      guid: 7f8f0b45c19d0b4085d9dce7bd719deb
+      id: 821116764
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0c805e5342ae8e46a2592a06f996cd81
+      - ElementName: Stop_boat_sideways
+        ObjectType: 3
+        guid: 7f8f0b45c19d0b4085d9dce7bd719deb
+      Path: Events\Default Work Unit\Stop_boat_sideways
+      maxAttenuation: 40
+      maxDuration: 0.855362
+      minDuration: 0.563327
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -267,7 +301,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: bebc14d169db4749b9659e409e25ab92
     GuidInternal: 
-    m_lastTime: -8585443882113772922
+    m_lastTime: -8585444066245650811
     List:
     - name: AMBX
       guid: 66bdc9e24f23ef488af7fc536b65dda0
@@ -374,7 +408,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: e3d9c3c49f1e5248bbfbf03d6fb1f425
     GuidInternal: 
-    m_lastTime: -8585444901898144691
+    m_lastTime: -8585444872410859290
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -388,7 +422,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 14a44e73130a8749998dfa4aa969a02a
     GuidInternal: 
-    m_lastTime: -8585443882108217753
+    m_lastTime: -8585444066245320744
     List:
     - name: Ambx
       guid: 1183356acf6f954fb14205b47b1d08b8
@@ -575,7 +609,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: a8d8877960652740a5fc7fcd5864ae22
     GuidInternal: 
-    m_lastTime: -8585444901897775647
+    m_lastTime: -8585444872410839284
     List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 
