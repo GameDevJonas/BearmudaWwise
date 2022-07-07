@@ -1659,6 +1659,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<RandomSequenceContainer Name="duck_into_water" ID="{76B370C9-BFE8-4451-84D3-E9A8B15DCA6A}" ShortID="491231246">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
@@ -1819,7 +1826,7 @@
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-3</Value>
+												<Value>-4</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1859,6 +1866,11 @@
 													</Modifier>
 												</ModifierInfo>
 											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
