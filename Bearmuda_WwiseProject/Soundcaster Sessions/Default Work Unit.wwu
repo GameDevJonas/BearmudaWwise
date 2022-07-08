@@ -29,7 +29,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="RTPC_Boat_Speed" ID="{97986E75-9A56-4694-A2AF-BAD3B4683264}"/>
-							<Value>4.61883408071749</Value>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="RTPC_Player_Footsteps" ID="{592BAB48-3408-4E1A-BB77-DAAAEC7194BF}"/>

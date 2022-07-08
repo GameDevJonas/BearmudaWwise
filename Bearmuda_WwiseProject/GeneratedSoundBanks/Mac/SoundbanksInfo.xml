@@ -20,7 +20,7 @@
 				<AuxBus Id="2636462861" Name="Reverb_Outside_Small" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs\Reverb_Outside_Small"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="2880737896" Language="SFX" Hash="3630499218">
+		<SoundBank Id="2880737896" Language="SFX" Hash="4026720341">
 			<ObjectPath>\SoundBanks\Default Work Unit\MainBank</ObjectPath>
 			<ShortName>MainBank</ShortName>
 			<Path>MainBank.bnk</Path>
