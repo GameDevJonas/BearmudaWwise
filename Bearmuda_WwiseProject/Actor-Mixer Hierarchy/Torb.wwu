@@ -918,6 +918,9 @@
 												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0"/>
 												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
 													<RTPCList>
 														<RTPC Name="" ID="{89E91515-257E-4947-B775-C4EDB9F79265}" ShortID="560178182">
 															<ReferenceList>
@@ -1131,7 +1134,7 @@
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-2</Value>
+														<Value>-4</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
