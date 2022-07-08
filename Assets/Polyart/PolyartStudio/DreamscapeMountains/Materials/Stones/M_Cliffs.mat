@@ -2,14 +2,15 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: M_Cliffs
   m_Shader: {fileID: 4800000, guid: ea5d36618984ae9489a6bfcc69508694, type: 3}
-  m_ShaderKeywords: 
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -36,8 +37,8 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _GrassColour:
-        m_Texture: {fileID: 2800000, guid: 3db1da7c1676ec24aad4553db2a415c3, type: 3}
-        m_Scale: {x: 1, y: 1}
+        m_Texture: {fileID: 2800000, guid: 59e30dd25e3f651428388f2c31ddb72e, type: 3}
+        m_Scale: {x: 3, y: 3}
         m_Offset: {x: 0, y: 0}
     - _GrassNormal:
         m_Texture: {fileID: 2800000, guid: 3901734d5f4f26442bd03918379f108a, type: 3}
@@ -79,7 +80,9 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
+    - _AlphaCutoff: 0.5
     - _GrassBias: -0.31
     - _GrassSharpness: 2.29
     - _Normal: 1.984
@@ -90,6 +93,8 @@ Material:
     - __dirty: 1
     m_Colors:
     - _CliffTiling: {r: 1, g: 0.25, b: 0, a: 0}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _GrassTint: {r: 0.68008065, g: 0.99215686, b: 0.40784314, a: 1}
     - _Tiling: {r: 2, g: 2, b: 0, a: 0}
     - _Tiling1: {r: 2, g: 2, b: 0, a: 0}
+  m_BuildTextureStacks: []
