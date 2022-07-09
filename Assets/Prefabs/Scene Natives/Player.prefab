@@ -55,9 +55,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1034989842156040031}
   - component: {fileID: 1034989842156040030}
-  - component: {fileID: 1034989842156040026}
   - component: {fileID: 1034989842156040029}
   - component: {fileID: 1034989842156040023}
+  - component: {fileID: 2612545259475130311}
   - component: {fileID: 1034989842156040027}
   - component: {fileID: 1034989842156040022}
   - component: {fileID: 1034989842156040025}
@@ -76,7 +76,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1034989842156039841}
-  m_LocalRotation: {x: -0, y: -0.63516194, z: -0, w: 0.77237904}
+  m_LocalRotation: {x: 0, y: -0.63516206, z: 0, w: 0.772379}
   m_LocalPosition: {x: 69.74, y: 8.375, z: 68.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -99,24 +99,6 @@ CapsuleCollider:
   m_Radius: 0.64
   m_Height: 2.15
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!143 &1034989842156040026
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1034989842156039841}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Height: 2
-  m_Radius: 0.5
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1034989842156040029
 MonoBehaviour:
@@ -145,6 +127,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentFollowers: []
+--- !u!114 &2612545259475130311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034989842156039841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87022d2af6c37014981eb22eda8ed879, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FloorLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  TextureSounds:
+  - Albedos:
+    - {fileID: 2800000, guid: 2daf8f97ff93279488811517f0629f79, type: 3}
+    - {fileID: 2800000, guid: 36d2dc62cc1b4624e84533b49f17f4c7, type: 3}
+    FootstepID: 1
+  - Albedos:
+    - {fileID: 2800000, guid: 4f94e1fabf0f0534ea36b4f9001a114e, type: 3}
+    FootstepID: 2
+  - Albedos:
+    - {fileID: 2800000, guid: 3db1da7c1676ec24aad4553db2a415c3, type: 3}
+    - {fileID: 2800000, guid: f459e43e9a6df704492a5b28dd555b58, type: 3}
+    - {fileID: 2800000, guid: 35b864168834e4e479f831ec4789c2bf, type: 3}
+    FootstepID: 3
+  Agent: {fileID: 0}
+  RTPCValue: 0
 --- !u!195 &1034989842156040027
 NavMeshAgent:
   m_ObjectHideFlags: 0
