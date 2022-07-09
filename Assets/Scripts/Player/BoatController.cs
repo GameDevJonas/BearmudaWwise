@@ -217,5 +217,6 @@ public class BoatController : MonoBehaviour
         inputActions.Boat.Interact.Disable();
         inputActions.Boat.TiltLeft.Disable();
         inputActions.Boat.TiltRight.Disable();
+        rb.velocity = Vector3.zero;
     }
 }
