@@ -22,6 +22,8 @@ public class PlayerManager : MonoBehaviour
     private void Start()
     {
         SwitchPlayerState(startingState);
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     [ContextMenu("Change to boat")]
