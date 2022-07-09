@@ -4,20 +4,23 @@ using UnityEngine;
 using AK.Wwise;
 using Cinemachine;
 using UnityEngine.Events;
+using System;
 
 public class PlayerManager : MonoBehaviour
 {
-    public enum ActivePlayerState { GroundPlayer, BoatPlayer };
+    public enum ActivePlayerState { GroundPlayer, BoatPlayer, VillageBuilder};
     public static ActivePlayerState PlayerState;
 
     [SerializeField] private ActivePlayerState startingState;
 
     [SerializeField] private GroundPlayerVariables GroundPlayerVariables;
     [SerializeField] private BoatPlayerVariables BoatPlayerVariables;
+    [SerializeField] private VillageBuilderVariables VillageBuilderVariables;
 
     public static UnityEvent<GameObject> InteractPushed = new();
     public static UnityEvent SwitchedToPlayer = new();
     public static UnityEvent SwitchedToBoat = new();
+    public static UnityEvent SwitchedToBuilder = new();
 
     private void Start()
     {
@@ -36,6 +39,12 @@ public class PlayerManager : MonoBehaviour
     public void ChangeToGroundInspector()
     {
         SwitchPlayerState(ActivePlayerState.GroundPlayer);
+    }
+
+    [ContextMenu("Change to builder")]
+    public void ChangeToBuilderInspector()
+    {
+        SwitchPlayerState(ActivePlayerState.VillageBuilder);
     }
 
     public void SwitchPlayerState()
@@ -61,6 +70,9 @@ public class PlayerManager : MonoBehaviour
             case ActivePlayerState.BoatPlayer:
                 TurnOnOffBoatVariables(true);
                 break;
+            case ActivePlayerState.VillageBuilder:
+                TurnOnOffBuilderVariables(true);
+                break;
         }
     }
 
@@ -70,6 +82,7 @@ public class PlayerManager : MonoBehaviour
         {
             case true:
                 TurnOnOffBoatVariables(false);
+                TurnOnOffBuilderVariables(false);
                 SwitchedToPlayer.Invoke();
 
                 AkSoundEngine.SetRTPCValue("RTPC_Ambx_Location", 1);
@@ -96,6 +109,7 @@ public class PlayerManager : MonoBehaviour
         {
             case true:
                 TurnOnOffGroundVariables(false);
+                TurnOnOffBuilderVariables(false);
                 SwitchedToBoat.Invoke();
 
                 AkSoundEngine.SetRTPCValue("RTPC_Ambx_Location", 2);
@@ -115,9 +129,32 @@ public class PlayerManager : MonoBehaviour
                 break;
         }
     }
+
+    private void TurnOnOffBuilderVariables(bool turnOn)
+    {
+        switch (turnOn)
+        {
+            case true:
+                TurnOnOffBoatVariables(false);
+                TurnOnOffGroundVariables(false);
+                SwitchedToBuilder.Invoke();
+
+                AkSoundEngine.SetRTPCValue("RTPC_Ambx_Location", 2);
+
+                PlayerState = ActivePlayerState.VillageBuilder;
+                //Debug.Log("Builder mode on");
+
+                VillageBuilderVariables.CinemachineVirtualCamera.Priority = 11;
+                break;
+            case false:
+                //Debug.Log("Builder mode off");
+                VillageBuilderVariables.CinemachineVirtualCamera.Priority = 9;
+                break;
+        }
+    }
 }
 
-[System.Serializable]
+[Serializable]
 public class GroundPlayerVariables
 {
     public PlayerController Controller;
@@ -125,10 +162,16 @@ public class GroundPlayerVariables
     public CinemachineFreeLook CinemachineFreeLook;
 }
 
-[System.Serializable]
+[Serializable]
 public class BoatPlayerVariables
 {
     public BoatController BoatController;
     public GameObject Visuals;
     public CinemachineFreeLook CinemachineFreeLook;
+}
+
+[Serializable]
+public class VillageBuilderVariables
+{
+    public CinemachineVirtualCamera CinemachineVirtualCamera;
 }
