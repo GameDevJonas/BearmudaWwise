@@ -145,10 +145,12 @@ public class PlayerManager : MonoBehaviour
                 //Debug.Log("Builder mode on");
 
                 VillageBuilderVariables.CinemachineVirtualCamera.Priority = 11;
+                VillageBuilderVariables.BuilderController.enabled = true;
                 break;
             case false:
                 //Debug.Log("Builder mode off");
                 VillageBuilderVariables.CinemachineVirtualCamera.Priority = 9;
+                VillageBuilderVariables.BuilderController.enabled = false;
                 break;
         }
     }
@@ -173,5 +175,6 @@ public class BoatPlayerVariables
 [Serializable]
 public class VillageBuilderVariables
 {
+    public BuilderController BuilderController;
     public CinemachineVirtualCamera CinemachineVirtualCamera;
 }

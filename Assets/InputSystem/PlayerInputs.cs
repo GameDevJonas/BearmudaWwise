@@ -349,7 +349,7 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                     ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""Interact"",
+                    ""name"": ""Confirm"",
                     ""type"": ""Button"",
                     ""id"": ""cf63d818-2629-4bc7-af2f-d53bb908c291"",
                     ""expectedControlType"": ""Button"",
@@ -507,7 +507,7 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
-                    ""action"": ""Interact"",
+                    ""action"": ""Confirm"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -518,7 +518,7 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""Interact"",
+                    ""action"": ""Confirm"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -590,7 +590,7 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
         m_VillagePlacement = asset.FindActionMap("VillagePlacement", throwIfNotFound: true);
         m_VillagePlacement_Movement = m_VillagePlacement.FindAction("Movement", throwIfNotFound: true);
         m_VillagePlacement_Rotate = m_VillagePlacement.FindAction("Rotate", throwIfNotFound: true);
-        m_VillagePlacement_Interact = m_VillagePlacement.FindAction("Interact", throwIfNotFound: true);
+        m_VillagePlacement_Confirm = m_VillagePlacement.FindAction("Confirm", throwIfNotFound: true);
         m_VillagePlacement_Cancel = m_VillagePlacement.FindAction("Cancel", throwIfNotFound: true);
     }
 
@@ -743,7 +743,7 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
     private IVillagePlacementActions m_VillagePlacementActionsCallbackInterface;
     private readonly InputAction m_VillagePlacement_Movement;
     private readonly InputAction m_VillagePlacement_Rotate;
-    private readonly InputAction m_VillagePlacement_Interact;
+    private readonly InputAction m_VillagePlacement_Confirm;
     private readonly InputAction m_VillagePlacement_Cancel;
     public struct VillagePlacementActions
     {
@@ -751,7 +751,7 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
         public VillagePlacementActions(@PlayerInputs wrapper) { m_Wrapper = wrapper; }
         public InputAction @Movement => m_Wrapper.m_VillagePlacement_Movement;
         public InputAction @Rotate => m_Wrapper.m_VillagePlacement_Rotate;
-        public InputAction @Interact => m_Wrapper.m_VillagePlacement_Interact;
+        public InputAction @Confirm => m_Wrapper.m_VillagePlacement_Confirm;
         public InputAction @Cancel => m_Wrapper.m_VillagePlacement_Cancel;
         public InputActionMap Get() { return m_Wrapper.m_VillagePlacement; }
         public void Enable() { Get().Enable(); }
@@ -768,9 +768,9 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                 @Rotate.started -= m_Wrapper.m_VillagePlacementActionsCallbackInterface.OnRotate;
                 @Rotate.performed -= m_Wrapper.m_VillagePlacementActionsCallbackInterface.OnRotate;
                 @Rotate.canceled -= m_Wrapper.m_VillagePlacementActionsCallbackInterface.OnRotate;
-                @Interact.started -= m_Wrapper.m_VillagePlacementActionsCallbackInterface.OnInteract;
-                @Interact.performed -= m_Wrapper.m_VillagePlacementActionsCallbackInterface.OnInteract;
-                @Interact.canceled -= m_Wrapper.m_VillagePlacementActionsCallbackInterface.OnInteract;
+                @Confirm.started -= m_Wrapper.m_VillagePlacementActionsCallbackInterface.OnConfirm;
+                @Confirm.performed -= m_Wrapper.m_VillagePlacementActionsCallbackInterface.OnConfirm;
+                @Confirm.canceled -= m_Wrapper.m_VillagePlacementActionsCallbackInterface.OnConfirm;
                 @Cancel.started -= m_Wrapper.m_VillagePlacementActionsCallbackInterface.OnCancel;
                 @Cancel.performed -= m_Wrapper.m_VillagePlacementActionsCallbackInterface.OnCancel;
                 @Cancel.canceled -= m_Wrapper.m_VillagePlacementActionsCallbackInterface.OnCancel;
@@ -784,9 +784,9 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                 @Rotate.started += instance.OnRotate;
                 @Rotate.performed += instance.OnRotate;
                 @Rotate.canceled += instance.OnRotate;
-                @Interact.started += instance.OnInteract;
-                @Interact.performed += instance.OnInteract;
-                @Interact.canceled += instance.OnInteract;
+                @Confirm.started += instance.OnConfirm;
+                @Confirm.performed += instance.OnConfirm;
+                @Confirm.canceled += instance.OnConfirm;
                 @Cancel.started += instance.OnCancel;
                 @Cancel.performed += instance.OnCancel;
                 @Cancel.canceled += instance.OnCancel;
@@ -827,7 +827,7 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
     {
         void OnMovement(InputAction.CallbackContext context);
         void OnRotate(InputAction.CallbackContext context);
-        void OnInteract(InputAction.CallbackContext context);
+        void OnConfirm(InputAction.CallbackContext context);
         void OnCancel(InputAction.CallbackContext context);
     }
 }

@@ -327,7 +327,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Interact",
+                    "name": "Confirm",
                     "type": "Button",
                     "id": "cf63d818-2629-4bc7-af2f-d53bb908c291",
                     "expectedControlType": "Button",
@@ -485,7 +485,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
-                    "action": "Interact",
+                    "action": "Confirm",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -496,7 +496,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",
-                    "action": "Interact",
+                    "action": "Confirm",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
