@@ -42,7 +42,7 @@ public class LostPerson : MonoBehaviour
         agent.Warp(newPosition);
     }
 
-    public void ChangeTarget(Transform newTarget)
+    public void SetNewTarget(Transform newTarget)
     {
         target = newTarget;
     }
