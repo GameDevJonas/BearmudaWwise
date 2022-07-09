@@ -372,7 +372,7 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: f59042408c8af6e439b91c77d529102f,
       type: 2}
-  PlayOnStart: 0
+  PlayOnStart: 1
 --- !u!4 &133211947
 Transform:
   m_ObjectHideFlags: 0
@@ -831,7 +831,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7822878, y: 1}
+    m_SensorSize: {x: 1.7020507, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -909,7 +909,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7822878, y: 1}
+    m_SensorSize: {x: 1.7020507, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1837,7 +1837,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7822878, y: 1}
+    m_SensorSize: {x: 1.7020507, y: 1}
   m_Transitions:
     m_BlendHint: 1
     m_InheritPosition: 1
@@ -2142,7 +2142,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7822878, y: 1}
+    m_SensorSize: {x: 1.7020507, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -2387,11 +2387,13 @@ MonoBehaviour:
   TiltEventStart:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: ea973ee594978aa44ac4ec50a2a2c37d,
+      type: 2}
   TiltEventStop:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 9167f03fb273a0945b02ce247d5121f6,
+      type: 2}
 --- !u!4 &923240860
 Transform:
   m_ObjectHideFlags: 0
