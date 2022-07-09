@@ -53,7 +53,7 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                     ""path"": ""<Gamepad>/buttonSouth"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Gamepad"",
                     ""action"": ""Interact"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -64,7 +64,7 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/space"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Keyboard"",
                     ""action"": ""Interact"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -86,7 +86,7 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Keyboard"",
                     ""action"": ""Movement"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -97,7 +97,7 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/s"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Keyboard"",
                     ""action"": ""Movement"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -108,7 +108,7 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/a"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Keyboard"",
                     ""action"": ""Movement"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -119,7 +119,7 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/d"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Keyboard"",
                     ""action"": ""Movement"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -130,7 +130,7 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                     ""path"": ""<Gamepad>/leftStick"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Gamepad"",
                     ""action"": ""Movement"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -149,24 +149,6 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
-                },
-                {
-                    ""name"": ""TiltLeft"",
-                    ""type"": ""Button"",
-                    ""id"": ""4cc0a937-0056-48c2-9ee5-426b1ef972a7"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""TiltRight"",
-                    ""type"": ""Button"",
-                    ""id"": ""9dcd3535-078a-47ea-a74e-c8ae205ba82f"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
                 },
                 {
                     ""name"": ""Interact"",
@@ -194,7 +176,7 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                     ""path"": ""<Gamepad>/leftStick"",
                     ""interactions"": """",
                     ""processors"": ""StickDeadzone"",
-                    ""groups"": """",
+                    ""groups"": ""Gamepad"",
                     ""action"": ""Movement"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -216,7 +198,7 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Keyboard"",
                     ""action"": ""Movement"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -227,7 +209,7 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/s"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Keyboard"",
                     ""action"": ""Movement"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -238,7 +220,7 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/a"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Keyboard"",
                     ""action"": ""Movement"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -249,54 +231,10 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/d"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Keyboard"",
                     ""action"": ""Movement"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""697c0f27-3391-46a1-955d-64cec2333b1c"",
-                    ""path"": ""<Gamepad>/leftShoulder"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""TiltLeft"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""453e76b0-a304-4466-aaba-30d7050899ac"",
-                    ""path"": ""<Keyboard>/q"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""TiltLeft"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""9c5149c2-40bf-4d29-a2f4-7b5593704b5a"",
-                    ""path"": ""<Gamepad>/rightShoulder"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""TiltRight"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""009fecaa-48ac-476a-8b95-6732b3415d1f"",
-                    ""path"": ""<Keyboard>/e"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""TiltRight"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
@@ -304,7 +242,7 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                     ""path"": ""<Gamepad>/buttonSouth"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Gamepad"",
                     ""action"": ""Interact"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -315,7 +253,7 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/space"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Keyboard"",
                     ""action"": ""Interact"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -337,7 +275,7 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                     ""path"": ""<Gamepad>/leftShoulder"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Gamepad"",
                     ""action"": ""Tilt"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -348,7 +286,7 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                     ""path"": ""<Gamepad>/rightShoulder"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Gamepad"",
                     ""action"": ""Tilt"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -370,7 +308,7 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/q"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Keyboard"",
                     ""action"": ""Tilt"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -381,15 +319,263 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/e"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Keyboard"",
                     ""action"": ""Tilt"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 }
             ]
+        },
+        {
+            ""name"": ""VillagePlacement"",
+            ""id"": ""a8c7dffb-e088-4ab5-a38f-4ea86772bacc"",
+            ""actions"": [
+                {
+                    ""name"": ""Movement"",
+                    ""type"": ""Value"",
+                    ""id"": ""66e95884-34b2-4f3b-9d40-0dd615ce8ccf"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Rotate"",
+                    ""type"": ""Value"",
+                    ""id"": ""cfdc6dcd-66f8-4d4f-8f66-dd8c90ec1007"",
+                    ""expectedControlType"": ""Axis"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Interact"",
+                    ""type"": ""Button"",
+                    ""id"": ""cf63d818-2629-4bc7-af2f-d53bb908c291"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Cancel"",
+                    ""type"": ""Button"",
+                    ""id"": ""86703c47-6900-41ac-8368-cd646f3a3670"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""4ce83fcd-d4d8-4044-afbf-38e2b99ff3c3"",
+                    ""path"": ""<Gamepad>/leftStick"",
+                    ""interactions"": """",
+                    ""processors"": ""StickDeadzone"",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""Keyboard"",
+                    ""id"": ""2ef42ed3-96ce-4876-8a6f-d63afd248aae"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""dc1dfdb6-af40-47bf-89a7-342b533ce0df"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""f49a942f-26c2-4a3e-b8ca-5b803fc7b66c"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""d362c53d-0203-4da3-b4c5-5950fa8d33dd"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""063db07f-fca3-458a-90bf-4833c1f85b10"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""Gamepad"",
+                    ""id"": ""e3be8670-6aad-4688-b71e-2108752e9d3e"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Rotate"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""8323b308-db0a-4a3f-859c-369ea6a9ffc1"",
+                    ""path"": ""<Gamepad>/leftShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Rotate"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""dfa86755-c776-4885-8b8f-0264be35951c"",
+                    ""path"": ""<Gamepad>/rightShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Rotate"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""Keyboard"",
+                    ""id"": ""6c80d4dc-3591-4a6c-b304-c175863bf0a6"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Rotate"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""bf098e99-e222-4d34-a6a0-69cd1054e446"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Rotate"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""611ee1ce-b040-48c6-b0cd-0cf3b7963a14"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Rotate"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3568ef00-4ee2-4370-a8cc-7eb63d4a8e59"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d5d709e3-69fc-4c95-a931-b1463be69d40"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a00a1733-3c37-4ea4-a437-0165ac764001"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Cancel"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2ab7f171-c62b-4537-8e54-5c361cbf8b15"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Cancel"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
-    ""controlSchemes"": []
+    ""controlSchemes"": [
+        {
+            ""name"": ""Gamepad"",
+            ""bindingGroup"": ""Gamepad"",
+            ""devices"": [
+                {
+                    ""devicePath"": ""<Gamepad>"",
+                    ""isOptional"": false,
+                    ""isOR"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""Keyboard"",
+            ""bindingGroup"": ""Keyboard"",
+            ""devices"": [
+                {
+                    ""devicePath"": ""<Keyboard>"",
+                    ""isOptional"": false,
+                    ""isOR"": false
+                },
+                {
+                    ""devicePath"": ""<Mouse>"",
+                    ""isOptional"": false,
+                    ""isOR"": false
+                }
+            ]
+        }
+    ]
 }");
         // Player
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
@@ -398,10 +584,14 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
         // Boat
         m_Boat = asset.FindActionMap("Boat", throwIfNotFound: true);
         m_Boat_Movement = m_Boat.FindAction("Movement", throwIfNotFound: true);
-        m_Boat_TiltLeft = m_Boat.FindAction("TiltLeft", throwIfNotFound: true);
-        m_Boat_TiltRight = m_Boat.FindAction("TiltRight", throwIfNotFound: true);
         m_Boat_Interact = m_Boat.FindAction("Interact", throwIfNotFound: true);
         m_Boat_Tilt = m_Boat.FindAction("Tilt", throwIfNotFound: true);
+        // VillagePlacement
+        m_VillagePlacement = asset.FindActionMap("VillagePlacement", throwIfNotFound: true);
+        m_VillagePlacement_Movement = m_VillagePlacement.FindAction("Movement", throwIfNotFound: true);
+        m_VillagePlacement_Rotate = m_VillagePlacement.FindAction("Rotate", throwIfNotFound: true);
+        m_VillagePlacement_Interact = m_VillagePlacement.FindAction("Interact", throwIfNotFound: true);
+        m_VillagePlacement_Cancel = m_VillagePlacement.FindAction("Cancel", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -503,8 +693,6 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
     private readonly InputActionMap m_Boat;
     private IBoatActions m_BoatActionsCallbackInterface;
     private readonly InputAction m_Boat_Movement;
-    private readonly InputAction m_Boat_TiltLeft;
-    private readonly InputAction m_Boat_TiltRight;
     private readonly InputAction m_Boat_Interact;
     private readonly InputAction m_Boat_Tilt;
     public struct BoatActions
@@ -512,8 +700,6 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
         private @PlayerInputs m_Wrapper;
         public BoatActions(@PlayerInputs wrapper) { m_Wrapper = wrapper; }
         public InputAction @Movement => m_Wrapper.m_Boat_Movement;
-        public InputAction @TiltLeft => m_Wrapper.m_Boat_TiltLeft;
-        public InputAction @TiltRight => m_Wrapper.m_Boat_TiltRight;
         public InputAction @Interact => m_Wrapper.m_Boat_Interact;
         public InputAction @Tilt => m_Wrapper.m_Boat_Tilt;
         public InputActionMap Get() { return m_Wrapper.m_Boat; }
@@ -528,12 +714,6 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                 @Movement.started -= m_Wrapper.m_BoatActionsCallbackInterface.OnMovement;
                 @Movement.performed -= m_Wrapper.m_BoatActionsCallbackInterface.OnMovement;
                 @Movement.canceled -= m_Wrapper.m_BoatActionsCallbackInterface.OnMovement;
-                @TiltLeft.started -= m_Wrapper.m_BoatActionsCallbackInterface.OnTiltLeft;
-                @TiltLeft.performed -= m_Wrapper.m_BoatActionsCallbackInterface.OnTiltLeft;
-                @TiltLeft.canceled -= m_Wrapper.m_BoatActionsCallbackInterface.OnTiltLeft;
-                @TiltRight.started -= m_Wrapper.m_BoatActionsCallbackInterface.OnTiltRight;
-                @TiltRight.performed -= m_Wrapper.m_BoatActionsCallbackInterface.OnTiltRight;
-                @TiltRight.canceled -= m_Wrapper.m_BoatActionsCallbackInterface.OnTiltRight;
                 @Interact.started -= m_Wrapper.m_BoatActionsCallbackInterface.OnInteract;
                 @Interact.performed -= m_Wrapper.m_BoatActionsCallbackInterface.OnInteract;
                 @Interact.canceled -= m_Wrapper.m_BoatActionsCallbackInterface.OnInteract;
@@ -547,12 +727,6 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                 @Movement.started += instance.OnMovement;
                 @Movement.performed += instance.OnMovement;
                 @Movement.canceled += instance.OnMovement;
-                @TiltLeft.started += instance.OnTiltLeft;
-                @TiltLeft.performed += instance.OnTiltLeft;
-                @TiltLeft.canceled += instance.OnTiltLeft;
-                @TiltRight.started += instance.OnTiltRight;
-                @TiltRight.performed += instance.OnTiltRight;
-                @TiltRight.canceled += instance.OnTiltRight;
                 @Interact.started += instance.OnInteract;
                 @Interact.performed += instance.OnInteract;
                 @Interact.canceled += instance.OnInteract;
@@ -563,6 +737,81 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
         }
     }
     public BoatActions @Boat => new BoatActions(this);
+
+    // VillagePlacement
+    private readonly InputActionMap m_VillagePlacement;
+    private IVillagePlacementActions m_VillagePlacementActionsCallbackInterface;
+    private readonly InputAction m_VillagePlacement_Movement;
+    private readonly InputAction m_VillagePlacement_Rotate;
+    private readonly InputAction m_VillagePlacement_Interact;
+    private readonly InputAction m_VillagePlacement_Cancel;
+    public struct VillagePlacementActions
+    {
+        private @PlayerInputs m_Wrapper;
+        public VillagePlacementActions(@PlayerInputs wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Movement => m_Wrapper.m_VillagePlacement_Movement;
+        public InputAction @Rotate => m_Wrapper.m_VillagePlacement_Rotate;
+        public InputAction @Interact => m_Wrapper.m_VillagePlacement_Interact;
+        public InputAction @Cancel => m_Wrapper.m_VillagePlacement_Cancel;
+        public InputActionMap Get() { return m_Wrapper.m_VillagePlacement; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(VillagePlacementActions set) { return set.Get(); }
+        public void SetCallbacks(IVillagePlacementActions instance)
+        {
+            if (m_Wrapper.m_VillagePlacementActionsCallbackInterface != null)
+            {
+                @Movement.started -= m_Wrapper.m_VillagePlacementActionsCallbackInterface.OnMovement;
+                @Movement.performed -= m_Wrapper.m_VillagePlacementActionsCallbackInterface.OnMovement;
+                @Movement.canceled -= m_Wrapper.m_VillagePlacementActionsCallbackInterface.OnMovement;
+                @Rotate.started -= m_Wrapper.m_VillagePlacementActionsCallbackInterface.OnRotate;
+                @Rotate.performed -= m_Wrapper.m_VillagePlacementActionsCallbackInterface.OnRotate;
+                @Rotate.canceled -= m_Wrapper.m_VillagePlacementActionsCallbackInterface.OnRotate;
+                @Interact.started -= m_Wrapper.m_VillagePlacementActionsCallbackInterface.OnInteract;
+                @Interact.performed -= m_Wrapper.m_VillagePlacementActionsCallbackInterface.OnInteract;
+                @Interact.canceled -= m_Wrapper.m_VillagePlacementActionsCallbackInterface.OnInteract;
+                @Cancel.started -= m_Wrapper.m_VillagePlacementActionsCallbackInterface.OnCancel;
+                @Cancel.performed -= m_Wrapper.m_VillagePlacementActionsCallbackInterface.OnCancel;
+                @Cancel.canceled -= m_Wrapper.m_VillagePlacementActionsCallbackInterface.OnCancel;
+            }
+            m_Wrapper.m_VillagePlacementActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @Movement.started += instance.OnMovement;
+                @Movement.performed += instance.OnMovement;
+                @Movement.canceled += instance.OnMovement;
+                @Rotate.started += instance.OnRotate;
+                @Rotate.performed += instance.OnRotate;
+                @Rotate.canceled += instance.OnRotate;
+                @Interact.started += instance.OnInteract;
+                @Interact.performed += instance.OnInteract;
+                @Interact.canceled += instance.OnInteract;
+                @Cancel.started += instance.OnCancel;
+                @Cancel.performed += instance.OnCancel;
+                @Cancel.canceled += instance.OnCancel;
+            }
+        }
+    }
+    public VillagePlacementActions @VillagePlacement => new VillagePlacementActions(this);
+    private int m_GamepadSchemeIndex = -1;
+    public InputControlScheme GamepadScheme
+    {
+        get
+        {
+            if (m_GamepadSchemeIndex == -1) m_GamepadSchemeIndex = asset.FindControlSchemeIndex("Gamepad");
+            return asset.controlSchemes[m_GamepadSchemeIndex];
+        }
+    }
+    private int m_KeyboardSchemeIndex = -1;
+    public InputControlScheme KeyboardScheme
+    {
+        get
+        {
+            if (m_KeyboardSchemeIndex == -1) m_KeyboardSchemeIndex = asset.FindControlSchemeIndex("Keyboard");
+            return asset.controlSchemes[m_KeyboardSchemeIndex];
+        }
+    }
     public interface IPlayerActions
     {
         void OnMovement(InputAction.CallbackContext context);
@@ -571,9 +820,14 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
     public interface IBoatActions
     {
         void OnMovement(InputAction.CallbackContext context);
-        void OnTiltLeft(InputAction.CallbackContext context);
-        void OnTiltRight(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
         void OnTilt(InputAction.CallbackContext context);
+    }
+    public interface IVillagePlacementActions
+    {
+        void OnMovement(InputAction.CallbackContext context);
+        void OnRotate(InputAction.CallbackContext context);
+        void OnInteract(InputAction.CallbackContext context);
+        void OnCancel(InputAction.CallbackContext context);
     }
 }

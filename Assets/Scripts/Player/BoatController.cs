@@ -75,8 +75,6 @@ public class BoatController : MonoBehaviour
 
         inputActions.Boat.Interact.performed += DoInteractButton;
         inputActions.Boat.Interact.Enable();
-
-        inputActions.Boat.TiltRight.Enable();
     }
 
     private void DoInteractButton(InputAction.CallbackContext obj)
@@ -215,8 +213,6 @@ public class BoatController : MonoBehaviour
         movement.Disable();
         tilt.Disable();
         inputActions.Boat.Interact.Disable();
-        inputActions.Boat.TiltLeft.Disable();
-        inputActions.Boat.TiltRight.Disable();
         rb.velocity = Vector3.zero;
     }
 }
