@@ -253,5 +253,10 @@ public class BoatController : MonoBehaviour
         inputActions.Boat.Interact.Disable();
         inputActions.Boat.Dash.Disable();
         rb.velocity = Vector3.zero;
+        isDashing = false;
+        startAccelValue = movementSpeed;
+        accelTimer = 0;
+        maxSpeed = maxNormalSpeed;
+
     }
 }
