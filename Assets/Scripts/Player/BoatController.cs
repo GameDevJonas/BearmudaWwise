@@ -8,17 +8,20 @@ using AK.Wwise;
 public class BoatController : MonoBehaviour
 {
     //Input system
-    
+
     private PlayerInputs inputActions;
     private InputAction movement;
     private InputAction tilt;
 
     //Movement variables
     [Header("Movement variables")]
-    [SerializeField] private float maxSpeed;
+    private float maxSpeed;
+    [SerializeField] private float maxNormalSpeed;
+    [SerializeField] private float maxDashSpeed;
     private Vector3 moveDirection;
     private float movementSpeed;
     private Rigidbody rb;
+    private bool isDashing;
 
     //Acceleration variables
     [Header("Acceleration variables")]
@@ -54,6 +57,7 @@ public class BoatController : MonoBehaviour
         accelTimer = 0;
         leftCollectTrigger.gameObject.SetActive(false);
         rightCollectTrigger.gameObject.SetActive(false);
+        maxSpeed = maxNormalSpeed;
         //lookAtPoint.SetParent(null);
     }
 
@@ -75,6 +79,32 @@ public class BoatController : MonoBehaviour
 
         inputActions.Boat.Interact.performed += DoInteractButton;
         inputActions.Boat.Interact.Enable();
+
+        inputActions.Boat.Dash.performed += StartDash;
+        inputActions.Boat.Dash.canceled += StopDash;
+        inputActions.Boat.Dash.Enable();
+    }
+
+    private void StartDash(InputAction.CallbackContext obj)
+    {
+        startAccelValue = movementSpeed;
+        accelTimer = 0;
+        maxSpeed = maxDashSpeed;
+        isDashing = true;
+
+        //Stop tilt values
+        anim.SetInteger("TiltValue", 0);
+        AkSoundEngine.PostEvent(TiltEventStop.Id, gameObject);
+        leftCollectTrigger.gameObject.SetActive(false);
+        rightCollectTrigger.gameObject.SetActive(false);
+    }
+
+    private void StopDash(InputAction.CallbackContext obj)
+    {
+        isDashing = false;
+        startAccelValue = movementSpeed;
+        accelTimer = 0;
+        maxSpeed = maxNormalSpeed;
     }
 
     private void DoInteractButton(InputAction.CallbackContext obj)
@@ -92,17 +122,19 @@ public class BoatController : MonoBehaviour
 
     private void DoTilt(InputAction.CallbackContext obj)
     {
+        if (isDashing) return;
+
         int inputValue = (int)tilt.ReadValue<float>();
 
         anim.SetInteger("TiltValue", inputValue);
 
-        if(inputValue < 0) //left tilt
+        if (inputValue < 0) //left tilt
         {
             leftCollectTrigger.gameObject.SetActive(true);
             AkSoundEngine.PostEvent(TiltEventStart.Id, gameObject);
-            
+
         }
-        else if(inputValue > 0) // right tilt
+        else if (inputValue > 0) // right tilt
         {
             rightCollectTrigger.gameObject.SetActive(true);
             AkSoundEngine.PostEvent(TiltEventStart.Id, gameObject);
@@ -110,11 +142,11 @@ public class BoatController : MonoBehaviour
         else //centered
         {
             AkSoundEngine.PostEvent(TiltEventStop.Id, gameObject);
-            if(leftCollectTrigger.CollidersInsideMe.Count > 0)
+            if (leftCollectTrigger.CollidersInsideMe.Count > 0)
             {
                 HoistPerson(leftCollectTrigger.CollidersInsideMe[0]);
             }
-            else if(rightCollectTrigger.CollidersInsideMe.Count > 0)
+            else if (rightCollectTrigger.CollidersInsideMe.Count > 0)
             {
                 HoistPerson(rightCollectTrigger.CollidersInsideMe[0]);
             }
@@ -162,11 +194,17 @@ public class BoatController : MonoBehaviour
         if (movement.ReadValue<Vector2>() != Vector2.zero) RotateWithMovement();
 
         AkSoundEngine.SetRTPCValue("RTPC_Boat_Speed", movementSpeed);
+        anim.SetFloat("BoatSpeed", movementSpeed);
     }
 
     private void AccelerationCalc()
     {
         if (isAccelerating && (movementSpeed <= maxSpeed))
+        {
+            movementSpeed = Mathf.Lerp(startAccelValue, maxSpeed, accelTimer / 1);
+            accelTimer += Time.deltaTime;
+        }
+        else if(isAccelerating && (movementSpeed > maxSpeed))
         {
             movementSpeed = Mathf.Lerp(startAccelValue, maxSpeed, accelTimer / 1);
             accelTimer += Time.deltaTime;
@@ -213,6 +251,7 @@ public class BoatController : MonoBehaviour
         movement.Disable();
         tilt.Disable();
         inputActions.Boat.Interact.Disable();
+        inputActions.Boat.Dash.Disable();
         rb.velocity = Vector3.zero;
     }
 }
