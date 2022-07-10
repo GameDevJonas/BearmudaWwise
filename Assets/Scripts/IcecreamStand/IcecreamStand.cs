@@ -55,8 +55,6 @@ public class IcecreamStand : MonoBehaviour
             }
             else
             {
-                //_activeLine = true;
-                //NextPersonInLine();
                 peopleInLine.AddRange(_playerFollowers.CurrentFollowers);
             }
 
@@ -68,7 +66,11 @@ public class IcecreamStand : MonoBehaviour
 
     private void NextPersonInLine()
     {
-        if (peopleInLine.Count < 1) return;
+        if (peopleInLine.Count < 1)
+        {
+            _activeLine = false;
+            return;
+        }
         peopleInLine[0].GetComponent<LostPerson>().SetNewTarget(firstInLinePoint);
     }
 

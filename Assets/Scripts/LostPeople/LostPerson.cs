@@ -39,6 +39,7 @@ public class LostPerson : MonoBehaviour
         inWater = false;
         canMove = true;
         GetComponent<Rigidbody>().isKinematic = false;
+        agent.enabled = true;
         agent.Warp(newPosition);
     }
 

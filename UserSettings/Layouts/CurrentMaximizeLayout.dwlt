@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 156
+  controlID: 36037
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -87,7 +87,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 25
+  controlID: 36038
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 26
+  controlID: 36039
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -187,8 +187,8 @@ MonoBehaviour:
     y: 0
     width: 354
     height: 626
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 6}
   m_Panes:
   - {fileID: 6}
@@ -226,10 +226,10 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: f0de85ff
-      m_LastClickedID: -8003856
-      m_ExpandedIDs: 188960ff924862ff528e62ffc8da85fffcde85ff1cdf85ff9ae585ff8a8e86ff4e9586ff529586ff86c68aff90c68affaec68aff42268fff46268fff4a268fff4e268fff9aacfaffb0b2faff0ab3faff7eb6faff9eb6faffd2c4faff8adefaff16e5fdff56e5fdffcee4fffffce4ffffa2e5ffff14fbfffff4ffffff787f0000947f000000800000808000009a800000308100003e810000468100005e810000c4810000d881000012820000328200008e8200003a9000004e9100009c9100000e9200004ac801005ecc0100e8cd0100
+      scrollPos: {x: 0, y: 104}
+      m_SelectedIDs: ba5648ff105648ff9c5648ffb85948ff2e5948ff4c5948ff385548ff
+      m_LastClickedID: -12036808
+      m_ExpandedIDs: e85448ffcc5548ffc45848ff9a5948ffba5948ff188960ff924862ff528e62ffc8da85fffcde85ff1cdf85ff9ae585ff8a8e86ff4e9586ff529586ff86c68aff90c68affaec68aff42268fff46268fff4a268fff4e268fff9aacfaffb0b2faff0ab3faff7eb6faff9eb6faffd2c4faff8adefaff16e5fdff56e5fdffcee4fffffce4ffffa2e5ffff14fbfffff4ffffff787f0000947f000000800000808000009a800000308100003e810000468100005e810000c4810000d881000012820000328200008e8200003a9000004e9100009c9100000e9200004ac80100e8cd0100dc890200ea890200688a0200
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -288,7 +288,7 @@ MonoBehaviour:
     m_CachedPref: -160
     m_ControlHash: 1412526313
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: -8003856
+  m_LastInspectedObjectInstanceID: -12036808
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
@@ -314,8 +314,8 @@ MonoBehaviour:
     y: 0
     width: 1138
     height: 626
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 9}
   m_Panes:
   - {fileID: 9}
@@ -550,9 +550,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 17.673061, y: 49.49567, z: 131.437}
+    m_Target: {x: -49.824104, y: 108.625046, z: -4.44125}
     speed: 2
-    m_Value: {x: 17.673061, y: 49.49567, z: 131.437}
+    m_Value: {x: -49.824104, y: 108.625046, z: -4.44125}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -599,9 +599,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.03714057, y: 0.9341198, z: -0.34044853, w: 0.10185299}
+    m_Target: {x: 0.3846462, y: 0.3528322, z: -0.162018, w: 0.8375865}
     speed: 2
-    m_Value: {x: 0.037136145, y: 0.9340085, z: -0.34040794, w: 0.10184085}
+    m_Value: {x: 0.38459927, y: 0.35278913, z: -0.16199823, w: 0.8374843}
   m_Size:
     m_Target: 3.8604035
     speed: 2
@@ -1150,7 +1150,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 36
+  controlID: 36006
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1220,21 +1220,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Scripts/LostPeople
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Scripts/LostPeople
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\paand\Downloads\BearmudaWwise\BearmudaWwise
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 767}
-    m_SelectedIDs: f0790000
-    m_LastClickedID: 31216
+    m_SelectedIDs: 867c0000
+    m_LastClickedID: 31878
     m_ExpandedIDs: 00000000ca790000cc790000ce790000d0790000d2790000d4790000d6790000d8790000da790000dc790000de790000e0790000e2790000e4790000e6790000e8790000ea790000ec790000ee790000f0790000f2790000f4790000f6790000e07b0000e07d0000f87d0000087e000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1263,7 +1263,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ca790000cc790000ce790000d0790000d2790000d4790000d6790000d8790000da790000dc790000de790000e0790000e2790000e4790000e6790000e8790000ea790000ec790000ee790000f0790000f2790000f4790000f6790000
+    m_ExpandedIDs: 00000000ca790000cc790000ce790000d0790000d2790000d4790000d6790000d8790000da790000dc790000de790000e0790000e2790000e4790000e6790000e8790000ea790000ec790000ee790000f0790000f2790000f4790000f6790000e07d0000f87d0000087e000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1288,24 +1288,24 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: f0de85ff
-    m_LastClickedInstanceID: -8003856
+    m_SelectedInstanceIDs: ba5648ff105648ff9c5648ffb85948ff2e5948ff4c5948ff385548ff
+    m_LastClickedInstanceID: -12036422
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: PlacePierBridge
-      m_OriginalName: PlacePierBridge
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 134862
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 14}
     m_CreateAssetUtility:
@@ -1367,8 +1367,8 @@ MonoBehaviour:
     y: 0
     width: 589
     height: 313
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -1406,7 +1406,7 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -8003856
+  m_LastSelectedObjectID: -12036808
 --- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1481,7 +1481,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 157
+  controlID: 35850
 --- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
