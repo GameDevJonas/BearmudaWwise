@@ -125,6 +125,82 @@
 						</Property>
 					</PropertyList>
 				</Effect>
+				<Effect Name="AMBX_time_of_day" ID="{6ADDACD3-E05E-422E-882A-562294278886}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FrequencyBand1" Type="Real32" Value="500"/>
+						<Property Name="FrequencyBand3" Type="Real32" Value="4000"/>
+						<Property Name="GainBand1" Type="Real32">
+							<RTPCList>
+								<RTPC Name="" ID="{F8A3F8B0-A67A-46BE-BB2E-B9EF12FD9D7C}" ShortID="483842156">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="RTPC_Ambx_Time" ID="{6F441635-DEE4-4E6A-89B4-5F3E4E0E8FD8}" WorkUnitID="{D114BCBE-DB69-4947-B965-9E409E25AB92}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{C1F74D57-2765-4AE0-9812-7A6ACBA2A01C}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>-3</YPos>
+												<Flags>5</Flags>
+												<SegmentShape>Log2</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>12</XPos>
+												<YPos>0</YPos>
+												<Flags>0</Flags>
+												<SegmentShape>Exp2</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>24</XPos>
+												<YPos>-3</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+						<Property Name="GainBand3" Type="Real32">
+							<RTPCList>
+								<RTPC Name="" ID="{84CA854F-18A4-42D3-B2E1-6E0ACF4E9325}" ShortID="379825816">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="RTPC_Ambx_Time" ID="{6F441635-DEE4-4E6A-89B4-5F3E4E0E8FD8}" WorkUnitID="{D114BCBE-DB69-4947-B965-9E409E25AB92}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{087E19AB-877F-466F-8F27-D4C5BD23777B}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>3</YPos>
+												<Flags>5</Flags>
+												<SegmentShape>Log2</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>12</XPos>
+												<YPos>0</YPos>
+												<Flags>0</Flags>
+												<SegmentShape>Exp2</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>24</XPos>
+												<YPos>3</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+				</Effect>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>

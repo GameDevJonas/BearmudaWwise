@@ -813,6 +813,9 @@
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
 						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+							<ObjectRef Name="AMBX_time_of_day" ID="{6ADDACD3-E05E-422E-882A-562294278886}" WorkUnitID="{25F376E1-291A-4ADE-9A86-D51967783889}"/>
+						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
 						</Reference>
@@ -1232,6 +1235,39 @@
 											<ValueList>
 												<Value>-6</Value>
 											</ValueList>
+											<RTPCList>
+												<RTPC Name="" ID="{113AB03C-E34F-4176-A6AE-8BDD64C904C6}" ShortID="656384668">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="RTPC_Ambx_Time" ID="{6F441635-DEE4-4E6A-89B4-5F3E4E0E8FD8}" WorkUnitID="{D114BCBE-DB69-4947-B965-9E409E25AB92}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{3FD8C41D-60E4-47C3-809B-CCC8CEF5DF4B}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>2.99999999999997</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Log2</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>12</XPos>
+																<YPos>-4</YPos>
+																<Flags>0</Flags>
+																<SegmentShape>Log2</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>24</XPos>
+																<YPos>2.99999999999997</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
@@ -1263,6 +1299,39 @@
 											<ValueList>
 												<Value>-2</Value>
 											</ValueList>
+											<RTPCList>
+												<RTPC Name="" ID="{54BAAABE-0D7C-4932-9D98-4475789B27A2}" ShortID="788199175">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="RTPC_Ambx_Time" ID="{6F441635-DEE4-4E6A-89B4-5F3E4E0E8FD8}" WorkUnitID="{D114BCBE-DB69-4947-B965-9E409E25AB92}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{8D4ACA7C-46A4-4A7E-9285-300E64473587}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>3</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Log2</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>12</XPos>
+																<YPos>-4</YPos>
+																<Flags>0</Flags>
+																<SegmentShape>Log2</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>24</XPos>
+																<YPos>3</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
@@ -1287,10 +1356,790 @@
 										<ActiveSource Name="ambx_beach_wind" ID="{06F82868-ECAF-4968-87EC-15D412A395E9}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<Sound Name="ambx_waves_night_loop" ID="{F78B5AFC-F4BA-4FE3-803E-FEEE482E840B}" ShortID="808294952">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{CB098BAB-12C9-49A8-B75C-684FCEB89F90}" ShortID="52448603">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="RTPC_Ambx_Time" ID="{6F441635-DEE4-4E6A-89B4-5F3E4E0E8FD8}" WorkUnitID="{D114BCBE-DB69-4947-B965-9E409E25AB92}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{3650E032-A371-451D-A9FC-8C324B19C3CA}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Log2</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>12</XPos>
+																<YPos>-200</YPos>
+																<Flags>0</Flags>
+																<SegmentShape>Exp2</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>24</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ambx_waves_night_loop" ID="{FDDD8BD8-D393-4542-B4CF-F907FEA13DF5}">
+											<Language>SFX</Language>
+											<AudioFile>ambx_waves_night_loop.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="879740767"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="ambx_waves_night_loop" ID="{FDDD8BD8-D393-4542-B4CF-F907FEA13DF5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="Seaguls" ID="{140CECEF-8473-453F-B009-926374735C25}" ShortID="192884297">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="2"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>31</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{33FD3E35-6EAF-47EC-8DAD-43613FBAF18D}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="10"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="UserAuxSendVolume0" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{0E2B856D-F649-48AC-91B9-594BD8EE55F1}" ShortID="938871465">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="RTPC_Ambx_Time" ID="{6F441635-DEE4-4E6A-89B4-5F3E4E0E8FD8}" WorkUnitID="{D114BCBE-DB69-4947-B965-9E409E25AB92}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{FEAED0C3-CF0E-4D9E-9D53-3297CBA8A972}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>3</XPos>
+																<YPos>-200</YPos>
+																<Flags>0</Flags>
+																<SegmentShape>Exp2</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>4</XPos>
+																<YPos>-6</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>14</XPos>
+																<YPos>-6</YPos>
+																<Flags>0</Flags>
+																<SegmentShape>Log2</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>20</XPos>
+																<YPos>-200</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>24</XPos>
+																<YPos>-200</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Reverb_Outside_Big" ID="{547F4800-E399-4C02-BB24-1A7431897B5F}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="ambx_oneshots_seaguls_01" ID="{92CD88D4-540F-47FF-8AF3-995D19E3B350}" ShortID="700111379">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ambx_oneshots_seaguls_01" ID="{13E54FFE-12C6-42DD-A532-911BC82D94DE}">
+													<Language>SFX</Language>
+													<AudioFile>ambx_oneshots_seaguls_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="110276552"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="ambx_oneshots_seaguls_01" ID="{13E54FFE-12C6-42DD-A532-911BC82D94DE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ambx_oneshots_seaguls_02" ID="{61EF1AFC-E56C-4E96-9B4F-62D4A389130E}" ShortID="939091426">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ambx_oneshots_seaguls_02" ID="{F28473FD-A554-42E4-8FD2-E2F50DDC30B8}">
+													<Language>SFX</Language>
+													<AudioFile>ambx_oneshots_seaguls_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="884859398"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="ambx_oneshots_seaguls_02" ID="{F28473FD-A554-42E4-8FD2-E2F50DDC30B8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ambx_oneshots_seaguls_03" ID="{9F3613CB-CAF0-4CC4-B8B7-33D1214B54D1}" ShortID="1024606064">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ambx_oneshots_seaguls_03" ID="{6ACC9D03-91B8-4D47-B67B-BA9CF126301B}">
+													<Language>SFX</Language>
+													<AudioFile>ambx_oneshots_seaguls_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="724526166"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="ambx_oneshots_seaguls_03" ID="{6ACC9D03-91B8-4D47-B67B-BA9CF126301B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ambx_oneshots_seaguls_04" ID="{15EAA840-DDA3-4576-A828-47C024F51D2E}" ShortID="663011572">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ambx_oneshots_seaguls_04" ID="{FC2C444D-7235-4D95-A09F-93C91C2B5370}">
+													<Language>SFX</Language>
+													<AudioFile>ambx_oneshots_seaguls_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="742471388"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="ambx_oneshots_seaguls_04" ID="{FC2C444D-7235-4D95-A09F-93C91C2B5370}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ambx_oneshots_seaguls_05" ID="{0BB07773-E24F-44BA-8B80-43DD3F71FECC}" ShortID="306415319">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ambx_oneshots_seaguls_05" ID="{D2877105-D9F7-4EDE-BE7F-5D51251C5053}">
+													<Language>SFX</Language>
+													<AudioFile>ambx_oneshots_seaguls_05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="619255257"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="ambx_oneshots_seaguls_05" ID="{D2877105-D9F7-4EDE-BE7F-5D51251C5053}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ambx_oneshots_seaguls_06" ID="{FF1B70F4-EE86-4432-BD3C-E1A82CF08731}" ShortID="707787843">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ambx_oneshots_seaguls_06" ID="{E4184248-C843-4DFC-8EA2-5154E515D3F9}">
+													<Language>SFX</Language>
+													<AudioFile>ambx_oneshots_seaguls_06.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="334143690"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="ambx_oneshots_seaguls_06" ID="{E4184248-C843-4DFC-8EA2-5154E515D3F9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ambx_oneshots_seaguls_07" ID="{F1CFF93A-2DAB-4824-86FF-013534DF793D}" ShortID="909983267">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ambx_oneshots_seaguls_07" ID="{45CD8951-0345-4F3A-AE4E-13043B513CF6}">
+													<Language>SFX</Language>
+													<AudioFile>ambx_oneshots_seaguls_07.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="983187710"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="ambx_oneshots_seaguls_07" ID="{45CD8951-0345-4F3A-AE4E-13043B513CF6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ambx_oneshots_seaguls_08" ID="{338D9CDD-ECED-4282-BDE3-207FB896AE7F}" ShortID="1053493586">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ambx_oneshots_seaguls_08" ID="{2846BB49-05C8-403E-BF31-086475D9C629}">
+													<Language>SFX</Language>
+													<AudioFile>ambx_oneshots_seaguls_08.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1019110358"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="ambx_oneshots_seaguls_08" ID="{2846BB49-05C8-403E-BF31-086475D9C629}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ambx_oneshots_seaguls_09" ID="{C2FB29CC-53EC-42FE-A282-35870F0156C6}" ShortID="887657913">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ambx_oneshots_seaguls_09" ID="{37FF48A5-C9BA-4226-BC09-030F2FBE3507}">
+													<Language>SFX</Language>
+													<AudioFile>ambx_oneshots_seaguls_09.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="933680790"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="ambx_oneshots_seaguls_09" ID="{37FF48A5-C9BA-4226-BC09-030F2FBE3507}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ambx_oneshots_seaguls_10" ID="{565DD7F3-F958-4229-B774-8C6A1DF97789}" ShortID="97232506">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ambx_oneshots_seaguls_10" ID="{44512CC6-27B6-47CA-BE18-6CD759048432}">
+													<Language>SFX</Language>
+													<AudioFile>ambx_oneshots_seaguls_10.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="469385317"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="ambx_oneshots_seaguls_10" ID="{44512CC6-27B6-47CA-BE18-6CD759048432}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ambx_oneshots_seaguls_11" ID="{204B0A40-249F-4777-87D2-786FF5D9D62A}" ShortID="1006466884">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ambx_oneshots_seaguls_11" ID="{180BF2C1-2166-4CD0-BAE1-B1F33030EB8B}">
+													<Language>SFX</Language>
+													<AudioFile>ambx_oneshots_seaguls_11.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="783803555"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="ambx_oneshots_seaguls_11" ID="{180BF2C1-2166-4CD0-BAE1-B1F33030EB8B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ambx_oneshots_seaguls_12" ID="{AF7F120E-5AFE-433D-82F2-FE1F6E616E8F}" ShortID="999526528">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ambx_oneshots_seaguls_12" ID="{61283F75-5C12-422D-AC54-F79CBEA51759}">
+													<Language>SFX</Language>
+													<AudioFile>ambx_oneshots_seaguls_12.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="228005621"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="ambx_oneshots_seaguls_12" ID="{61283F75-5C12-422D-AC54-F79CBEA51759}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ambx_oneshots_seaguls_13" ID="{B6FAEEE3-2356-4D72-A964-605745F56245}" ShortID="285199663">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ambx_oneshots_seaguls_13" ID="{D7648DC0-7148-4FCD-8017-05455A1F918C}">
+													<Language>SFX</Language>
+													<AudioFile>ambx_oneshots_seaguls_13.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="887879867"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="ambx_oneshots_seaguls_13" ID="{D7648DC0-7148-4FCD-8017-05455A1F918C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ambx_oneshots_seaguls_14" ID="{441812F3-59D2-4AF0-B65D-8F85A66B22ED}" ShortID="668605400">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ambx_oneshots_seaguls_14" ID="{9209347D-5078-405D-9663-0BF67F78AB65}">
+													<Language>SFX</Language>
+													<AudioFile>ambx_oneshots_seaguls_14.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="391685949"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="ambx_oneshots_seaguls_14" ID="{9209347D-5078-405D-9663-0BF67F78AB65}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ambx_oneshots_seaguls_15" ID="{B7A1E97A-2E18-4854-942E-D32D62EA2CDD}" ShortID="585947851">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ambx_oneshots_seaguls_15" ID="{0E5A1C29-209F-47D0-B579-FCE93CD8351F}">
+													<Language>SFX</Language>
+													<AudioFile>ambx_oneshots_seaguls_15.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="715099373"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="ambx_oneshots_seaguls_15" ID="{0E5A1C29-209F-47D0-B579-FCE93CD8351F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ambx_oneshots_seaguls_16" ID="{A4C505E5-BB41-4FB0-A471-9B240545D7E2}" ShortID="1010654357">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0DBD1AC-6E18-41A5-ABFD-0743954F321A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC58765C-F24E-4F49-A936-123B11804268}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ambx_oneshots_seaguls_16" ID="{1B0B09C6-B705-41BF-ADF3-E1116C7CF0BA}">
+													<Language>SFX</Language>
+													<AudioFile>ambx_oneshots_seaguls_16.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="705566132"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="ambx_oneshots_seaguls_16" ID="{1B0B09C6-B705-41BF-ADF3-E1116C7CF0BA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{2512FDA6-743C-426F-8263-E8D3FE8C0BB7}">
+											<PropertyList>
+												<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Seaguls_Path" ID="{D30B81FE-E7F7-4D4C-8F6D-8C9753C9E742}">
+													<PointList>
+														<Point>
+															<XPos>-87.81726</XPos>
+															<YPos>39.26554</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-75.6345177664975</XPos>
+															<YPos>81.3559322033898</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Seaguls_Path_01" ID="{CF771E43-66FE-4A52-B023-C4645C729121}">
+													<PointList>
+														<Point>
+															<XPos>68.0203</XPos>
+															<YPos>78.24859</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>82.741116751269</XPos>
+															<YPos>70.6214689265537</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Seaguls_Path_02" ID="{E4241DEA-2037-4AF9-B265-0042C44FD3EB}">
+													<PointList>
+														<Point>
+															<XPos>4.56853</XPos>
+															<YPos>80.50847</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-10.6598984771574</XPos>
+															<YPos>84.180790960452</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Seaguls_Path_03" ID="{90B87CF0-56DF-494B-BA72-3969BE021963}">
+													<PointList>
+														<Point>
+															<XPos>-30.96447</XPos>
+															<YPos>8.75706</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-33.502538071066</XPos>
+															<YPos>-27.683615819209</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Seaguls_Path_04" ID="{0A2B3F03-C1D6-4845-91FD-B096C787E217}">
+													<PointList>
+														<Point>
+															<XPos>75.63452</XPos>
+															<YPos>-7.62712</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>73.0964467005076</XPos>
+															<YPos>-25.9887005649718</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Seaguls_Path_05" ID="{D6928926-3CEA-4F5C-981D-7096D7A2CFFC}">
+													<PointList>
+														<Point>
+															<XPos>-84.77157</XPos>
+															<YPos>-57.34463</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-69.0355329949239</XPos>
+															<YPos>-70.6214689265537</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Seaguls_Path_06" ID="{D2A0F275-1BD9-4211-A9DF-874EF38BF823}">
+													<PointList>
+														<Point>
+															<XPos>79.69543</XPos>
+															<YPos>-62.42938</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>75.1269035532995</XPos>
+															<YPos>-70.6214689265537</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Seaguls_Path_07" ID="{50EC0C98-B1BF-4439-8A75-1ECD75D49B71}">
+													<PointList>
+														<Point>
+															<XPos>-20.30457</XPos>
+															<YPos>-80.50847</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>19.2893401015228</XPos>
+															<YPos>-80.7909604519774</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Seaguls_Path_08" ID="{9F1E6D79-8062-462C-892E-87A7775C38F6}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-54.8223350253807</XPos>
+															<YPos>-68.3615819209039</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Seaguls_Path_09" ID="{C10FB975-8714-41EB-9A4A-F759AEC071F6}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>47.7157360406091</XPos>
+															<YPos>-54.8022598870056</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Seaguls_Path_10" ID="{4430013E-EFBC-4DC5-A8DB-5433A2981453}">
+													<PointList>
+														<Point>
+															<XPos>85.27919</XPos>
+															<YPos>9.88701</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-83.756345177665</XPos>
+															<YPos>10.1694915254237</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Seaguls_Path_11" ID="{D4E16706-984B-42BF-92F4-586B2AA36F88}">
+													<PointList>
+														<Point>
+															<XPos>-87.30964</XPos>
+															<YPos>1.41243</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>89.8477157360406</XPos>
+															<YPos>7.34463276836158</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ObjectLists/>
+								</RandomSequenceContainer>
 							</ChildrenList>
 							<ObjectLists/>
 							<GroupingInfo>
 								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Seaguls" ID="{140CECEF-8473-453F-B009-926374735C25}"/>
+										<PropertyList>
+											<Property Name="ContinuePlay" Type="bool" Value="True"/>
+											<Property Name="FadeInTime" Type="Real64">
+												<ValueList>
+													<Value>1</Value>
+												</ValueList>
+											</Property>
+											<Property Name="FadeOutTime" Type="Real64">
+												<ValueList>
+													<Value>1</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
+									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="ambx_beach_waves" ID="{C7432CF2-2192-4B86-8B62-17C39EC27221}"/>
 										<PropertyList>
@@ -1309,6 +2158,22 @@
 									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="ambx_boat" ID="{9F5F32FB-9A5F-4DBD-96ED-AA722265FEAA}"/>
+										<PropertyList>
+											<Property Name="ContinuePlay" Type="bool" Value="True"/>
+											<Property Name="FadeInTime" Type="Real64">
+												<ValueList>
+													<Value>1</Value>
+												</ValueList>
+											</Property>
+											<Property Name="FadeOutTime" Type="Real64">
+												<ValueList>
+													<Value>1</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="ambx_waves_night_loop" ID="{F78B5AFC-F4BA-4FE3-803E-FEEE482E840B}"/>
 										<PropertyList>
 											<Property Name="ContinuePlay" Type="bool" Value="True"/>
 											<Property Name="FadeInTime" Type="Real64">
@@ -1344,12 +2209,15 @@
 									<Grouping>
 										<SwitchRef Name="boat" ID="{E7C7726F-3344-4F3F-903F-97C72FCAD5F4}"/>
 										<ItemList>
+											<ItemRef Name="Seaguls" ID="{140CECEF-8473-453F-B009-926374735C25}"/>
+											<ItemRef Name="ambx_waves_night_loop" ID="{F78B5AFC-F4BA-4FE3-803E-FEEE482E840B}"/>
 											<ItemRef Name="ambx_boat" ID="{9F5F32FB-9A5F-4DBD-96ED-AA722265FEAA}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
 										<SwitchRef Name="land" ID="{83A75DE7-A4B9-438C-8F83-3FF8CCB9A8CA}"/>
 										<ItemList>
+											<ItemRef Name="Seaguls" ID="{140CECEF-8473-453F-B009-926374735C25}"/>
 											<ItemRef Name="ambx_beach_wind" ID="{0FF266FC-E4F6-4EF4-8271-008D5DCD73BF}"/>
 											<ItemRef Name="ambx_beach_waves" ID="{C7432CF2-2192-4B86-8B62-17C39EC27221}"/>
 										</ItemList>
@@ -1759,19 +2627,16 @@
 															</Point>
 															<Point>
 																<XPos>10</XPos>
-																<YPos>-0</YPos>
+																<YPos>0</YPos>
 																<Flags>0</Flags>
 															</Point>
 															<Point>
 																<XPos>20</XPos>
-																<YPos>-0</YPos>
+																<YPos>0</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>
 													</Curve>
-												</RTPC>
-												<RTPC Name="" ID="{0C06C68B-B67C-46F2-9593-1487E5624C29}" ShortID="1036246593">
-													<ReferenceList/>
 												</RTPC>
 											</RTPCList>
 										</Property>
@@ -2031,12 +2896,12 @@
 															</Point>
 															<Point>
 																<XPos>10</XPos>
-																<YPos>-0</YPos>
+																<YPos>0</YPos>
 																<Flags>0</Flags>
 															</Point>
 															<Point>
 																<XPos>20</XPos>
-																<YPos>-0</YPos>
+																<YPos>0</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>

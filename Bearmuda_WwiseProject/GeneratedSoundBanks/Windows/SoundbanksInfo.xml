@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2018992009">
+		<SoundBank Id="1355168291" Language="SFX" Hash="898277781">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -20,7 +20,7 @@
 				<AuxBus Id="2636462861" Name="Reverb_Outside_Small" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs\Reverb_Outside_Small"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="2880737896" Language="SFX" Hash="4026720341">
+		<SoundBank Id="2880737896" Language="SFX" Hash="2072155467">
 			<ObjectPath>\SoundBanks\Default Work Unit\MainBank</ObjectPath>
 			<ShortName>MainBank</ShortName>
 			<Path>MainBank.bnk</Path>
@@ -35,37 +35,105 @@
 							<ShortName>ambx_beach_waves.wav</ShortName>
 							<Path>SFX\ambx_beach_waves_D79FB2B7.wem</Path>
 						</File>
+						<File Id="110276552" Language="SFX">
+							<ShortName>ambx_oneshots_seaguls_01.wav</ShortName>
+							<Path>SFX\ambx_oneshots_seaguls_01_10C4C929.wem</Path>
+						</File>
 						<File Id="185627170" Language="SFX">
 							<ShortName>ambx_wind_on_boat_gust_02.wav</ShortName>
 							<Path>SFX\ambx_wind_on_boat_gust_02_10C4C929.wem</Path>
+						</File>
+						<File Id="228005621" Language="SFX">
+							<ShortName>ambx_oneshots_seaguls_12.wav</ShortName>
+							<Path>SFX\ambx_oneshots_seaguls_12_10C4C929.wem</Path>
 						</File>
 						<File Id="333654543" Language="SFX">
 							<ShortName>ambx_wind_on_boat_gust_01.wav</ShortName>
 							<Path>SFX\ambx_wind_on_boat_gust_01_10C4C929.wem</Path>
 						</File>
+						<File Id="334143690" Language="SFX">
+							<ShortName>ambx_oneshots_seaguls_06.wav</ShortName>
+							<Path>SFX\ambx_oneshots_seaguls_06_10C4C929.wem</Path>
+						</File>
 						<File Id="390340548" Language="SFX">
 							<ShortName>ambx_wind_on_boat_gust_06.wav</ShortName>
 							<Path>SFX\ambx_wind_on_boat_gust_06_10C4C929.wem</Path>
+						</File>
+						<File Id="391685949" Language="SFX">
+							<ShortName>ambx_oneshots_seaguls_14.wav</ShortName>
+							<Path>SFX\ambx_oneshots_seaguls_14_10C4C929.wem</Path>
 						</File>
 						<File Id="436736175" Language="SFX">
 							<ShortName>ambx_wind_on_boat_gust_07.wav</ShortName>
 							<Path>SFX\ambx_wind_on_boat_gust_07_10C4C929.wem</Path>
 						</File>
+						<File Id="469385317" Language="SFX">
+							<ShortName>ambx_oneshots_seaguls_10.wav</ShortName>
+							<Path>SFX\ambx_oneshots_seaguls_10_10C4C929.wem</Path>
+						</File>
 						<File Id="542809095" Language="SFX">
 							<ShortName>ambx_waves_from_boat_main.wav</ShortName>
 							<Path>SFX\ambx_waves_from_boat_main_D79FB2B7.wem</Path>
+						</File>
+						<File Id="619255257" Language="SFX">
+							<ShortName>ambx_oneshots_seaguls_05.wav</ShortName>
+							<Path>SFX\ambx_oneshots_seaguls_05_10C4C929.wem</Path>
+						</File>
+						<File Id="705566132" Language="SFX">
+							<ShortName>ambx_oneshots_seaguls_16.wav</ShortName>
+							<Path>SFX\ambx_oneshots_seaguls_16_10C4C929.wem</Path>
+						</File>
+						<File Id="715099373" Language="SFX">
+							<ShortName>ambx_oneshots_seaguls_15.wav</ShortName>
+							<Path>SFX\ambx_oneshots_seaguls_15_10C4C929.wem</Path>
+						</File>
+						<File Id="724526166" Language="SFX">
+							<ShortName>ambx_oneshots_seaguls_03.wav</ShortName>
+							<Path>SFX\ambx_oneshots_seaguls_03_10C4C929.wem</Path>
+						</File>
+						<File Id="742471388" Language="SFX">
+							<ShortName>ambx_oneshots_seaguls_04.wav</ShortName>
+							<Path>SFX\ambx_oneshots_seaguls_04_10C4C929.wem</Path>
+						</File>
+						<File Id="783803555" Language="SFX">
+							<ShortName>ambx_oneshots_seaguls_11.wav</ShortName>
+							<Path>SFX\ambx_oneshots_seaguls_11_10C4C929.wem</Path>
 						</File>
 						<File Id="873436168" Language="SFX">
 							<ShortName>ambx_wind_on_boat_gust_03.wav</ShortName>
 							<Path>SFX\ambx_wind_on_boat_gust_03_10C4C929.wem</Path>
 						</File>
+						<File Id="879740767" Language="SFX">
+							<ShortName>ambx_waves_night_loop.wav</ShortName>
+							<Path>SFX\ambx_waves_night_loop_D79FB2B7.wem</Path>
+						</File>
+						<File Id="884859398" Language="SFX">
+							<ShortName>ambx_oneshots_seaguls_02.wav</ShortName>
+							<Path>SFX\ambx_oneshots_seaguls_02_10C4C929.wem</Path>
+						</File>
+						<File Id="887879867" Language="SFX">
+							<ShortName>ambx_oneshots_seaguls_13.wav</ShortName>
+							<Path>SFX\ambx_oneshots_seaguls_13_10C4C929.wem</Path>
+						</File>
+						<File Id="933680790" Language="SFX">
+							<ShortName>ambx_oneshots_seaguls_09.wav</ShortName>
+							<Path>SFX\ambx_oneshots_seaguls_09_10C4C929.wem</Path>
+						</File>
 						<File Id="962980403" Language="SFX">
 							<ShortName>ambx_beach_wind.wav</ShortName>
 							<Path>SFX\ambx_beach_wind_D79FB2B7.wem</Path>
 						</File>
+						<File Id="983187710" Language="SFX">
+							<ShortName>ambx_oneshots_seaguls_07.wav</ShortName>
+							<Path>SFX\ambx_oneshots_seaguls_07_10C4C929.wem</Path>
+						</File>
 						<File Id="996347894" Language="SFX">
 							<ShortName>ambx_waves_from_boat_calm.wav</ShortName>
 							<Path>SFX\ambx_waves_from_boat_calm_D79FB2B7.wem</Path>
+						</File>
+						<File Id="1019110358" Language="SFX">
+							<ShortName>ambx_oneshots_seaguls_08.wav</ShortName>
+							<Path>SFX\ambx_oneshots_seaguls_08_10C4C929.wem</Path>
 						</File>
 						<File Id="1055280920" Language="SFX">
 							<ShortName>ambx_wind_on_boat_gust_04.wav</ShortName>
@@ -77,24 +145,60 @@
 						<SwitchContainer SwitchValue="{E7C7726F-3344-4F3F-903F-97C72FCAD5F4}">
 							<Media>
 								<File Id="85993444"/>
+								<File Id="110276552"/>
 								<File Id="185627170"/>
+								<File Id="228005621"/>
 								<File Id="333654543"/>
+								<File Id="334143690"/>
 								<File Id="390340548"/>
+								<File Id="391685949"/>
 								<File Id="436736175"/>
+								<File Id="469385317"/>
 								<File Id="542809095"/>
+								<File Id="619255257"/>
+								<File Id="705566132"/>
+								<File Id="715099373"/>
+								<File Id="724526166"/>
+								<File Id="742471388"/>
+								<File Id="783803555"/>
 								<File Id="873436168"/>
+								<File Id="879740767"/>
+								<File Id="884859398"/>
+								<File Id="887879867"/>
+								<File Id="933680790"/>
 								<File Id="962980403"/>
+								<File Id="983187710"/>
 								<File Id="996347894"/>
+								<File Id="1019110358"/>
 								<File Id="1055280920"/>
 							</Media>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{83A75DE7-A4B9-438C-8F83-3FF8CCB9A8CA}">
 							<Media>
 								<File Id="95723522"/>
+								<File Id="110276552"/>
+								<File Id="228005621"/>
+								<File Id="334143690"/>
+								<File Id="391685949"/>
+								<File Id="469385317"/>
+								<File Id="619255257"/>
+								<File Id="705566132"/>
+								<File Id="715099373"/>
+								<File Id="724526166"/>
+								<File Id="742471388"/>
+								<File Id="783803555"/>
+								<File Id="884859398"/>
+								<File Id="887879867"/>
+								<File Id="933680790"/>
 								<File Id="962980403"/>
+								<File Id="983187710"/>
+								<File Id="1019110358"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
+					<AuxBusSends>
+						<AuxBus Id="1401104826" Name="Reverb_Outside_Big" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs\Reverb_Outside_Big"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="1391074924" Name="Play_Boat" ObjectPath="\Events\Default Work Unit\Play_Boat" MaxAttenuation="40." DurationType="Infinite">
 					<IncludedMemoryFiles>
@@ -167,6 +271,39 @@
 							<Path>SFX\SFX_Ball_Hit_4_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1346240278" Name="Play_MainMusic" ObjectPath="\Events\Default Work Unit\Music\Play_MainMusic" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="1041701678" Language="SFX">
+							<ShortName>Ocean loop.wav</ShortName>
+							<Path>SFX\Ocean loop_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{7AF742C7-6FC4-4098-8413-92C64C2A2E12}">
+							<Media>
+								<File Id="1041701678"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{E4500F26-6821-4284-A405-3789EB02256A}">
+							<Media>
+								<File Id="1041701678"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{00A26180-6779-4401-9E51-797874B6C869}">
+							<Media>
+								<File Id="1041701678"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{1730671E-5CEC-4AA0-98C2-515AA98186F5}">
+							<Media>
+								<File Id="1041701678"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+					<ActionSetState>
+						<ActionSetStateEntry Id="3041563226" Name="Silence" ObjectPath="\States\Default Work Unit\Music\Music\Silence"/>
+					</ActionSetState>
 				</Event>
 				<Event Id="1724675634" Name="Play_Player_Footstep" ObjectPath="\Events\Default Work Unit\Play_Player_Footstep" DurationType="OneShot" DurationMin="0.232222" DurationMax="0.500839">
 					<IncludedMemoryFiles>
@@ -300,6 +437,26 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="91038576" Name="Set_Music_Boat_Boost" ObjectPath="\Events\Default Work Unit\Music\Set_Music_Boat_Boost" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="3811857207" Name="Boat_Boost" ObjectPath="\States\Default Work Unit\Music\Music\Boat_Boost"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="552689038" Name="Set_Music_Boat_Calm" ObjectPath="\Events\Default Work Unit\Music\Set_Music_Boat_Calm" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="2157623951" Name="Boat_Calm" ObjectPath="\States\Default Work Unit\Music\Music\Boat_Calm"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="1375079833" Name="Set_Music_Island" ObjectPath="\Events\Default Work Unit\Music\Set_Music_Island" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="3199546890" Name="Island" ObjectPath="\States\Default Work Unit\Music\Music\Island"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="2009308915" Name="Set_Music_Silence" ObjectPath="\Events\Default Work Unit\Music\Set_Music_Silence" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="3041563226" Name="Silence" ObjectPath="\States\Default Work Unit\Music\Music\Silence"/>
+					</ActionSetState>
+				</Event>
 				<Event Id="821116764" Name="Stop_boat_sideways" ObjectPath="\Events\Default Work Unit\Stop_boat_sideways" MaxAttenuation="40." DurationType="OneShot" DurationMin="0.563327" DurationMax="0.855362">
 					<IncludedMemoryFiles>
 						<File Id="246944576" Language="SFX">
@@ -324,8 +481,32 @@
 			<GameParameters>
 				<GameParameter Id="103953880" Name="RTPC_Player_Footsteps" ObjectPath="\Game Parameters\Default Work Unit\player\RTPC_Player_Footsteps"/>
 				<GameParameter Id="640542493" Name="RTPC_Boat_Speed" ObjectPath="\Game Parameters\Default Work Unit\boat\RTPC_Boat_Speed"/>
+				<GameParameter Id="1337744217" Name="RTPC_Ambx_Time" ObjectPath="\Game Parameters\Default Work Unit\AMBX\RTPC_Ambx_Time"/>
 				<GameParameter Id="4226707187" Name="RTPC_Ambx_Location" ObjectPath="\Game Parameters\Default Work Unit\AMBX\RTPC_Ambx_Location"/>
 			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="2157623951" Name="Boat_Calm" ObjectPath="\States\Default Work Unit\Music\Music\Boat_Calm" GUID="{7AF742C7-6FC4-4098-8413-92C64C2A2E12}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="3041563226" Name="Silence" ObjectPath="\States\Default Work Unit\Music\Music\Silence" GUID="{1730671E-5CEC-4AA0-98C2-515AA98186F5}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="3199546890" Name="Island" ObjectPath="\States\Default Work Unit\Music\Music\Island" GUID="{E4500F26-6821-4284-A405-3789EB02256A}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="3811857207" Name="Boat_Boost" ObjectPath="\States\Default Work Unit\Music\Music\Boat_Boost" GUID="{1B7535B5-01B2-46B7-98A2-138C766155CD}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="3991942870" Name="Music" ObjectPath="\States\Default Work Unit\Music\Music" GUID="{3F3AB7AE-24FE-4CCA-977E-D3F58079B5E8}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Music\Music\None" GUID="{00A26180-6779-4401-9E51-797874B6C869}"/>
+						<State Id="3199546890" Name="Island" ObjectPath="\States\Default Work Unit\Music\Music\Island" GUID="{E4500F26-6821-4284-A405-3789EB02256A}"/>
+						<State Id="2157623951" Name="Boat_Calm" ObjectPath="\States\Default Work Unit\Music\Music\Boat_Calm" GUID="{7AF742C7-6FC4-4098-8413-92C64C2A2E12}"/>
+						<State Id="3811857207" Name="Boat_Boost" ObjectPath="\States\Default Work Unit\Music\Music\Boat_Boost" GUID="{1B7535B5-01B2-46B7-98A2-138C766155CD}"/>
+						<State Id="3041563226" Name="Silence" ObjectPath="\States\Default Work Unit\Music\Music\Silence" GUID="{1730671E-5CEC-4AA0-98C2-515AA98186F5}"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 			<SwitchGroups>
 				<SwitchGroup Id="2385628198" Name="footsteps" ObjectPath="\Switches\Default Work Unit\player\footsteps" GUID="{A43464AD-067A-4F77-9BEC-615D84FC768C}">
 					<Switches>

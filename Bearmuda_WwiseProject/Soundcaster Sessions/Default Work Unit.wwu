@@ -45,7 +45,7 @@
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="RTPC_Ambx_Location" ID="{239B14AB-41FE-408C-83D4-BDCD9DB18CDA}"/>
-							<Value>2.305</Value>
+							<Value>2.162</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="RTPC_Boat_Speed" ID="{97986E75-9A56-4694-A2AF-BAD3B4683264}"/>
@@ -54,6 +54,10 @@
 						<RTPCValue>
 							<GameParameterRef Name="RTPC_Player_Footsteps" ID="{592BAB48-3408-4E1A-BB77-DAAAEC7194BF}"/>
 							<Value>2</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_Ambx_Time" ID="{6F441635-DEE4-4E6A-89B4-5F3E4E0E8FD8}"/>
+							<Value>13.1</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">

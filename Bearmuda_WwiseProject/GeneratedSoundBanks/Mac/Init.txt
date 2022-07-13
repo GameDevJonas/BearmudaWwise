@@ -9,6 +9,16 @@ Switch	ID	Name	Switch Group			Notes
 	674522502	land	Ambx			
 	1795056175	boat	Ambx			
 
+State Group	ID	Name			Wwise Object Path	Notes
+	3991942870	Music			\Default Work Unit\Music\Music	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Music			
+	2157623951	Boat_Calm	Music			
+	3041563226	Silence	Music			
+	3199546890	Island	Music			
+	3811857207	Boat_Boost	Music			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3545700988	Reverbs			\Default Work Unit\Master Audio Bus\Reverbs	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	

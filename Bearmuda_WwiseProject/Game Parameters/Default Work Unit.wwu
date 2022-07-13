@@ -33,6 +33,13 @@
 								<Property Name="Min" Type="Real64" Value="1"/>
 							</PropertyList>
 						</GameParameter>
+						<GameParameter Name="RTPC_Ambx_Time" ID="{6F441635-DEE4-4E6A-89B4-5F3E4E0E8FD8}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="12"/>
+								<Property Name="Max" Type="Real64" Value="24"/>
+								<Property Name="Min" Type="Real64" Value="1"/>
+							</PropertyList>
+						</GameParameter>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
