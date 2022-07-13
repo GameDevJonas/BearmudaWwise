@@ -119,6 +119,132 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="Music" ID="{65925079-A89D-4B4F-B560-35E4E6292E41}" ShortID="1017300850">
+					<ChildrenList>
+						<Event Name="Play_MainMusic" ID="{2EF06338-6E37-477D-93AB-5239510F6269}">
+							<ChildrenList>
+								<Action Name="" ID="{17F9D9F3-20DA-4EBF-BD2C-15F8A5CDB482}" ShortID="591279440">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MainMusic" ID="{7AFD695C-C0A1-4911-B2AD-98C42284A794}" WorkUnitID="{70B10B43-D852-4931-8C87-75E9E3B8B76A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{1393F0C2-0650-4AFE-A55C-72D947BA8772}" ShortID="964362360">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Silence" ID="{1730671E-5CEC-4AA0-98C2-515AA98186F5}" WorkUnitID="{C4C3D9E3-1E9F-4852-BBFB-F03D6FB1F425}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_Music_Boat_Boost" ID="{259B5A85-991C-4D3A-B3B6-9F69503C5787}">
+							<ChildrenList>
+								<Action Name="" ID="{80084CE8-FCDF-43DB-AE93-A87FE2AC2444}" ShortID="541434660">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Boat_Boost" ID="{1B7535B5-01B2-46B7-98A2-138C766155CD}" WorkUnitID="{C4C3D9E3-1E9F-4852-BBFB-F03D6FB1F425}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{EBB315F0-0DF9-490C-8A0E-3A507EE1F994}" ShortID="597792178">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="12"/>
+										<Property Name="FadeTime" Type="Real64" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MainMusic" ID="{7AFD695C-C0A1-4911-B2AD-98C42284A794}" WorkUnitID="{70B10B43-D852-4931-8C87-75E9E3B8B76A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_Music_Boat_Calm" ID="{43CACE02-9FBF-4EDB-B8F0-DB2576E0D5CD}">
+							<ChildrenList>
+								<Action Name="" ID="{C224E8DC-0D47-4EDE-A11E-9512E741F2BA}" ShortID="795697758">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Boat_Calm" ID="{7AF742C7-6FC4-4098-8413-92C64C2A2E12}" WorkUnitID="{C4C3D9E3-1E9F-4852-BBFB-F03D6FB1F425}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{7626B886-B3DB-4B96-805D-2F1587EF9077}" ShortID="192074475">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="12"/>
+										<Property Name="FadeTime" Type="Real64" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MainMusic" ID="{7AFD695C-C0A1-4911-B2AD-98C42284A794}" WorkUnitID="{70B10B43-D852-4931-8C87-75E9E3B8B76A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_Music_Island" ID="{D54099AF-DC7E-4C72-B91F-B54B125ECA01}">
+							<ChildrenList>
+								<Action Name="" ID="{23D6D947-A79C-437E-A12C-0E2FEE247B9A}" ShortID="969699361">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Island" ID="{E4500F26-6821-4284-A405-3789EB02256A}" WorkUnitID="{C4C3D9E3-1E9F-4852-BBFB-F03D6FB1F425}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{2481F652-C9E8-4824-8CA6-66886CA0BC24}" ShortID="601405012">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="12"/>
+										<Property Name="FadeTime" Type="Real64" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MainMusic" ID="{7AFD695C-C0A1-4911-B2AD-98C42284A794}" WorkUnitID="{70B10B43-D852-4931-8C87-75E9E3B8B76A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_Music_Silence" ID="{60BFFD43-B316-4DE3-91E6-29AE100DD89B}">
+							<ChildrenList>
+								<Action Name="" ID="{52DEE13B-500A-402F-BE16-19EB053E7F62}" ShortID="489223564">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Silence" ID="{1730671E-5CEC-4AA0-98C2-515AA98186F5}" WorkUnitID="{C4C3D9E3-1E9F-4852-BBFB-F03D6FB1F425}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{441D3A29-F9E0-4998-933B-105E5CFD16F9}" ShortID="743988769">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="12"/>
+										<Property Name="FadeTime" Type="Real64" Value="3"/>
+										<Property Name="Volume" Type="Real64" Value="-96"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MainMusic" ID="{7AFD695C-C0A1-4911-B2AD-98C42284A794}" WorkUnitID="{70B10B43-D852-4931-8C87-75E9E3B8B76A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{C4C3D9E3-1E9F-4852-BBFB-F03D6FB1F425}" SchemaVersion="103">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{C4C3D9E3-1E9F-4852-BBFB-F03D6FB1F425}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{C4C3D9E3-1E9F-4852-BBFB-F03D6FB1F425}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Music" ID="{E3A8F51E-0710-404B-B8F0-80844B98317A}" ShortID="292236066">
+					<ChildrenList>
+						<StateGroup Name="Music" ID="{3F3AB7AE-24FE-4CCA-977E-D3F58079B5E8}">
+							<ChildrenList>
+								<State Name="None" ID="{00A26180-6779-4401-9E51-797874B6C869}"/>
+								<State Name="Island" ID="{E4500F26-6821-4284-A405-3789EB02256A}"/>
+								<State Name="Boat_Calm" ID="{7AF742C7-6FC4-4098-8413-92C64C2A2E12}"/>
+								<State Name="Boat_Boost" ID="{1B7535B5-01B2-46B7-98A2-138C766155CD}"/>
+								<State Name="Silence" ID="{1730671E-5CEC-4AA0-98C2-515AA98186F5}"/>
+							</ChildrenList>
+						</StateGroup>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

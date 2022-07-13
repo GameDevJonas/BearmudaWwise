@@ -14,12 +14,32 @@
 							<Position X="0" Y="2"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Play_MainMusic" ID="{2EF06338-6E37-477D-93AB-5239510F6269}" WorkUnitID="{535E800C-AE42-468E-A259-2A06F996CD81}"/>
+							<Position X="0" Y="4"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_Boat" ID="{34D07E89-644B-4DA2-B813-4D4046F7EACF}" WorkUnitID="{535E800C-AE42-468E-A259-2A06F996CD81}"/>
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Stop_boat_sideways" ID="{450B8F7F-9DC1-400B-85D9-DCE7BD719DEB}" WorkUnitID="{535E800C-AE42-468E-A259-2A06F996CD81}"/>
 							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Set_Music_Boat_Boost" ID="{259B5A85-991C-4D3A-B3B6-9F69503C5787}" WorkUnitID="{535E800C-AE42-468E-A259-2A06F996CD81}"/>
+							<Position X="1" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Set_Music_Boat_Calm" ID="{43CACE02-9FBF-4EDB-B8F0-DB2576E0D5CD}" WorkUnitID="{535E800C-AE42-468E-A259-2A06F996CD81}"/>
+							<Position X="2" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Set_Music_Island" ID="{D54099AF-DC7E-4C72-B91F-B54B125ECA01}" WorkUnitID="{535E800C-AE42-468E-A259-2A06F996CD81}"/>
+							<Position X="3" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Set_Music_Silence" ID="{60BFFD43-B316-4DE3-91E6-29AE100DD89B}" WorkUnitID="{535E800C-AE42-468E-A259-2A06F996CD81}"/>
+							<Position X="4" Y="4"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
@@ -36,7 +56,9 @@
 							<Value>2</Value>
 						</RTPCValue>
 					</RTPCValueList>
-					<CurrentStateList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Island" ID="{E4500F26-6821-4284-A405-3789EB02256A}"/>
+					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="grass" ID="{C83A6289-F4EA-451E-8D82-739A22576C55}"/>
 						<CurrentSwitchRef Name="boat" ID="{E7C7726F-3344-4F3F-903F-97C72FCAD5F4}"/>
