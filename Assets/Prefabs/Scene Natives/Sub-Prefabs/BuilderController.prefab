@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 5910825350494786940}
   - component: {fileID: 5910825350494786941}
   - component: {fileID: 5910825350494786943}
+  - component: {fileID: 7198188316618677078}
+  - component: {fileID: 5171361291023723347}
   - component: {fileID: 5910825350494786942}
   m_Layer: 0
   m_Name: BuilderController
@@ -56,6 +58,12 @@ MonoBehaviour:
   CancelEvent:
     m_PersistentCalls:
       m_Calls: []
+  StopRotate:
+    m_PersistentCalls:
+      m_Calls: []
+  RotateEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &5910825350494786943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63,7 +71,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5910825350494786939}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 31e0cd4cf2b45c744a97ff0149985789, type: 3}
   m_Name: 
@@ -72,6 +80,36 @@ MonoBehaviour:
   startPoint: {fileID: 0}
   endPoint: {fileID: 0}
   pierParent: {fileID: 0}
+--- !u!114 &7198188316618677078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5910825350494786939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1ff9f47f1d3ebb4abde64ead2449056, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  housePrefab: {fileID: 0}
+  houseParent: {fileID: 0}
+  houseYHeight: 0
+  rotationValue: 0
+--- !u!114 &5171361291023723347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5910825350494786939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9658b1be97b2484189ded5bd043ca33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pierStartPoints: []
+  pierPointRadius: 0
 --- !u!54 &5910825350494786942
 Rigidbody:
   m_ObjectHideFlags: 0
