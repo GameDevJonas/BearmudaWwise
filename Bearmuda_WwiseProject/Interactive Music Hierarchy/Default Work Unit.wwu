@@ -6,6 +6,11 @@
 				<MusicSwitchContainer Name="MainMusic" ID="{7AFD695C-C0A1-4911-B2AD-98C42284A794}" ShortID="907580133">
 					<PropertyList>
 						<Property Name="Tempo" Type="Real64" Value="92"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -883,7 +888,6 @@
 									<PropertyList>
 										<Property Name="SourceContextType" Type="int16" Value="1"/>
 									</PropertyList>
-									<ReferenceList/>
 									<TransitionInfo/>
 								</MusicTransition>
 								<MusicTransition Name="Transition" ID="{136DBC9C-51D3-46C2-9921-9A0147F44CD4}">
