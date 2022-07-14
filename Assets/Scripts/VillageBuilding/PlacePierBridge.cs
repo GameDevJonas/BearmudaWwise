@@ -10,11 +10,10 @@ public class PlacePierBridge : MonoBehaviour
     private GameObject tempSpline;
 
     public GameObject pierPrefab;
-    [SerializeField] private Transform startPoint, endPoint;
+    /*[SerializeField] private Transform startPoint, endPoint;
     [SerializeField] private Transform pierParent;
 
-    private bool updateEndPos, activePlacement;
-
+    private bool updateEndPos, activePlacement;*/
 
 
     private void Awake()
@@ -25,16 +24,16 @@ public class PlacePierBridge : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Controller.ConfirmEvent.AddListener(ConfirmPress);
+        /*Controller.ConfirmEvent.AddListener(ConfirmPress);
         Controller.CancelEvent.AddListener(CancelPress);
 
-        activePlacement = true;
+        activePlacement = true;*/
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (updateEndPos) UpdateEndPositionPoint();
+        /*if (updateEndPos) UpdateEndPositionPoint();
 
         if (!updateEndPos)
         {
@@ -43,9 +42,10 @@ public class PlacePierBridge : MonoBehaviour
         }
 
         if (activePlacement) startPoint.GetChild(0).gameObject.SetActive(!updateEndPos);
+        */
     }
 
-    public void ConfirmPress()
+    /*public void ConfirmPress()
     {
         if (!updateEndPos) PlacePierStart();
         else if (updateEndPos) PlacePierEnd();
@@ -104,5 +104,22 @@ public class PlacePierBridge : MonoBehaviour
         endPoint.SetParent(null);
         Spline = null;
         startPoint.GetChild(0).gameObject.SetActive(false);
+    }*/
+
+    public void PlacePier(Transform startPosition, Transform endPosition, Transform house)
+    {
+        tempSpline = Instantiate(pierPrefab, startPosition.position, Quaternion.identity, house);
+        tempSpline.SetActive(true);
+        Spline = tempSpline.GetComponent<Spline>();
+        GameObject testObj = new("TestObj");
+
+        testObj.transform.position = endPosition.position;
+        testObj.transform.SetParent(tempSpline.transform);
+
+
+        Spline.nodes[1].Position = testObj.transform.localPosition;
+        Spline.nodes[0].Position = Vector3.zero;
+
+        //Controller.EndBuilding();
     }
 }

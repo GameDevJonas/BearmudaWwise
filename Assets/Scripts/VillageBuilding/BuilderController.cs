@@ -20,7 +20,8 @@ public class BuilderController : MonoBehaviour
 
     [SerializeField] private float movementSpeed;
 
-    [HideInInspector] public UnityEvent ConfirmEvent = new UnityEvent(), CancelEvent = new UnityEvent();
+    [HideInInspector] public UnityEvent ConfirmEvent = new UnityEvent(), CancelEvent = new UnityEvent(), StopRotate = new UnityEvent();
+    [HideInInspector] public UnityEvent<float> RotateEvent = new UnityEvent<float>();
 
     private void Awake()
     {
@@ -40,6 +41,8 @@ public class BuilderController : MonoBehaviour
         movement.Enable();
 
         rotate = inputActions.VillagePlacement.Rotate;
+        rotate.performed += Rotate;
+        rotate.canceled += RotateEnd;
         rotate.Enable();
 
         inputActions.VillagePlacement.Confirm.performed += Confirm;
@@ -49,12 +52,23 @@ public class BuilderController : MonoBehaviour
         inputActions.VillagePlacement.Cancel.Enable();
     }
 
+
     private void OnDisable()
     {
         movement.Disable();
         rotate.Disable();
         inputActions.VillagePlacement.Confirm.Disable();
         inputActions.VillagePlacement.Cancel.Disable();
+    }
+    private void Rotate(InputAction.CallbackContext obj)
+    {
+        float rotValue = rotate.ReadValue<float>();
+        RotateEvent.Invoke(rotValue);
+    }
+
+    private void RotateEnd(InputAction.CallbackContext obj)
+    {
+        StopRotate.Invoke();
     }
 
     private void Cancel(InputAction.CallbackContext obj)
@@ -79,8 +93,7 @@ public class BuilderController : MonoBehaviour
 
     public void EndBuilding()
     {
-        BuildNavMeshes(); //Maybe do an async here
-        manager.SwitchPlayerState(PlayerManager.ActivePlayerState.GroundPlayer);
+       Invoke("BuildNavMeshes", .5f); //Maybe do an async here
     }
 
     private void ApplyMovement()
@@ -96,5 +109,6 @@ public class BuilderController : MonoBehaviour
         {
             surface.BuildNavMesh();
         }
+        manager.SwitchPlayerState(PlayerManager.ActivePlayerState.GroundPlayer);
     }
 }

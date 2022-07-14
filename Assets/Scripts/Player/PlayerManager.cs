@@ -5,6 +5,7 @@ using AK.Wwise;
 using Cinemachine;
 using UnityEngine.Events;
 using System;
+using UnityEngine.Rendering;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -27,6 +28,7 @@ public class PlayerManager : MonoBehaviour
         SwitchPlayerState(startingState);
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+        //Debug.Log(FindObjectOfType<Volume>().profile.components[2]);
     }
 
     [ContextMenu("Change to boat")]
@@ -146,11 +148,16 @@ public class PlayerManager : MonoBehaviour
 
                 VillageBuilderVariables.CinemachineVirtualCamera.Priority = 11;
                 VillageBuilderVariables.BuilderController.enabled = true;
+
+                FindObjectOfType<Volume>().profile.components[2].active = false;
                 break;
             case false:
                 //Debug.Log("Builder mode off");
+                //VillageBuilderVariables.BuilderController.CancelEvent.Invoke();
+
                 VillageBuilderVariables.CinemachineVirtualCamera.Priority = 9;
                 VillageBuilderVariables.BuilderController.enabled = false;
+                FindObjectOfType<Volume>().profile.components[2].active = true;
                 break;
         }
     }

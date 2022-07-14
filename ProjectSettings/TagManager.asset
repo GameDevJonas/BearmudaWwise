@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - LostPerson
+  - PierStartPos
   layers:
   - Default
   - TransparentFX
