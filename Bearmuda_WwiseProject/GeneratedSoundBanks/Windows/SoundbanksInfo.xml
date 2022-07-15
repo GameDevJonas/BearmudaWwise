@@ -20,7 +20,7 @@
 				<AuxBus Id="2636462861" Name="Reverb_Outside_Small" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs\Reverb_Outside_Small"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="2880737896" Language="SFX" Hash="2009901774">
+		<SoundBank Id="2880737896" Language="SFX" Hash="608043910">
 			<ObjectPath>\SoundBanks\Default Work Unit\MainBank</ObjectPath>
 			<ShortName>MainBank</ShortName>
 			<Path>MainBank.bnk</Path>
@@ -517,7 +517,7 @@
 					<IncludedMemoryFiles>
 						<File Id="864801515" Language="SFX">
 							<ShortName>sfx_UI_menu_back.wav</ShortName>
-							<Path>SFX\sfx_UI_menu_back_D54F21A6.wem</Path>
+							<Path>SFX\sfx_UI_menu_back_47843704.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -541,11 +541,11 @@
 					<IncludedMemoryFiles>
 						<File Id="1063843644" Language="SFX">
 							<ShortName>sfx_UI_menu_click_light_02.wav</ShortName>
-							<Path>SFX\sfx_UI_menu_click_light_02_99647B5E.wem</Path>
+							<Path>SFX\sfx_UI_menu_click_light_02_F83F4045.wem</Path>
 						</File>
 						<File Id="1072234793" Language="SFX">
 							<ShortName>sfx_UI_menu_click_light_01.wav</ShortName>
-							<Path>SFX\sfx_UI_menu_click_light_01_D75BA260.wem</Path>
+							<Path>SFX\sfx_UI_menu_click_light_01_B4FC4E9C.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -565,7 +565,7 @@
 						</File>
 						<File Id="572643112" Language="SFX">
 							<ShortName>sfx_UI_menu_click_soft_02.wav</ShortName>
-							<Path>SFX\sfx_UI_menu_click_soft_02_5A1B0274.wem</Path>
+							<Path>SFX\sfx_UI_menu_click_soft_02_31082210.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -573,7 +573,7 @@
 					<IncludedMemoryFiles>
 						<File Id="872172236" Language="SFX">
 							<ShortName>sfx_UI_menu_hover.wav</ShortName>
-							<Path>SFX\sfx_UI_menu_hover_E96500B6.wem</Path>
+							<Path>SFX\sfx_UI_menu_hover_A9C1629E.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 57d5f0e632a6db4b8d3244fbf54bd714
     GuidInternal: 
-    m_lastTime: -8585438700326988151
+    m_lastTime: -8585444872410839284
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 5c7658dc4ef2494fa936123b11804268
     GuidInternal: 
-    m_lastTime: -8585438700337986614
+    m_lastTime: -8585444852607501547
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -123,7 +123,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 87fe6e58c7007a478f0ec3970104b7c4
     GuidInternal: 
-    m_lastTime: -8585438700327157698
+    m_lastTime: -8585444872410879294
     List:
     - name: MainBank
       guid: be2de4e137f60642bf7a81a6e7b7fc03
@@ -609,7 +609,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: bebc14d169db4749b9659e409e25ab92
     GuidInternal: 
-    m_lastTime: -8585437644676759571
+    m_lastTime: -8585437813796042836
     List:
     - name: AMBX
       guid: 66bdc9e24f23ef488af7fc536b65dda0
@@ -733,7 +733,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: e3d9c3c49f1e5248bbfbf03d6fb1f425
     GuidInternal: 
-    m_lastTime: -8585438700327057963
+    m_lastTime: -8585439006852408946
     List:
     - name: Music
       guid: 1ef5a8e310074b40b8f080844b98317a
@@ -1127,10 +1127,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: a8d8877960652740a5fc7fcd5864ae22
     GuidInternal: 
-    m_lastTime: -8585438700327008096
+    m_lastTime: -8585444872410839284
     List: []
-  ExpandedFileSystemItemIds: 01000000020000000300000004000000
-  ExpandedWaapiItemIds: 020000000300000004000000
+  ExpandedFileSystemItemIds: 0100000002000000030000000400000005000000060000000e00000010000000
+  ExpandedWaapiItemIds: 02000000030000000e000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 1
