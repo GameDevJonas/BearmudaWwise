@@ -17,12 +17,17 @@ public class PlayerController : MonoBehaviour
 
     private Animator anim;
 
+    [SerializeField] private LostPerson lostPersonVillageHouse;
+
+    private PlayerManager manager;
+
     private void Awake()
     {
         inputActions = new PlayerInputs();
         agent = GetComponent<NavMeshAgent>();
         mainCam = Camera.main.transform;
         anim = GetComponentInChildren<Animator>();
+        manager = FindObjectOfType<PlayerManager>();
     }
 
     private void OnEnable()
@@ -32,18 +37,23 @@ public class PlayerController : MonoBehaviour
 
         inputActions.Player.Interact.performed += DoInteractButton;
         inputActions.Player.Interact.Enable();
+
+        lostPersonVillageHouse = null;
     }
 
     private void DoInteractButton(InputAction.CallbackContext obj)
     {
         PlayerManager.InteractPushed.Invoke(this.gameObject);
-
+        if(lostPersonVillageHouse != null)
+        {
+            FindObjectOfType<PlaceVillageHouse>().lostPerson = lostPersonVillageHouse;
+            manager.SwitchPlayerState(PlayerManager.ActivePlayerState.VillageBuilder);
+        }
     }
 
-    private void FixedUpdate()
+    public void GetNearestLostPerson(LostPerson person)
     {
-        //if (movement.ReadValue<Vector2>() != Vector2.zero) Debug.Log("Reading movement values: " + movement.ReadValue<Vector2>());
-        
+        lostPersonVillageHouse = person;
     }
 
     private void Update()
@@ -52,11 +62,7 @@ public class PlayerController : MonoBehaviour
         Vector3 desiredInput = new Vector3(inputAxis.x * 2, 0, inputAxis.y * 2);
 
         var forward = mainCam.forward;
-        //forward.y = 0;
-        //forward.Normalize();
         var right = mainCam.right;
-        //right.y = 0;
-        //right.Normalize();
 
         navObject.localPosition = new Vector3(desiredInput.x, 0, desiredInput.z);
         navObject.parent.rotation = Quaternion.LookRotation(forward);
@@ -68,6 +74,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnDisable()
     {
+        lostPersonVillageHouse = null;
         movement.Disable();
         inputActions.Player.Interact.Disable();
     }

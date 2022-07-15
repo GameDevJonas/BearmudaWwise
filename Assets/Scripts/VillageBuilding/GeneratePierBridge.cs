@@ -10,6 +10,7 @@ public class GeneratePierBridge : MonoBehaviour
     [SerializeField] private float pierPointRadius;
 
     [SerializeField] private Transform houseRef;
+
     // Start is called before the first frame update
     void Start()
     {

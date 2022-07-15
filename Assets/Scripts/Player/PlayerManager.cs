@@ -156,13 +156,13 @@ public class PlayerManager : MonoBehaviour
 
                 VillageBuilderVariables.CinemachineVirtualCamera.Priority = 11;
                 VillageBuilderVariables.BuilderController.enabled = true;
-
+                VillageBuilderVariables.BuilderController.GetComponent<PlaceVillageHouse>().enabled = turnOn;
                 FindObjectOfType<Volume>().profile.components[2].active = false;
                 break;
             case false:
                 //Debug.Log("Builder mode off");
                 //VillageBuilderVariables.BuilderController.CancelEvent.Invoke();
-
+                //VillageBuilderVariables.BuilderController.GetComponent<PlaceVillageHouse>().enabled = turnOn;
                 VillageBuilderVariables.CinemachineVirtualCamera.Priority = 9;
                 VillageBuilderVariables.BuilderController.enabled = false;
                 FindObjectOfType<Volume>().profile.components[2].active = true;

@@ -50,12 +50,17 @@ public class IcecreamStand : MonoBehaviour
                 foreach (Transform lostPerson in _playerFollowers.CurrentFollowers)
                 {
                     lostPerson.GetComponent<LostPerson>().SetNewTarget(peopleInLine[^1]);
+                    lostPerson.GetComponent<UnityEngine.AI.NavMeshAgent>().speed = 7;
                     peopleInLine.Add(lostPerson);
                 }
             }
             else
             {
                 peopleInLine.AddRange(_playerFollowers.CurrentFollowers);
+                foreach(Transform lostP in _playerFollowers.CurrentFollowers)
+                {
+                    lostP.GetComponent<UnityEngine.AI.NavMeshAgent>().speed = 7;
+                }
             }
 
             _activeLine = true;
@@ -88,9 +93,11 @@ public class IcecreamStand : MonoBehaviour
         waitingPositions.Add(newPos.transform);
         LostPerson nextPersonInLine = peopleInLine[0].GetComponent<LostPerson>();
         nextPersonInLine.SetNewTarget(waitingPositions[^1]);
+        nextPersonInLine.GetComponent<UnityEngine.AI.NavMeshAgent>().speed = 4;
 
         GameObject newIceCream = Instantiate(icecreams[Random.Range(0, icecreams.Length)], nextPersonInLine.transform.GetChild(0).GetChild(0));
         nextPersonInLine.transform.GetChild(0).GetChild(0).gameObject.SetActive(true);
+        nextPersonInLine.GetIceCream();
 
         peopleInLine.RemoveAt(0);
         NextPersonInLine();

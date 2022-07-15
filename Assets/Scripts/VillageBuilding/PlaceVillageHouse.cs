@@ -13,9 +13,11 @@ public class PlaceVillageHouse : MonoBehaviour
     [SerializeField] private float houseYHeight;
     [SerializeField] private float rotationValue;
 
-    private GameObject housePlacementRef;
+    [SerializeField]private GameObject housePlacementRef;
     private float rotDirection;
     private bool doRotate;
+
+    public LostPerson lostPerson;
 
     private void Awake()
     {
@@ -75,10 +77,9 @@ public class PlaceVillageHouse : MonoBehaviour
 
         //Turn on own pier start points
 
+        lostPerson.GetHouse(housePlacementRef.transform);
         housePlacementRef = null;
-        housePlacementRef = Instantiate(housePrefab, transform.position, Quaternion.identity, houseParent);
-        //Controller.EndBuilding();
-        //this.enabled = false;
+        this.enabled = false;
     }
 
     public void CancelPress()
@@ -87,5 +88,10 @@ public class PlaceVillageHouse : MonoBehaviour
         housePlacementRef = null;
         Controller.EndBuilding();
         this.enabled = false;
+    }
+
+    private void OnDisable()
+    {
+        Destroy(housePlacementRef);
     }
 }
