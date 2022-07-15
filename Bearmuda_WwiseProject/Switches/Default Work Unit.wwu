@@ -45,6 +45,12 @@
 								</Curve>
 							</SwitchOnRTPC>
 						</SwitchGroup>
+						<SwitchGroup Name="building" ID="{AB8A5079-1943-47AF-85DB-7EFD07CD90E9}">
+							<ChildrenList>
+								<Switch Name="land" ID="{5843E2EB-0446-41CC-A694-3AE045726B96}"/>
+								<Switch Name="water" ID="{527BB987-A684-4B9E-878D-E228813C8478}"/>
+							</ChildrenList>
+						</SwitchGroup>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="AMBX" ID="{2CBB9B1D-42A1-4C55-A594-853107098AFC}" ShortID="159345126">

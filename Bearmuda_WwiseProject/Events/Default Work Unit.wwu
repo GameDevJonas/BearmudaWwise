@@ -245,6 +245,148 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Play_coins" ID="{80DC4565-198B-4188-9D3B-8C734DE2FCB6}">
+					<ChildrenList>
+						<Action Name="" ID="{0EFCFAC9-A43A-4B03-8F3C-D14749A7B488}" ShortID="550978258">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="flip" ID="{FBF25F62-F588-46C3-A43A-97F669B3FA85}" WorkUnitID="{BF2D29B7-58D5-4DA9-985B-6FD720B30510}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{B6E77C49-79EE-4D34-B8D9-AC7525AB4D2A}" ShortID="991003807">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.3"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="jar" ID="{FEDC5EE7-8981-4FEE-8AB5-05A250D70396}" WorkUnitID="{BF2D29B7-58D5-4DA9-985B-6FD720B30510}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{22F710CF-0888-4FE9-A294-4DBF4DD8693C}" ShortID="1031744745">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.3"/>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="jiggle" ID="{E61B1B0D-E835-403B-9306-134FE9EE190A}" WorkUnitID="{BF2D29B7-58D5-4DA9-985B-6FD720B30510}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Folder Name="UI" ID="{213E413F-F4EE-4B18-B66A-EEC60CC2B6DC}" ShortID="170885130">
+					<ChildrenList>
+						<Event Name="Play_UI_click_double" ID="{621FDB5B-0266-4B4D-85B4-8731B7AECE4C}">
+							<ChildrenList>
+								<Action Name="" ID="{6CE04415-9132-456A-8343-28BD2CEAD48D}" ShortID="43254962">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="click_double" ID="{8D171181-2D71-4869-A121-9F2B38D54CB1}" WorkUnitID="{BF2D29B7-58D5-4DA9-985B-6FD720B30510}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_UI_click_light" ID="{85664BE6-FC99-4D14-BD16-6A65E0F98BC9}">
+							<ChildrenList>
+								<Action Name="" ID="{247D668D-7ADE-4DBF-A398-EA5117220DCC}" ShortID="202905178">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="click_light" ID="{AD07290F-367E-42E8-A4C1-0E276DE0DC36}" WorkUnitID="{BF2D29B7-58D5-4DA9-985B-6FD720B30510}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_UI_click_simple" ID="{158DDB6E-42CD-4727-9361-86E705E06AD1}">
+							<ChildrenList>
+								<Action Name="" ID="{E630FB19-3660-4D7D-86A3-7BDA058448C4}" ShortID="592887790">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="click_simple" ID="{333D1685-7C16-4ED5-A14F-C9D9F0B0CA53}" WorkUnitID="{BF2D29B7-58D5-4DA9-985B-6FD720B30510}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_UI_click_soft" ID="{DC1FF451-AEF5-4B6D-970F-106D029AECD3}">
+							<ChildrenList>
+								<Action Name="" ID="{9C1A8B17-3C29-4148-B7AD-97B804D2D3DB}" ShortID="988400077">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="click_soft" ID="{87883A52-1FB4-49FE-8D4E-BDDDC7DFD659}" WorkUnitID="{BF2D29B7-58D5-4DA9-985B-6FD720B30510}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_UI_hover" ID="{E0CE2D7A-DD63-45D7-AE58-451BD1F7741C}">
+							<ChildrenList>
+								<Action Name="" ID="{71B7CB73-DFCB-4EF4-8AF0-A67C4171AF57}" ShortID="610116436">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="hover" ID="{8CB0E5F1-07F5-4A97-B870-07A33A496B5F}" WorkUnitID="{BF2D29B7-58D5-4DA9-985B-6FD720B30510}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_UI_back" ID="{38B15B61-D6C8-42D0-935E-A0468BFCD9A8}">
+							<ChildrenList>
+								<Action Name="" ID="{3EA84F06-E4F9-42BE-BF78-CBE57B264B34}" ShortID="212728128">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="back" ID="{C80A4B88-2EB4-4B61-AB8A-8DF2DDB9461F}" WorkUnitID="{BF2D29B7-58D5-4DA9-985B-6FD720B30510}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_UI_select" ID="{E64F2A9A-F7DC-44AB-9885-F9384ABA6911}">
+							<ChildrenList>
+								<Action Name="" ID="{40082045-4295-4129-8B68-E0984BC95EA8}" ShortID="540878478">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="click_gritty" ID="{566E8B70-402B-4BCC-8EBC-FAE5153C199B}" WorkUnitID="{BF2D29B7-58D5-4DA9-985B-6FD720B30510}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{943B178C-CD6A-4C54-A463-4FEEB1035866}" ShortID="367011255">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="select" ID="{0E833D20-F206-43A2-8922-E43579D9C3A9}" WorkUnitID="{BF2D29B7-58D5-4DA9-985B-6FD720B30510}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Event Name="Play_build_bridge" ID="{64952A88-E7DB-4EEB-8912-6384F46FA166}">
+					<ChildrenList>
+						<Action Name="" ID="{082C1C84-D56C-472C-A939-23BEFD39E9C2}" ShortID="490437438">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="place_main_wood" ID="{486C540E-2146-42CD-A81A-85D081672596}" WorkUnitID="{BF2D29B7-58D5-4DA9-985B-6FD720B30510}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{79BE0725-D0DD-4054-98C9-1FC0A34A6BFF}" ShortID="477548404">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="place_water" ID="{7A20A46B-7EC5-476C-BCE8-5A3CA0515BE6}" WorkUnitID="{BF2D29B7-58D5-4DA9-985B-6FD720B30510}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
