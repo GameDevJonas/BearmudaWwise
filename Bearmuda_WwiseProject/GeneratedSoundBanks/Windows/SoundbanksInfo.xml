@@ -20,7 +20,7 @@
 				<AuxBus Id="2636462861" Name="Reverb_Outside_Small" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs\Reverb_Outside_Small"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="2880737896" Language="SFX" Hash="1228143634">
+		<SoundBank Id="2880737896" Language="SFX" Hash="2009901774">
 			<ObjectPath>\SoundBanks\Default Work Unit\MainBank</ObjectPath>
 			<ShortName>MainBank</ShortName>
 			<Path>MainBank.bnk</Path>
@@ -272,6 +272,102 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="3287383742" Name="Play_build_bridge" ObjectPath="\Events\Default Work Unit\Play_build_bridge" DurationType="OneShot" DurationMin="1.020839" DurationMax="1.25">
+					<IncludedMemoryFiles>
+						<File Id="20445697" Language="SFX">
+							<ShortName>sfx_build_bridge_water_03.wav</ShortName>
+							<Path>SFX\sfx_build_bridge_water_03_10C4C929.wem</Path>
+						</File>
+						<File Id="115031779" Language="SFX">
+							<ShortName>sfx_build_bridge_main_05.wav</ShortName>
+							<Path>SFX\sfx_build_bridge_main_05_10C4C929.wem</Path>
+						</File>
+						<File Id="115309235" Language="SFX">
+							<ShortName>sfx_build_bridge_main_02.wav</ShortName>
+							<Path>SFX\sfx_build_bridge_main_02_10C4C929.wem</Path>
+						</File>
+						<File Id="154785725" Language="SFX">
+							<ShortName>sfx_build_bridge_water_01.wav</ShortName>
+							<Path>SFX\sfx_build_bridge_water_01_10C4C929.wem</Path>
+						</File>
+						<File Id="437207839" Language="SFX">
+							<ShortName>sfx_build_bridge_water_02.wav</ShortName>
+							<Path>SFX\sfx_build_bridge_water_02_10C4C929.wem</Path>
+						</File>
+						<File Id="503131630" Language="SFX">
+							<ShortName>sfx_build_bridge_main_01.wav</ShortName>
+							<Path>SFX\sfx_build_bridge_main_01_10C4C929.wem</Path>
+						</File>
+						<File Id="595308250" Language="SFX">
+							<ShortName>sfx_build_bridge_main_03.wav</ShortName>
+							<Path>SFX\sfx_build_bridge_main_03_10C4C929.wem</Path>
+						</File>
+						<File Id="715802250" Language="SFX">
+							<ShortName>sfx_build_bridge_water_04.wav</ShortName>
+							<Path>SFX\sfx_build_bridge_water_04_10C4C929.wem</Path>
+						</File>
+						<File Id="869399585" Language="SFX">
+							<ShortName>sfx_build_bridge_water_05.wav</ShortName>
+							<Path>SFX\sfx_build_bridge_water_05_10C4C929.wem</Path>
+						</File>
+						<File Id="1036626137" Language="SFX">
+							<ShortName>sfx_build_bridge_main_04.wav</ShortName>
+							<Path>SFX\sfx_build_bridge_main_04_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3115138860" Name="Play_coins" ObjectPath="\Events\Default Work Unit\Play_coins" DurationType="OneShot" DurationMin="0.841655" DurationMax="1.55">
+					<IncludedMemoryFiles>
+						<File Id="63857153" Language="SFX">
+							<ShortName>sfx_coin_flip_06.wav</ShortName>
+							<Path>SFX\sfx_coin_flip_06_10C4C929.wem</Path>
+						</File>
+						<File Id="177885432" Language="SFX">
+							<ShortName>sfx_coins_hit_jar_06.wav</ShortName>
+							<Path>SFX\sfx_coins_hit_jar_06_10C4C929.wem</Path>
+						</File>
+						<File Id="353065860" Language="SFX">
+							<ShortName>sfx_coins_hit_jar_03.wav</ShortName>
+							<Path>SFX\sfx_coins_hit_jar_03_10C4C929.wem</Path>
+						</File>
+						<File Id="381976889" Language="SFX">
+							<ShortName>sfx_coin_flip_04.wav</ShortName>
+							<Path>SFX\sfx_coin_flip_04_10C4C929.wem</Path>
+						</File>
+						<File Id="444846971" Language="SFX">
+							<ShortName>sfx_coins_hit_jar_04.wav</ShortName>
+							<Path>SFX\sfx_coins_hit_jar_04_10C4C929.wem</Path>
+						</File>
+						<File Id="492503674" Language="SFX">
+							<ShortName>sfx_coins_hit_jar_02.wav</ShortName>
+							<Path>SFX\sfx_coins_hit_jar_02_10C4C929.wem</Path>
+						</File>
+						<File Id="614675144" Language="SFX">
+							<ShortName>sfx_coins_hit_jar_05.wav</ShortName>
+							<Path>SFX\sfx_coins_hit_jar_05_10C4C929.wem</Path>
+						</File>
+						<File Id="682897200" Language="SFX">
+							<ShortName>sfx_coins_hit_jar_08.wav</ShortName>
+							<Path>SFX\sfx_coins_hit_jar_08_10C4C929.wem</Path>
+						</File>
+						<File Id="921885950" Language="SFX">
+							<ShortName>sfx_coins_hit_jar_09.wav</ShortName>
+							<Path>SFX\sfx_coins_hit_jar_09_10C4C929.wem</Path>
+						</File>
+						<File Id="934388475" Language="SFX">
+							<ShortName>sfx_coins_hit_jar_01.wav</ShortName>
+							<Path>SFX\sfx_coins_hit_jar_01_10C4C929.wem</Path>
+						</File>
+						<File Id="977533020" Language="SFX">
+							<ShortName>sfx_coin_flip_05.wav</ShortName>
+							<Path>SFX\sfx_coin_flip_05_10C4C929.wem</Path>
+						</File>
+						<File Id="1018650613" Language="SFX">
+							<ShortName>sfx_coins_hit_jar_07.wav</ShortName>
+							<Path>SFX\sfx_coins_hit_jar_07_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1346240278" Name="Play_MainMusic" ObjectPath="\Events\Default Work Unit\Music\Play_MainMusic" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="1041701678" Language="SFX">
@@ -414,6 +510,82 @@
 						<File Id="255825772" Language="SFX">
 							<ShortName>HORSE Gelding Snort.wav</ShortName>
 							<Path>SFX\HORSE Gelding Snort_6DADE084.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1386224142" Name="Play_UI_back" ObjectPath="\Events\Default Work Unit\UI\Play_UI_back" DurationType="OneShot" DurationMin="0.225913" DurationMax="0.225913">
+					<IncludedMemoryFiles>
+						<File Id="864801515" Language="SFX">
+							<ShortName>sfx_UI_menu_back.wav</ShortName>
+							<Path>SFX\sfx_UI_menu_back_D54F21A6.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2977247607" Name="Play_UI_click_double" ObjectPath="\Events\Default Work Unit\UI\Play_UI_click_double" DurationType="OneShot" DurationMin="0.181769" DurationMax="0.208322">
+					<IncludedMemoryFiles>
+						<File Id="72829619" Language="SFX">
+							<ShortName>sfx_UI_menu_click_double_03.wav</ShortName>
+							<Path>SFX\sfx_UI_menu_click_double_03_10C4C929.wem</Path>
+						</File>
+						<File Id="857086744" Language="SFX">
+							<ShortName>sfx_UI_menu_click_double_02.wav</ShortName>
+							<Path>SFX\sfx_UI_menu_click_double_02_10C4C929.wem</Path>
+						</File>
+						<File Id="1000658140" Language="SFX">
+							<ShortName>sfx_UI_menu_click_double_01.wav</ShortName>
+							<Path>SFX\sfx_UI_menu_click_double_01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2480270868" Name="Play_UI_click_light" ObjectPath="\Events\Default Work Unit\UI\Play_UI_click_light" DurationType="OneShot" DurationMin="0.135198" DurationMax="0.150479">
+					<IncludedMemoryFiles>
+						<File Id="1063843644" Language="SFX">
+							<ShortName>sfx_UI_menu_click_light_02.wav</ShortName>
+							<Path>SFX\sfx_UI_menu_click_light_02_99647B5E.wem</Path>
+						</File>
+						<File Id="1072234793" Language="SFX">
+							<ShortName>sfx_UI_menu_click_light_01.wav</ShortName>
+							<Path>SFX\sfx_UI_menu_click_light_01_D75BA260.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3761008630" Name="Play_UI_click_simple" ObjectPath="\Events\Default Work Unit\UI\Play_UI_click_simple" DurationType="OneShot" DurationMin="0.128639" DurationMax="0.128639">
+					<IncludedMemoryFiles>
+						<File Id="421079538" Language="SFX">
+							<ShortName>sfx_UI_menu_click_simple_01.wav</ShortName>
+							<Path>SFX\sfx_UI_menu_click_simple_01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="520575376" Name="Play_UI_click_soft" ObjectPath="\Events\Default Work Unit\UI\Play_UI_click_soft" DurationType="OneShot" DurationMin="0.187259" DurationMax="0.229161">
+					<IncludedMemoryFiles>
+						<File Id="176303427" Language="SFX">
+							<ShortName>sfx_UI_menu_click_soft_01.wav</ShortName>
+							<Path>SFX\sfx_UI_menu_click_soft_01_10C4C929.wem</Path>
+						</File>
+						<File Id="572643112" Language="SFX">
+							<ShortName>sfx_UI_menu_click_soft_02.wav</ShortName>
+							<Path>SFX\sfx_UI_menu_click_soft_02_5A1B0274.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1339559671" Name="Play_UI_hover" ObjectPath="\Events\Default Work Unit\UI\Play_UI_hover" DurationType="OneShot" DurationMin="0.019838" DurationMax="0.019838">
+					<IncludedMemoryFiles>
+						<File Id="872172236" Language="SFX">
+							<ShortName>sfx_UI_menu_hover.wav</ShortName>
+							<Path>SFX\sfx_UI_menu_hover_E96500B6.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3308548503" Name="Play_UI_select" ObjectPath="\Events\Default Work Unit\UI\Play_UI_select" DurationType="OneShot" DurationMin="0.237483" DurationMax="0.237483">
+					<IncludedMemoryFiles>
+						<File Id="593943380" Language="SFX">
+							<ShortName>sfx_UI_menu_select.wav</ShortName>
+							<Path>SFX\sfx_UI_menu_select_10C4C929.wem</Path>
+						</File>
+						<File Id="715296657" Language="SFX">
+							<ShortName>sfx_UI_menu_click_gritty.wav</ShortName>
+							<Path>SFX\sfx_UI_menu_click_gritty_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
