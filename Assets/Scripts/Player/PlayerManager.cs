@@ -18,6 +18,8 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private BoatPlayerVariables BoatPlayerVariables;
     [SerializeField] private VillageBuilderVariables VillageBuilderVariables;
 
+    [SerializeField] private AK.Wwise.Event silenceIsland, normalIsland, boatCalm;
+
     public static UnityEvent<GameObject> InteractPushed = new();
     public static UnityEvent SwitchedToPlayer = new();
     public static UnityEvent SwitchedToBoat = new();
@@ -87,6 +89,8 @@ public class PlayerManager : MonoBehaviour
                 TurnOnOffBuilderVariables(false);
                 SwitchedToPlayer.Invoke();
 
+                AkSoundEngine.PostEvent(normalIsland.Id, gameObject);
+
                 AkSoundEngine.SetRTPCValue("RTPC_Ambx_Location", 1);
 
                 PlayerState = ActivePlayerState.GroundPlayer;
@@ -114,6 +118,8 @@ public class PlayerManager : MonoBehaviour
                 TurnOnOffBuilderVariables(false);
                 SwitchedToBoat.Invoke();
 
+                AkSoundEngine.PostEvent(boatCalm.Id, gameObject);
+
                 AkSoundEngine.SetRTPCValue("RTPC_Ambx_Location", 2);
 
                 PlayerState = ActivePlayerState.BoatPlayer;
@@ -140,6 +146,8 @@ public class PlayerManager : MonoBehaviour
                 TurnOnOffBoatVariables(false);
                 TurnOnOffGroundVariables(false);
                 SwitchedToBuilder.Invoke();
+
+                AkSoundEngine.PostEvent(silenceIsland.Id, gameObject);
 
                 AkSoundEngine.SetRTPCValue("RTPC_Ambx_Location", 2);
 

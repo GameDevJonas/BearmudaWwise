@@ -97,6 +97,8 @@ public class BoatController : MonoBehaviour
         AkSoundEngine.PostEvent(TiltEventStop.Id, gameObject);
         leftCollectTrigger.gameObject.SetActive(false);
         rightCollectTrigger.gameObject.SetActive(false);
+
+        AkSoundEngine.PostEvent("Set_Music_Boat_Boost", gameObject);
     }
 
     private void StopDash(InputAction.CallbackContext obj)
@@ -105,6 +107,7 @@ public class BoatController : MonoBehaviour
         startAccelValue = movementSpeed;
         accelTimer = 0;
         maxSpeed = maxNormalSpeed;
+        AkSoundEngine.PostEvent("Set_Music_Boat_Calm", gameObject);
     }
 
     private void DoInteractButton(InputAction.CallbackContext obj)

@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 57d5f0e632a6db4b8d3244fbf54bd714
     GuidInternal: 
-    m_lastTime: -8585444872410839284
+    m_lastTime: -8585438700326988151
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 5c7658dc4ef2494fa936123b11804268
     GuidInternal: 
-    m_lastTime: -8585444852607501547
+    m_lastTime: -8585438700337986614
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -123,7 +123,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 87fe6e58c7007a478f0ec3970104b7c4
     GuidInternal: 
-    m_lastTime: -8585444872410879294
+    m_lastTime: -8585438700327157698
     List:
     - name: MainBank
       guid: be2de4e137f60642bf7a81a6e7b7fc03
@@ -151,7 +151,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 0c805e5342ae8e46a2592a06f996cd81
     GuidInternal: 
-    m_lastTime: -8585438992874544697
+    m_lastTime: -8585438700340495704
     List:
     - name: Music
       guid: 795092659da84f4bb56035e4e6292e41
@@ -418,7 +418,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: bebc14d169db4749b9659e409e25ab92
     GuidInternal: 
-    m_lastTime: -8585438961293307682
+    m_lastTime: -8585437644676759571
     List:
     - name: AMBX
       guid: 66bdc9e24f23ef488af7fc536b65dda0
@@ -542,7 +542,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: e3d9c3c49f1e5248bbfbf03d6fb1f425
     GuidInternal: 
-    m_lastTime: -8585439006852408946
+    m_lastTime: -8585438700327057963
     List:
     - name: Music
       guid: 1ef5a8e310074b40b8f080844b98317a
@@ -690,7 +690,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 14a44e73130a8749998dfa4aa969a02a
     GuidInternal: 
-    m_lastTime: -8585444066245320744
+    m_lastTime: -8585438700327018073
     List:
     - name: Ambx
       guid: 1183356acf6f954fb14205b47b1d08b8
@@ -877,10 +877,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: a8d8877960652740a5fc7fcd5864ae22
     GuidInternal: 
-    m_lastTime: -8585444872410839284
+    m_lastTime: -8585438700327008096
     List: []
-  ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedFileSystemItemIds: 020000000300000004000000
+  ExpandedWaapiItemIds: 020000000300000004000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 1
