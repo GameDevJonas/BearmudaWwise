@@ -89,6 +89,7 @@ public class PlayerManager : MonoBehaviour
                 TurnOnOffBuilderVariables(true);
                 break;
             case ActivePlayerState.MainMenu:
+                TurnOnOffMenuVariables(true);
                 break;
         }
     }
@@ -197,8 +198,6 @@ public class PlayerManager : MonoBehaviour
                 AkSoundEngine.SetRTPCValue("RTPC_Ambx_Location", 2);
                 break;
             case false:
-
-                //SwitchPlayerState(startingState);
                 mainMenuCam.Priority = 0;
                 mainMenuCam.gameObject.SetActive(turnOn);
                 Cursor.visible = false;

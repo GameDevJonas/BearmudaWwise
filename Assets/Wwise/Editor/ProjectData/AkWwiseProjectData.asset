@@ -151,7 +151,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 0c805e5342ae8e46a2592a06f996cd81
     GuidInternal: 
-    m_lastTime: -8585438700340495704
+    m_lastTime: -8585436927652896423
     List:
     - name: Music
       guid: 795092659da84f4bb56035e4e6292e41
@@ -238,6 +238,40 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.208322
       minDuration: 0.166667
+    - name: Play_build_bridge
+      guid: 882a9564dbe7eb4e89126384f46fa166
+      id: 3287383742
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0c805e5342ae8e46a2592a06f996cd81
+      - ElementName: Play_build_bridge
+        ObjectType: 3
+        guid: 882a9564dbe7eb4e89126384f46fa166
+      Path: Events\Default Work Unit\Play_build_bridge
+      maxAttenuation: 0
+      maxDuration: 1.25
+      minDuration: 1.020839
+    - name: Play_coins
+      guid: 6545dc808b1988419d3b8c734de2fcb6
+      id: 3115138860
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0c805e5342ae8e46a2592a06f996cd81
+      - ElementName: Play_coins
+        ObjectType: 3
+        guid: 6545dc808b1988419d3b8c734de2fcb6
+      Path: Events\Default Work Unit\Play_coins
+      maxAttenuation: 0
+      maxDuration: 1.55
+      minDuration: 0.841655
     - name: Play_MainMusic
       guid: 3863f02e376e7d4793ab5239510f6269
       id: 1346240278
@@ -292,6 +326,146 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.77952
       minDuration: 0.77952
+    - name: Play_UI_back
+      guid: 615bb138c8d6d042935ea0468bfcd9a8
+      id: 1386224142
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0c805e5342ae8e46a2592a06f996cd81
+      - ElementName: UI
+        ObjectType: 4
+        guid: 3f413e21eef4184bb66aeec60cc2b6dc
+      - ElementName: Play_UI_back
+        ObjectType: 3
+        guid: 615bb138c8d6d042935ea0468bfcd9a8
+      Path: Events\Default Work Unit\UI\Play_UI_back
+      maxAttenuation: 0
+      maxDuration: 0.225913
+      minDuration: 0.225913
+    - name: Play_UI_click_double
+      guid: 5bdb1f6266024d4b85b48731b7aece4c
+      id: 2977247607
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0c805e5342ae8e46a2592a06f996cd81
+      - ElementName: UI
+        ObjectType: 4
+        guid: 3f413e21eef4184bb66aeec60cc2b6dc
+      - ElementName: Play_UI_click_double
+        ObjectType: 3
+        guid: 5bdb1f6266024d4b85b48731b7aece4c
+      Path: Events\Default Work Unit\UI\Play_UI_click_double
+      maxAttenuation: 0
+      maxDuration: 0.208322
+      minDuration: 0.181769
+    - name: Play_UI_click_light
+      guid: e64b668599fc144dbd166a65e0f98bc9
+      id: 2480270868
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0c805e5342ae8e46a2592a06f996cd81
+      - ElementName: UI
+        ObjectType: 4
+        guid: 3f413e21eef4184bb66aeec60cc2b6dc
+      - ElementName: Play_UI_click_light
+        ObjectType: 3
+        guid: e64b668599fc144dbd166a65e0f98bc9
+      Path: Events\Default Work Unit\UI\Play_UI_click_light
+      maxAttenuation: 0
+      maxDuration: 0.150479
+      minDuration: 0.135198
+    - name: Play_UI_click_simple
+      guid: 6edb8d15cd422747936186e705e06ad1
+      id: 3761008630
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0c805e5342ae8e46a2592a06f996cd81
+      - ElementName: UI
+        ObjectType: 4
+        guid: 3f413e21eef4184bb66aeec60cc2b6dc
+      - ElementName: Play_UI_click_simple
+        ObjectType: 3
+        guid: 6edb8d15cd422747936186e705e06ad1
+      Path: Events\Default Work Unit\UI\Play_UI_click_simple
+      maxAttenuation: 0
+      maxDuration: 0.128639
+      minDuration: 0.128639
+    - name: Play_UI_click_soft
+      guid: 51f41fdcf5ae6d4b970f106d029aecd3
+      id: 520575376
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0c805e5342ae8e46a2592a06f996cd81
+      - ElementName: UI
+        ObjectType: 4
+        guid: 3f413e21eef4184bb66aeec60cc2b6dc
+      - ElementName: Play_UI_click_soft
+        ObjectType: 3
+        guid: 51f41fdcf5ae6d4b970f106d029aecd3
+      Path: Events\Default Work Unit\UI\Play_UI_click_soft
+      maxAttenuation: 0
+      maxDuration: 0.229161
+      minDuration: 0.187259
+    - name: Play_UI_hover
+      guid: 7a2dcee063ddd745ae58451bd1f7741c
+      id: 1339559671
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0c805e5342ae8e46a2592a06f996cd81
+      - ElementName: UI
+        ObjectType: 4
+        guid: 3f413e21eef4184bb66aeec60cc2b6dc
+      - ElementName: Play_UI_hover
+        ObjectType: 3
+        guid: 7a2dcee063ddd745ae58451bd1f7741c
+      Path: Events\Default Work Unit\UI\Play_UI_hover
+      maxAttenuation: 0
+      maxDuration: 0.019838
+      minDuration: 0.019838
+    - name: Play_UI_select
+      guid: 9a2a4fe6dcf7ab449885f9384aba6911
+      id: 3308548503
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0c805e5342ae8e46a2592a06f996cd81
+      - ElementName: UI
+        ObjectType: 4
+        guid: 3f413e21eef4184bb66aeec60cc2b6dc
+      - ElementName: Play_UI_select
+        ObjectType: 3
+        guid: 9a2a4fe6dcf7ab449885f9384aba6911
+      Path: Events\Default Work Unit\UI\Play_UI_select
+      maxAttenuation: 0
+      maxDuration: 0.237483
+      minDuration: 0.237483
     - name: Play_whoosh
       guid: 418c3f615e611e449d4c128b1bef1992
       id: 148817996
@@ -406,6 +580,23 @@ MonoBehaviour:
       maxAttenuation: 40
       maxDuration: 0.855362
       minDuration: 0.563327
+    - name: UI
+      guid: 3f413e21eef4184bb66aeec60cc2b6dc
+      id: 1551306167
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0c805e5342ae8e46a2592a06f996cd81
+      - ElementName: UI
+        ObjectType: 4
+        guid: 3f413e21eef4184bb66aeec60cc2b6dc
+      Path: Events\Default Work Unit\UI
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -690,7 +881,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 14a44e73130a8749998dfa4aa969a02a
     GuidInternal: 
-    m_lastTime: -8585438700327018073
+    m_lastTime: -8585436927649439091
     List:
     - name: Ambx
       guid: 1183356acf6f954fb14205b47b1d08b8
@@ -766,6 +957,65 @@ MonoBehaviour:
         guid: 1d9bbb2ca142554ca594853107098afc
       Path: Switches\Default Work Unit\AMBX
       values: []
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: building
+      guid: 79508aab4319af4785db7efd07cd90e9
+      id: 3339761385
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 14a44e73130a8749998dfa4aa969a02a
+      - ElementName: player
+        ObjectType: 4
+        guid: c01af3960a97274eb800299d8d9b1885
+      - ElementName: building
+        ObjectType: 11
+        guid: 79508aab4319af4785db7efd07cd90e9
+      Path: Switches\Default Work Unit\player\building
+      values:
+      - name: land
+        guid: ebe243584604cc41a6943ae045726b96
+        id: 674522502
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 14a44e73130a8749998dfa4aa969a02a
+        - ElementName: player
+          ObjectType: 4
+          guid: c01af3960a97274eb800299d8d9b1885
+        - ElementName: building
+          ObjectType: 11
+          guid: 79508aab4319af4785db7efd07cd90e9
+        - ElementName: land
+          ObjectType: 10
+          guid: ebe243584604cc41a6943ae045726b96
+      - name: water
+        guid: 87b97b5284a69e4b878de228813c8478
+        id: 2654748154
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 14a44e73130a8749998dfa4aa969a02a
+        - ElementName: player
+          ObjectType: 4
+          guid: c01af3960a97274eb800299d8d9b1885
+        - ElementName: building
+          ObjectType: 11
+          guid: 79508aab4319af4785db7efd07cd90e9
+        - ElementName: water
+          ObjectType: 10
+          guid: 87b97b5284a69e4b878de228813c8478
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
