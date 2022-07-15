@@ -120,6 +120,6 @@ public class PlacePierBridge : MonoBehaviour
         Spline.nodes[1].Position = testObj.transform.localPosition;
         Spline.nodes[0].Position = Vector3.zero;
 
-        //Controller.EndBuilding();
+        Controller.EndBuilding();
     }
 }

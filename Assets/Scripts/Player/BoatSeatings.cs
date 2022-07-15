@@ -16,6 +16,9 @@ public class BoatSeatings : MonoBehaviour
         person.SetParent(seatings[seatingsTaken].seat);
         person.localRotation = Quaternion.identity;
         person.localPosition = Vector3.zero;
+        Transform icebear = transform.GetChild(0).Find("Icebear");
+        person.LookAt(icebear.position);
+        person.localRotation = Quaternion.Euler(new Vector3(0,person.localRotation.eulerAngles.y, 0));
         seatingsTaken++;
     }
 
