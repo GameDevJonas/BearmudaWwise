@@ -9,7 +9,7 @@ using UnityEngine.Rendering;
 
 public class PlayerManager : MonoBehaviour
 {
-    public enum ActivePlayerState { GroundPlayer, BoatPlayer, VillageBuilder};
+    public enum ActivePlayerState { GroundPlayer, BoatPlayer, VillageBuilder, MainMenu };
     public static ActivePlayerState PlayerState;
 
     [SerializeField] private ActivePlayerState startingState;
@@ -17,6 +17,7 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private GroundPlayerVariables GroundPlayerVariables;
     [SerializeField] private BoatPlayerVariables BoatPlayerVariables;
     [SerializeField] private VillageBuilderVariables VillageBuilderVariables;
+    [SerializeField] private CinemachineVirtualCamera mainMenuCam;
 
     [SerializeField] private AK.Wwise.Event silenceIsland, normalIsland, boatCalm;
 
@@ -27,9 +28,19 @@ public class PlayerManager : MonoBehaviour
 
     private void Start()
     {
-        SwitchPlayerState(startingState);
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
+        if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex == 0)
+        {
+            Debug.Log("AY MENU TIME");
+            SwitchPlayerState(ActivePlayerState.MainMenu);
+        }
+        else
+        {
+            Debug.Log("AY GAME TIME");
+            SwitchPlayerState(startingState);
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+
         //Debug.Log(FindObjectOfType<Volume>().profile.components[2]);
     }
 
@@ -76,6 +87,8 @@ public class PlayerManager : MonoBehaviour
                 break;
             case ActivePlayerState.VillageBuilder:
                 TurnOnOffBuilderVariables(true);
+                break;
+            case ActivePlayerState.MainMenu:
                 break;
         }
     }
@@ -168,6 +181,36 @@ public class PlayerManager : MonoBehaviour
                 FindObjectOfType<Volume>().profile.components[2].active = true;
                 break;
         }
+    }
+
+    private void TurnOnOffMenuVariables(bool turnOn)
+    {
+        switch (turnOn)
+        {
+            case true:
+                TurnOnOffBoatVariables(false);
+                TurnOnOffGroundVariables(false);
+                TurnOnOffBuilderVariables(false);
+
+                mainMenuCam.Priority = 20;
+
+                AkSoundEngine.SetRTPCValue("RTPC_Ambx_Location", 2);
+                break;
+            case false:
+
+                //SwitchPlayerState(startingState);
+                mainMenuCam.Priority = 0;
+                mainMenuCam.gameObject.SetActive(turnOn);
+                Cursor.visible = false;
+                Cursor.lockState = CursorLockMode.Locked;
+                break;
+        }
+    }
+
+    public void PlayGame()
+    {
+        TurnOnOffMenuVariables(false);
+        SwitchPlayerState(ActivePlayerState.GroundPlayer);
     }
 }
 
