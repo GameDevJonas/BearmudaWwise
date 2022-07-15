@@ -20,7 +20,7 @@ public class LostPerson : MonoBehaviour
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
-        boatPlayer = FindObjectOfType<BoatController>().transform.GetChild(0).Find("Icebear");
+        boatPlayer = FindObjectOfType<BoatController>().transform.GetChild(0).Find("Icebear (1)");
         groundPlayer = FindObjectOfType<PlayerController>();
     }
 

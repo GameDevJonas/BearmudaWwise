@@ -9,7 +9,7 @@ using UnityEngine.Rendering;
 
 public class PlayerManager : MonoBehaviour
 {
-    public enum ActivePlayerState { GroundPlayer, BoatPlayer, VillageBuilder, MainMenu };
+    public enum ActivePlayerState { GroundPlayer, BoatPlayer, VillageBuilder, MainMenu, IcecreamStand };
     public static ActivePlayerState PlayerState;
 
     [SerializeField] private ActivePlayerState startingState;
@@ -17,7 +17,7 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private GroundPlayerVariables GroundPlayerVariables;
     [SerializeField] private BoatPlayerVariables BoatPlayerVariables;
     [SerializeField] private VillageBuilderVariables VillageBuilderVariables;
-    [SerializeField] private CinemachineVirtualCamera mainMenuCam;
+    [SerializeField] private CinemachineVirtualCamera mainMenuCam, icecreamStandCam;
 
     [SerializeField] private AK.Wwise.Event silenceIsland, normalIsland, boatCalm;
 
@@ -41,8 +41,6 @@ public class PlayerManager : MonoBehaviour
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
         }
-
-        //Debug.Log(FindObjectOfType<Volume>().profile.components[2]);
     }
 
     [ContextMenu("Change to boat")]
@@ -92,6 +90,9 @@ public class PlayerManager : MonoBehaviour
             case ActivePlayerState.MainMenu:
                 TurnOnOffMenuVariables(true);
                 break;
+            case ActivePlayerState.IcecreamStand:
+                TurnOnOffStandVariables(true);
+                break;
         }
     }
 
@@ -102,6 +103,7 @@ public class PlayerManager : MonoBehaviour
             case true:
                 TurnOnOffBoatVariables(false);
                 TurnOnOffBuilderVariables(false);
+                TurnOnOffStandVariables(false);
                 SwitchedToPlayer.Invoke();
 
                 AkSoundEngine.PostEvent(normalIsland.Id, gameObject);
@@ -111,6 +113,7 @@ public class PlayerManager : MonoBehaviour
                 PlayerState = ActivePlayerState.GroundPlayer;
                 //Debug.Log("Ground mode on");
 
+                GroundPlayerVariables.Controller.GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = turnOn;
                 GroundPlayerVariables.Controller.enabled = turnOn;
                 GroundPlayerVariables.Visuals.SetActive(turnOn);
                 GroundPlayerVariables.CinemachineFreeLook.Priority = 11;
@@ -203,6 +206,26 @@ public class PlayerManager : MonoBehaviour
                 mainMenuCam.gameObject.SetActive(turnOn);
                 Cursor.visible = false;
                 Cursor.lockState = CursorLockMode.Locked;
+                break;
+        }
+    }
+
+    private void TurnOnOffStandVariables(bool turnOn)
+    {
+        switch (turnOn)
+        {
+            case true:
+                TurnOnOffBoatVariables(false);
+                TurnOnOffGroundVariables(false);
+                TurnOnOffBuilderVariables(false);
+
+                icecreamStandCam.Priority = 20;
+                GroundPlayerVariables.Visuals.SetActive(turnOn);
+                GroundPlayerVariables.Controller.GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = !turnOn;
+                AkSoundEngine.SetRTPCValue("RTPC_Ambx_Location", 1);
+                break;
+            case false:
+                icecreamStandCam.Priority = 0;
                 break;
         }
     }

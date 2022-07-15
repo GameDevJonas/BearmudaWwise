@@ -1,5 +1,52 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2961953250859401623
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8877659919438662378}
+  - component: {fileID: 4290080825643516310}
+  m_Layer: 0
+  m_Name: LightingManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8877659919438662378
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2961953250859401623}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6411375815108906788}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4290080825643516310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2961953250859401623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63e52c75acb22c84c95af1a8e4093087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DirectionalLight: {fileID: 6411375814410962286}
+  Preset: {fileID: 0}
+  TimeOfDay: 1
 --- !u!1 &6411375814410962321
 GameObject:
   m_ObjectHideFlags: 0
@@ -31,7 +78,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6411375815108906788}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!108 &6411375814410962286
 Light:
@@ -145,6 +192,7 @@ Transform:
   m_Children:
   - {fileID: 6411375815379799436}
   - {fileID: 6411375815327900077}
+  - {fileID: 8877659919438662378}
   - {fileID: 6411375814410962287}
   - {fileID: 6411375815391081252}
   - {fileID: 6411375815919971393}
@@ -204,6 +252,26 @@ MonoBehaviour:
     BoatController: {fileID: 0}
     Visuals: {fileID: 0}
     CinemachineFreeLook: {fileID: 0}
+  VillageBuilderVariables:
+    BuilderController: {fileID: 0}
+    CinemachineVirtualCamera: {fileID: 0}
+  mainMenuCam: {fileID: 0}
+  icecreamStandCam: {fileID: 0}
+  silenceIsland:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 83e6c8976025f0b4686bbdee695f747f,
+      type: 2}
+  normalIsland:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: cee3491917ad45b4b82bd441f3883eac,
+      type: 2}
+  boatCalm:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: c1693d1aa748cf94099ec04165a43a35,
+      type: 2}
 --- !u!1 &6411375815379799439
 GameObject:
   m_ObjectHideFlags: 0
@@ -290,7 +358,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6411375815391081252}
-  - component: {fileID: 6411375815391081255}
   - component: {fileID: 6411375815391081254}
   m_Layer: 0
   m_Name: WwiseGlobal
@@ -312,34 +379,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6411375815108906788}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6411375815391081255
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6411375815391081257}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fc0a8a6d1776bc4c81820cca06f89ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InitializationSettings: {fileID: 11400000, guid: 3826607a816f54448a488e49f4577b3c,
-    type: 2}
-  basePath: 
-  language: 
-  defaultPoolSize: 0
-  lowerPoolSize: 0
-  streamingPoolSize: 0
-  memoryCutoffThreshold: 0
-  monitorPoolSize: 0
-  monitorQueuePoolSize: 0
-  callbackManagerBufferSize: 0
-  spatialAudioPoolSize: 0
-  maxSoundPropagationDepth: 0
-  engineLogging: 0
 --- !u!114 &6411375815391081254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -395,7 +436,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6411375815108906788}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 42.973, z: 0}
 --- !u!114 &6411375815919971422
 MonoBehaviour:
