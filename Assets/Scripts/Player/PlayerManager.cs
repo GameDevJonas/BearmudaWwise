@@ -36,6 +36,7 @@ public class PlayerManager : MonoBehaviour
         else
         {
             Debug.Log("AY GAME TIME");
+            TurnOnOffMenuVariables(false);
             SwitchPlayerState(startingState);
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;

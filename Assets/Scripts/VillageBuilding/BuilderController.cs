@@ -93,7 +93,8 @@ public class BuilderController : MonoBehaviour
 
     public void EndBuilding()
     {
-       Invoke("BuildNavMeshes", .5f); //Maybe do an async here
+        GetComponent<PostWwiseEvent>().PostEvent();
+        Invoke("BuildNavMeshes", .5f); //Maybe do an async here
     }
 
     private void ApplyMovement()
