@@ -200,7 +200,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Island" ID="{E4500F26-6821-4284-A405-3789EB02256A}" WorkUnitID="{C4C3D9E3-1E9F-4852-BBFB-F03D6FB1F425}"/>
+											<ObjectRef Name="Island_Start" ID="{AAC36981-C674-47BE-9312-8BD504AAC4EC}" WorkUnitID="{C4C3D9E3-1E9F-4852-BBFB-F03D6FB1F425}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -234,6 +234,81 @@
 										<Property Name="ActionType" Type="int16" Value="12"/>
 										<Property Name="FadeTime" Type="Real64" Value="3"/>
 										<Property Name="Volume" Type="Real64" Value="-96"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MainMusic" ID="{7AFD695C-C0A1-4911-B2AD-98C42284A794}" WorkUnitID="{70B10B43-D852-4931-8C87-75E9E3B8B76A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_Music_Building" ID="{52FECBDD-49A9-4E69-8E82-ECCAD05CDD0C}">
+							<ChildrenList>
+								<Action Name="" ID="{FC91FBD4-70F1-4002-94F6-E98DAA8009FE}" ShortID="805906782">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Building" ID="{1277E5ED-43D7-492F-9B96-6F12E5B5DCF7}" WorkUnitID="{C4C3D9E3-1E9F-4852-BBFB-F03D6FB1F425}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{C95377FF-6932-4940-BE78-634BAECD6A9F}" ShortID="259979914">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="12"/>
+										<Property Name="FadeTime" Type="Real64" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MainMusic" ID="{7AFD695C-C0A1-4911-B2AD-98C42284A794}" WorkUnitID="{70B10B43-D852-4931-8C87-75E9E3B8B76A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_Music_Island_Main" ID="{ECF86BCE-83B3-4BAE-9AD7-530ABF9A7D70}">
+							<ChildrenList>
+								<Action Name="" ID="{25F78D9F-D453-4AB5-9C73-6BD9B829774B}" ShortID="875884078">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Island_main" ID="{E4500F26-6821-4284-A405-3789EB02256A}" WorkUnitID="{C4C3D9E3-1E9F-4852-BBFB-F03D6FB1F425}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{CB5BF03E-2651-4A91-BF89-0EA33BB1B96F}" ShortID="24661890">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="12"/>
+										<Property Name="FadeTime" Type="Real64" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MainMusic" ID="{7AFD695C-C0A1-4911-B2AD-98C42284A794}" WorkUnitID="{70B10B43-D852-4931-8C87-75E9E3B8B76A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_Music_Island_Main_Full" ID="{7B10EC0B-4BCD-416B-A231-52445828AB9C}">
+							<ChildrenList>
+								<Action Name="" ID="{ED4EFF6C-DFED-444C-84B4-9793444E14D1}" ShortID="71430277">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Island_full" ID="{97B94636-9514-4716-A031-B42B3C2DD9A0}" WorkUnitID="{C4C3D9E3-1E9F-4852-BBFB-F03D6FB1F425}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{A9941C14-7552-48CA-8A9D-E2ABB89CBBA8}" ShortID="199892192">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="12"/>
+										<Property Name="FadeTime" Type="Real64" Value="3"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
