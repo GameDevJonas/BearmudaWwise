@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 5c7658dc4ef2494fa936123b11804268
     GuidInternal: 
-    m_lastTime: -8585444852607501547
+    m_lastTime: -8585436035627577765
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -54,6 +54,23 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+    - name: Music
+      guid: 0b18bd48c75f5f4a9f6edf9b3c8639f3
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5c7658dc4ef2494fa936123b11804268
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Music
+        ObjectType: 2
+        guid: 0b18bd48c75f5f4a9f6edf9b3c8639f3
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music
     - name: Reverb_Outside_Big
       guid: 00487f5499e3024cbb241a7431897b5f
       id: 1401104826
@@ -111,6 +128,23 @@ MonoBehaviour:
         ObjectType: 2
         guid: 8ccd4f2b5cbbb84aa9826b1f22e5071e
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs
+    - name: SFX
+      guid: 3b1027c3f28bb34ba0592f3e22cc6ba1
+      id: 393239870
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5c7658dc4ef2494fa936123b11804268
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFX
+        ObjectType: 2
+        guid: 3b1027c3f28bb34ba0592f3e22cc6ba1
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -151,7 +185,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 0c805e5342ae8e46a2592a06f996cd81
     GuidInternal: 
-    m_lastTime: -8585436243063351130
+    m_lastTime: -8585436043330892282
     List:
     - name: Music
       guid: 795092659da84f4bb56035e4e6292e41
@@ -540,6 +574,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Set_Music_Building
+      guid: ddcbfe52a949694e8e82eccad05cdd0c
+      id: 3814408302
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0c805e5342ae8e46a2592a06f996cd81
+      - ElementName: Music
+        ObjectType: 4
+        guid: 795092659da84f4bb56035e4e6292e41
+      - ElementName: Set_Music_Building
+        ObjectType: 3
+        guid: ddcbfe52a949694e8e82eccad05cdd0c
+      Path: Events\Default Work Unit\Music\Set_Music_Building
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Set_Music_Island
       guid: af9940d57edc724cb91fb54b125eca01
       id: 1375079833
@@ -557,6 +611,46 @@ MonoBehaviour:
         ObjectType: 3
         guid: af9940d57edc724cb91fb54b125eca01
       Path: Events\Default Work Unit\Music\Set_Music_Island
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Set_Music_Island_Main
+      guid: ce6bf8ecb383ae4b9ad7530abf9a7d70
+      id: 323401795
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0c805e5342ae8e46a2592a06f996cd81
+      - ElementName: Music
+        ObjectType: 4
+        guid: 795092659da84f4bb56035e4e6292e41
+      - ElementName: Set_Music_Island_Main
+        ObjectType: 3
+        guid: ce6bf8ecb383ae4b9ad7530abf9a7d70
+      Path: Events\Default Work Unit\Music\Set_Music_Island_Main
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Set_Music_Island_Main_Full
+      guid: 0bec107bcd4b6b41a23152445828ab9c
+      id: 1036953801
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0c805e5342ae8e46a2592a06f996cd81
+      - ElementName: Music
+        ObjectType: 4
+        guid: 795092659da84f4bb56035e4e6292e41
+      - ElementName: Set_Music_Island_Main_Full
+        ObjectType: 3
+        guid: 0bec107bcd4b6b41a23152445828ab9c
+      Path: Events\Default Work Unit\Music\Set_Music_Island_Main_Full
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -626,7 +720,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: bebc14d169db4749b9659e409e25ab92
     GuidInternal: 
-    m_lastTime: -8585436247781931874
+    m_lastTime: -8585436035627877742
     List:
     - name: AMBX
       guid: 66bdc9e24f23ef488af7fc536b65dda0
@@ -642,6 +736,20 @@ MonoBehaviour:
         ObjectType: 4
         guid: 66bdc9e24f23ef488af7fc536b65dda0
       Path: Game Parameters\Default Work Unit\AMBX
+    - name: Audio_Levels
+      guid: b5b618432d63e94b982f5084d3481c84
+      id: 2100683649
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bebc14d169db4749b9659e409e25ab92
+      - ElementName: Audio_Levels
+        ObjectType: 4
+        guid: b5b618432d63e94b982f5084d3481c84
+      Path: Game Parameters\Default Work Unit\Audio_Levels
     - name: boat
       guid: 75ace609abbe2442956d9ef281ac40c8
       id: 1795056175
@@ -721,6 +829,40 @@ MonoBehaviour:
         ObjectType: 13
         guid: 756e9897569a9446a2afbad3b4683264
       Path: Game Parameters\Default Work Unit\boat\RTPC_Boat_Speed
+    - name: RTPC_Level_Music
+      guid: 728139854c8b0949b5a4c2cf68875616
+      id: 1507880879
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bebc14d169db4749b9659e409e25ab92
+      - ElementName: Audio_Levels
+        ObjectType: 4
+        guid: b5b618432d63e94b982f5084d3481c84
+      - ElementName: RTPC_Level_Music
+        ObjectType: 13
+        guid: 728139854c8b0949b5a4c2cf68875616
+      Path: Game Parameters\Default Work Unit\Audio_Levels\RTPC_Level_Music
+    - name: RTPC_Level_SFX
+      guid: b7b7198972f4924099407f643d461119
+      id: 1265773779
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bebc14d169db4749b9659e409e25ab92
+      - ElementName: Audio_Levels
+        ObjectType: 4
+        guid: b5b618432d63e94b982f5084d3481c84
+      - ElementName: RTPC_Level_SFX
+        ObjectType: 13
+        guid: b7b7198972f4924099407f643d461119
+      Path: Game Parameters\Default Work Unit\Audio_Levels\RTPC_Level_SFX
     - name: RTPC_Player_Footsteps
       guid: 48ab2b5908341a4ebb77daaaec7194bf
       id: 103953880
@@ -767,7 +909,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: e3d9c3c49f1e5248bbfbf03d6fb1f425
     GuidInternal: 
-    m_lastTime: -8585439006852408946
+    m_lastTime: -8585436043330982334
     List:
     - name: Music
       guid: 1ef5a8e310074b40b8f080844b98317a
@@ -843,9 +985,9 @@ MonoBehaviour:
         - ElementName: Boat_Calm
           ObjectType: 8
           guid: c742f77ac46f9840841392c64c2a2e12
-      - name: Island
-        guid: 260f50e421688442a4053789eb02256a
-        id: 3199546890
+      - name: Building
+        guid: ede57712d7432f499b966f12e5b5dcf7
+        id: 3339761385
         PathAndIcons:
         - ElementName: States
           ObjectType: 5
@@ -859,9 +1001,66 @@ MonoBehaviour:
         - ElementName: Music
           ObjectType: 9
           guid: aeb73a3ffe24ca4c977ed3f58079b5e8
-        - ElementName: Island
+        - ElementName: Building
+          ObjectType: 8
+          guid: ede57712d7432f499b966f12e5b5dcf7
+      - name: Island_full
+        guid: 3646b99714951647a031b42b3c2dd9a0
+        id: 2298941290
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: e3d9c3c49f1e5248bbfbf03d6fb1f425
+        - ElementName: Music
+          ObjectType: 4
+          guid: 1ef5a8e310074b40b8f080844b98317a
+        - ElementName: Music
+          ObjectType: 9
+          guid: aeb73a3ffe24ca4c977ed3f58079b5e8
+        - ElementName: Island_full
+          ObjectType: 8
+          guid: 3646b99714951647a031b42b3c2dd9a0
+      - name: Island_main
+        guid: 260f50e421688442a4053789eb02256a
+        id: 1433199062
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: e3d9c3c49f1e5248bbfbf03d6fb1f425
+        - ElementName: Music
+          ObjectType: 4
+          guid: 1ef5a8e310074b40b8f080844b98317a
+        - ElementName: Music
+          ObjectType: 9
+          guid: aeb73a3ffe24ca4c977ed3f58079b5e8
+        - ElementName: Island_main
           ObjectType: 8
           guid: 260f50e421688442a4053789eb02256a
+      - name: Island_Start
+        guid: 8169c3aa74c6be4793128bd504aac4ec
+        id: 3132664923
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: e3d9c3c49f1e5248bbfbf03d6fb1f425
+        - ElementName: Music
+          ObjectType: 4
+          guid: 1ef5a8e310074b40b8f080844b98317a
+        - ElementName: Music
+          ObjectType: 9
+          guid: aeb73a3ffe24ca4c977ed3f58079b5e8
+        - ElementName: Island_Start
+          ObjectType: 8
+          guid: 8169c3aa74c6be4793128bd504aac4ec
       - name: None
         guid: 8061a200796701449e51797874b6c869
         id: 748895195
@@ -1222,7 +1421,7 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585444872410839284
     List: []
-  ExpandedFileSystemItemIds: 010000000200000003000000
+  ExpandedFileSystemItemIds: 01000000020000000300000004000000
   ExpandedWaapiItemIds: 0200000003000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
