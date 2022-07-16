@@ -607,6 +607,149 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""UI"",
+            ""id"": ""5033081c-fa28-4e97-85a3-b5bf8e058a3f"",
+            ""actions"": [
+                {
+                    ""name"": ""PauseButton"",
+                    ""type"": ""Button"",
+                    ""id"": ""396e596c-a7ff-49e5-810a-fb3019f39c2a"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Navigate"",
+                    ""type"": ""Value"",
+                    ""id"": ""13e2ab1a-b247-406f-adac-8c129074beed"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Adjust"",
+                    ""type"": ""Value"",
+                    ""id"": ""22cd14e5-aaa0-4a9b-b2a8-20f425f9a1e5"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Submit"",
+                    ""type"": ""Button"",
+                    ""id"": ""b8d55457-4e51-405f-a4ec-3ee82458bdcc"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""03a45eb0-db47-411d-bdb2-c9ce675aa250"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""PauseButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b8293a4e-bd5d-4e42-ac5b-9edf2b5ac278"",
+                    ""path"": ""<Gamepad>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""PauseButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""1D Axis"",
+                    ""id"": ""7ddf461a-6bb4-4998-be40-50a880f3b04a"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Navigate"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""5b170e6b-6c0e-4c7f-8d06-2073addf903f"",
+                    ""path"": ""<Gamepad>/leftStick/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Navigate"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""37506a52-9894-4702-a348-8c22c90fb956"",
+                    ""path"": ""<Gamepad>/leftStick/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Navigate"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""1D Axis"",
+                    ""id"": ""bdc98532-f912-40ca-a5a1-99343e5ccda0"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Adjust"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""12a902ec-ce9b-4481-b426-0b80a146c6c9"",
+                    ""path"": ""<Gamepad>/leftStick/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Adjust"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""b5ca03d9-6af7-4ee1-b70c-3cfb07ccf48f"",
+                    ""path"": ""<Gamepad>/leftStick/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Adjust"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3dbbeb17-48d0-4a51-a10b-62fc4614dd74"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Submit"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": [
@@ -656,6 +799,12 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
         m_VillagePlacement_Rotate = m_VillagePlacement.FindAction("Rotate", throwIfNotFound: true);
         m_VillagePlacement_Confirm = m_VillagePlacement.FindAction("Confirm", throwIfNotFound: true);
         m_VillagePlacement_Cancel = m_VillagePlacement.FindAction("Cancel", throwIfNotFound: true);
+        // UI
+        m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
+        m_UI_PauseButton = m_UI.FindAction("PauseButton", throwIfNotFound: true);
+        m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
+        m_UI_Adjust = m_UI.FindAction("Adjust", throwIfNotFound: true);
+        m_UI_Submit = m_UI.FindAction("Submit", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -874,6 +1023,63 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
         }
     }
     public VillagePlacementActions @VillagePlacement => new VillagePlacementActions(this);
+
+    // UI
+    private readonly InputActionMap m_UI;
+    private IUIActions m_UIActionsCallbackInterface;
+    private readonly InputAction m_UI_PauseButton;
+    private readonly InputAction m_UI_Navigate;
+    private readonly InputAction m_UI_Adjust;
+    private readonly InputAction m_UI_Submit;
+    public struct UIActions
+    {
+        private @PlayerInputs m_Wrapper;
+        public UIActions(@PlayerInputs wrapper) { m_Wrapper = wrapper; }
+        public InputAction @PauseButton => m_Wrapper.m_UI_PauseButton;
+        public InputAction @Navigate => m_Wrapper.m_UI_Navigate;
+        public InputAction @Adjust => m_Wrapper.m_UI_Adjust;
+        public InputAction @Submit => m_Wrapper.m_UI_Submit;
+        public InputActionMap Get() { return m_Wrapper.m_UI; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(UIActions set) { return set.Get(); }
+        public void SetCallbacks(IUIActions instance)
+        {
+            if (m_Wrapper.m_UIActionsCallbackInterface != null)
+            {
+                @PauseButton.started -= m_Wrapper.m_UIActionsCallbackInterface.OnPauseButton;
+                @PauseButton.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnPauseButton;
+                @PauseButton.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnPauseButton;
+                @Navigate.started -= m_Wrapper.m_UIActionsCallbackInterface.OnNavigate;
+                @Navigate.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnNavigate;
+                @Navigate.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnNavigate;
+                @Adjust.started -= m_Wrapper.m_UIActionsCallbackInterface.OnAdjust;
+                @Adjust.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnAdjust;
+                @Adjust.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnAdjust;
+                @Submit.started -= m_Wrapper.m_UIActionsCallbackInterface.OnSubmit;
+                @Submit.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnSubmit;
+                @Submit.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnSubmit;
+            }
+            m_Wrapper.m_UIActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @PauseButton.started += instance.OnPauseButton;
+                @PauseButton.performed += instance.OnPauseButton;
+                @PauseButton.canceled += instance.OnPauseButton;
+                @Navigate.started += instance.OnNavigate;
+                @Navigate.performed += instance.OnNavigate;
+                @Navigate.canceled += instance.OnNavigate;
+                @Adjust.started += instance.OnAdjust;
+                @Adjust.performed += instance.OnAdjust;
+                @Adjust.canceled += instance.OnAdjust;
+                @Submit.started += instance.OnSubmit;
+                @Submit.performed += instance.OnSubmit;
+                @Submit.canceled += instance.OnSubmit;
+            }
+        }
+    }
+    public UIActions @UI => new UIActions(this);
     private int m_GamepadSchemeIndex = -1;
     public InputControlScheme GamepadScheme
     {
@@ -911,5 +1117,12 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
         void OnRotate(InputAction.CallbackContext context);
         void OnConfirm(InputAction.CallbackContext context);
         void OnCancel(InputAction.CallbackContext context);
+    }
+    public interface IUIActions
+    {
+        void OnPauseButton(InputAction.CallbackContext context);
+        void OnNavigate(InputAction.CallbackContext context);
+        void OnAdjust(InputAction.CallbackContext context);
+        void OnSubmit(InputAction.CallbackContext context);
     }
 }

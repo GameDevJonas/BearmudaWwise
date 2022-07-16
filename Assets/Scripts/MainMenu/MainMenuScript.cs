@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MainMenuScript : MonoBehaviour
 {
@@ -31,6 +32,12 @@ public class MainMenuScript : MonoBehaviour
         {
             yield return null;
         }
+        yield return new WaitForSeconds(1f);
+        while (blackOverlay.GetComponent<CanvasGroup>().alpha > 0)
+        {
+            blackOverlay.GetComponent<CanvasGroup>().alpha -= .1f;
+            yield return null;
+        }
         blackOverlay.SetActive(false);
     }
 
@@ -39,5 +46,10 @@ public class MainMenuScript : MonoBehaviour
     {
         FindObjectOfType<PlayerManager>().PlayGame();
         SceneManager.UnloadSceneAsync(0);
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }

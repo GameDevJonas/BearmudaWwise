@@ -260,6 +260,9 @@ public class BoatController : MonoBehaviour
         startAccelValue = movementSpeed;
         accelTimer = 0;
         maxSpeed = maxNormalSpeed;
-
+        movementSpeed = 0;
+        AkSoundEngine.PostEvent("Set_Music_Boat_Calm", gameObject);
+        AkSoundEngine.SetRTPCValue("RTPC_Boat_Speed", movementSpeed);
+        anim.SetFloat("BoatSpeed", movementSpeed);
     }
 }

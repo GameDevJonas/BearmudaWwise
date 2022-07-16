@@ -38,8 +38,6 @@ public class PlayerManager : MonoBehaviour
             Debug.Log("AY GAME TIME");
             TurnOnOffMenuVariables(false);
             SwitchPlayerState(startingState);
-            Cursor.visible = false;
-            Cursor.lockState = CursorLockMode.Locked;
         }
     }
 
@@ -204,8 +202,6 @@ public class PlayerManager : MonoBehaviour
             case false:
                 mainMenuCam.Priority = 0;
                 mainMenuCam.gameObject.SetActive(turnOn);
-                Cursor.visible = false;
-                Cursor.lockState = CursorLockMode.Locked;
                 break;
         }
     }

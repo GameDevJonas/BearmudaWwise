@@ -20,6 +20,7 @@ public class LostPerson : MonoBehaviour
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
+        agent.enabled = false;
         boatPlayer = FindObjectOfType<BoatController>().transform.GetChild(0).Find("Icebear (1)");
         groundPlayer = FindObjectOfType<PlayerController>();
     }
@@ -52,10 +53,16 @@ public class LostPerson : MonoBehaviour
     public void ArriveOnLand(Vector3 newPosition)
     {
         inWater = false;
-        canMove = true;
         GetComponent<Rigidbody>().isKinematic = false;
         agent.enabled = true;
         agent.Warp(newPosition);
+        canMove = true;
+    }
+
+    [ContextMenu("Test warp")]
+    public void WarpHere()
+    {
+        agent.Warp(transform.position);
     }
 
     public void SetNewTarget(Transform newTarget)

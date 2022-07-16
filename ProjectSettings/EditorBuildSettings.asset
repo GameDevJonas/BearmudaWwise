@@ -11,7 +11,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DemoScene_art.unity
     guid: db38c8436c60e4b43bae5c28c7a026b7
-  - enabled: 0
-    path: Assets/Scenes/VillagePlacementPrototype.unity
-    guid: 069b7b666b63e654ab92b123bf87da06
   m_configObjects: {}
