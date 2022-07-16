@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="898277781">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2586854869">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -20,7 +20,7 @@
 				<AuxBus Id="2636462861" Name="Reverb_Outside_Small" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs\Reverb_Outside_Small"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="2880737896" Language="SFX" Hash="608043910">
+		<SoundBank Id="2880737896" Language="SFX" Hash="1719381597">
 			<ObjectPath>\SoundBanks\Default Work Unit\MainBank</ObjectPath>
 			<ShortName>MainBank</ShortName>
 			<Path>MainBank.bnk</Path>
@@ -272,51 +272,31 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3287383742" Name="Play_build_bridge" ObjectPath="\Events\Default Work Unit\Play_build_bridge" DurationType="OneShot" DurationMin="1.020839" DurationMax="1.25">
+				<Event Id="3287383742" Name="Play_build_bridge" ObjectPath="\Events\Default Work Unit\Play_build_bridge" DurationType="OneShot" DurationMin="1.374989" DurationMax="1.760408">
 					<IncludedMemoryFiles>
-						<File Id="20445697" Language="SFX">
-							<ShortName>sfx_build_bridge_water_03.wav</ShortName>
-							<Path>SFX\sfx_build_bridge_water_03_10C4C929.wem</Path>
+						<File Id="17672498" Language="SFX">
+							<ShortName>sfx_build_house_03.wav</ShortName>
+							<Path>SFX\sfx_build_house_03_10C4C929.wem</Path>
 						</File>
-						<File Id="115031779" Language="SFX">
-							<ShortName>sfx_build_bridge_main_05.wav</ShortName>
-							<Path>SFX\sfx_build_bridge_main_05_10C4C929.wem</Path>
+						<File Id="24823109" Language="SFX">
+							<ShortName>sfx_build_house_02.wav</ShortName>
+							<Path>SFX\sfx_build_house_02_10C4C929.wem</Path>
 						</File>
-						<File Id="115309235" Language="SFX">
-							<ShortName>sfx_build_bridge_main_02.wav</ShortName>
-							<Path>SFX\sfx_build_bridge_main_02_10C4C929.wem</Path>
+						<File Id="199491182" Language="SFX">
+							<ShortName>sfx_build_house_04.wav</ShortName>
+							<Path>SFX\sfx_build_house_04_10C4C929.wem</Path>
 						</File>
-						<File Id="154785725" Language="SFX">
-							<ShortName>sfx_build_bridge_water_01.wav</ShortName>
-							<Path>SFX\sfx_build_bridge_water_01_10C4C929.wem</Path>
+						<File Id="311070472" Language="SFX">
+							<ShortName>sfx_build_house_05.wav</ShortName>
+							<Path>SFX\sfx_build_house_05_10C4C929.wem</Path>
 						</File>
-						<File Id="437207839" Language="SFX">
-							<ShortName>sfx_build_bridge_water_02.wav</ShortName>
-							<Path>SFX\sfx_build_bridge_water_02_10C4C929.wem</Path>
-						</File>
-						<File Id="503131630" Language="SFX">
-							<ShortName>sfx_build_bridge_main_01.wav</ShortName>
-							<Path>SFX\sfx_build_bridge_main_01_10C4C929.wem</Path>
-						</File>
-						<File Id="595308250" Language="SFX">
-							<ShortName>sfx_build_bridge_main_03.wav</ShortName>
-							<Path>SFX\sfx_build_bridge_main_03_10C4C929.wem</Path>
-						</File>
-						<File Id="715802250" Language="SFX">
-							<ShortName>sfx_build_bridge_water_04.wav</ShortName>
-							<Path>SFX\sfx_build_bridge_water_04_10C4C929.wem</Path>
-						</File>
-						<File Id="869399585" Language="SFX">
-							<ShortName>sfx_build_bridge_water_05.wav</ShortName>
-							<Path>SFX\sfx_build_bridge_water_05_10C4C929.wem</Path>
-						</File>
-						<File Id="1036626137" Language="SFX">
-							<ShortName>sfx_build_bridge_main_04.wav</ShortName>
-							<Path>SFX\sfx_build_bridge_main_04_10C4C929.wem</Path>
+						<File Id="579978304" Language="SFX">
+							<ShortName>sfx_build_house_01.wav</ShortName>
+							<Path>SFX\sfx_build_house_01_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3115138860" Name="Play_coins" ObjectPath="\Events\Default Work Unit\Play_coins" DurationType="OneShot" DurationMin="0.841655" DurationMax="1.55">
+				<Event Id="3115138860" Name="Play_coins" ObjectPath="\Events\Default Work Unit\Play_coins" MaxAttenuation="40." DurationType="OneShot" DurationMin="0.841655" DurationMax="1.55">
 					<IncludedMemoryFiles>
 						<File Id="63857153" Language="SFX">
 							<ShortName>sfx_coin_flip_06.wav</ShortName>
@@ -368,6 +348,49 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="3134393685" Name="Play_lick_icecream" ObjectPath="\Events\Default Work Unit\Play_lick_icecream" MaxAttenuation="40." DurationType="OneShot" DurationMin="0.351043" DurationMax="0.459773">
+					<IncludedMemoryFiles>
+						<File Id="144974211" Language="SFX">
+							<ShortName>sfx_people_lick_09.wav</ShortName>
+							<Path>SFX\sfx_people_lick_09_10C4C929.wem</Path>
+						</File>
+						<File Id="404760537" Language="SFX">
+							<ShortName>sfx_people_lick_05.wav</ShortName>
+							<Path>SFX\sfx_people_lick_05_10C4C929.wem</Path>
+						</File>
+						<File Id="436431992" Language="SFX">
+							<ShortName>sfx_people_lick_07.wav</ShortName>
+							<Path>SFX\sfx_people_lick_07_10C4C929.wem</Path>
+						</File>
+						<File Id="709490770" Language="SFX">
+							<ShortName>sfx_people_lick_06.wav</ShortName>
+							<Path>SFX\sfx_people_lick_06_10C4C929.wem</Path>
+						</File>
+						<File Id="711747721" Language="SFX">
+							<ShortName>sfx_people_lick_02.wav</ShortName>
+							<Path>SFX\sfx_people_lick_02_10C4C929.wem</Path>
+						</File>
+						<File Id="976742057" Language="SFX">
+							<ShortName>sfx_people_lick_03.wav</ShortName>
+							<Path>SFX\sfx_people_lick_03_10C4C929.wem</Path>
+						</File>
+						<File Id="981845064" Language="SFX">
+							<ShortName>sfx_people_lick_08.wav</ShortName>
+							<Path>SFX\sfx_people_lick_08_10C4C929.wem</Path>
+						</File>
+						<File Id="983641631" Language="SFX">
+							<ShortName>sfx_people_lick_01.wav</ShortName>
+							<Path>SFX\sfx_people_lick_01_10C4C929.wem</Path>
+						</File>
+						<File Id="1006228724" Language="SFX">
+							<ShortName>sfx_people_lick_04.wav</ShortName>
+							<Path>SFX\sfx_people_lick_04_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="2636462861" Name="Reverb_Outside_Small" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs\Reverb_Outside_Small"/>
+					</AuxBusSends>
+				</Event>
 				<Event Id="1346240278" Name="Play_MainMusic" ObjectPath="\Events\Default Work Unit\Music\Play_MainMusic" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="1041701678" Language="SFX">
@@ -401,11 +424,35 @@
 						<ActionSetStateEntry Id="3041563226" Name="Silence" ObjectPath="\States\Default Work Unit\Music\Music\Silence"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="1724675634" Name="Play_Player_Footstep" ObjectPath="\Events\Default Work Unit\Play_Player_Footstep" DurationType="OneShot" DurationMin="0.232222" DurationMax="0.500839">
+				<Event Id="1724675634" Name="Play_Player_Footstep" ObjectPath="\Events\Default Work Unit\Play_Player_Footstep" DurationType="OneShot" DurationMin="0.177234" DurationMax="0.500839">
 					<IncludedMemoryFiles>
+						<File Id="59257449" Language="SFX">
+							<ShortName>sfx_player_fts_grass_run_03.wav</ShortName>
+							<Path>SFX\sfx_player_fts_grass_run_03_10C4C929.wem</Path>
+						</File>
+						<File Id="75060220" Language="SFX">
+							<ShortName>sfx_player_fts_sand_run_03.wav</ShortName>
+							<Path>SFX\sfx_player_fts_sand_run_03_10C4C929.wem</Path>
+						</File>
 						<File Id="86936168" Language="SFX">
 							<ShortName>sfx_player_fts_wood_04.wav</ShortName>
 							<Path>SFX\sfx_player_fts_wood_04_10C4C929.wem</Path>
+						</File>
+						<File Id="115188813" Language="SFX">
+							<ShortName>sfx_player_fts_sand_run_04.wav</ShortName>
+							<Path>SFX\sfx_player_fts_sand_run_04_10C4C929.wem</Path>
+						</File>
+						<File Id="121925699" Language="SFX">
+							<ShortName>sfx_player_fts_grass_run_01.wav</ShortName>
+							<Path>SFX\sfx_player_fts_grass_run_01_10C4C929.wem</Path>
+						</File>
+						<File Id="144495081" Language="SFX">
+							<ShortName>sfx_player_fts_wood_run_02.wav</ShortName>
+							<Path>SFX\sfx_player_fts_wood_run_02_10C4C929.wem</Path>
+						</File>
+						<File Id="158629373" Language="SFX">
+							<ShortName>sfx_player_fts_sand_run_02.wav</ShortName>
+							<Path>SFX\sfx_player_fts_sand_run_02_10C4C929.wem</Path>
 						</File>
 						<File Id="196119321" Language="SFX">
 							<ShortName>sfx_player_fts_grass_04.wav</ShortName>
@@ -414,6 +461,18 @@
 						<File Id="216717300" Language="SFX">
 							<ShortName>sfx_player_fts_sand_03.wav</ShortName>
 							<Path>SFX\sfx_player_fts_sand_03_10C4C929.wem</Path>
+						</File>
+						<File Id="256507939" Language="SFX">
+							<ShortName>sfx_player_fts_wood_run_01.wav</ShortName>
+							<Path>SFX\sfx_player_fts_wood_run_01_10C4C929.wem</Path>
+						</File>
+						<File Id="286813788" Language="SFX">
+							<ShortName>sfx_player_fts_sand_run_01.wav</ShortName>
+							<Path>SFX\sfx_player_fts_sand_run_01_10C4C929.wem</Path>
+						</File>
+						<File Id="294929716" Language="SFX">
+							<ShortName>sfx_player_fts_wood_run_04.wav</ShortName>
+							<Path>SFX\sfx_player_fts_wood_run_04_10C4C929.wem</Path>
 						</File>
 						<File Id="337945395" Language="SFX">
 							<ShortName>sfx_player_fts_wood_05.wav</ShortName>
@@ -427,6 +486,10 @@
 							<ShortName>sfx_player_fts_grass_02.wav</ShortName>
 							<Path>SFX\sfx_player_fts_grass_02_10C4C929.wem</Path>
 						</File>
+						<File Id="428110081" Language="SFX">
+							<ShortName>sfx_player_fts_sand_run_05.wav</ShortName>
+							<Path>SFX\sfx_player_fts_sand_run_05_10C4C929.wem</Path>
+						</File>
 						<File Id="458018787" Language="SFX">
 							<ShortName>sfx_player_fts_grass_03.wav</ShortName>
 							<Path>SFX\sfx_player_fts_grass_03_10C4C929.wem</Path>
@@ -439,6 +502,10 @@
 							<ShortName>sfx_player_fts_wood_02.wav</ShortName>
 							<Path>SFX\sfx_player_fts_wood_02_10C4C929.wem</Path>
 						</File>
+						<File Id="568132926" Language="SFX">
+							<ShortName>sfx_player_fts_grass_run_05.wav</ShortName>
+							<Path>SFX\sfx_player_fts_grass_run_05_10C4C929.wem</Path>
+						</File>
 						<File Id="592955165" Language="SFX">
 							<ShortName>sfx_player_fts_sand_02.wav</ShortName>
 							<Path>SFX\sfx_player_fts_sand_02_10C4C929.wem</Path>
@@ -447,13 +514,29 @@
 							<ShortName>sfx_player_fts_grass_06.wav</ShortName>
 							<Path>SFX\sfx_player_fts_grass_06_10C4C929.wem</Path>
 						</File>
+						<File Id="636861809" Language="SFX">
+							<ShortName>sfx_player_fts_grass_run_04.wav</ShortName>
+							<Path>SFX\sfx_player_fts_grass_run_04_10C4C929.wem</Path>
+						</File>
 						<File Id="750065658" Language="SFX">
 							<ShortName>sfx_player_fts_sand_04.wav</ShortName>
 							<Path>SFX\sfx_player_fts_sand_04_10C4C929.wem</Path>
 						</File>
+						<File Id="765015555" Language="SFX">
+							<ShortName>sfx_player_fts_wood_run_03.wav</ShortName>
+							<Path>SFX\sfx_player_fts_wood_run_03_10C4C929.wem</Path>
+						</File>
+						<File Id="781808915" Language="SFX">
+							<ShortName>sfx_player_fts_wood_run_06.wav</ShortName>
+							<Path>SFX\sfx_player_fts_wood_run_06_10C4C929.wem</Path>
+						</File>
 						<File Id="843426940" Language="SFX">
 							<ShortName>sfx_player_fts_grass_01.wav</ShortName>
 							<Path>SFX\sfx_player_fts_grass_01_10C4C929.wem</Path>
+						</File>
+						<File Id="901282434" Language="SFX">
+							<ShortName>sfx_player_fts_wood_run_05.wav</ShortName>
+							<Path>SFX\sfx_player_fts_wood_run_05_10C4C929.wem</Path>
 						</File>
 						<File Id="968215707" Language="SFX">
 							<ShortName>sfx_player_fts_sand_01.wav</ShortName>
@@ -467,41 +550,88 @@
 							<ShortName>sfx_player_fts_grass_05.wav</ShortName>
 							<Path>SFX\sfx_player_fts_grass_05_10C4C929.wem</Path>
 						</File>
+						<File Id="1008082816" Language="SFX">
+							<ShortName>sfx_player_fts_grass_run_06.wav</ShortName>
+							<Path>SFX\sfx_player_fts_grass_run_06_10C4C929.wem</Path>
+						</File>
 						<File Id="1025550419" Language="SFX">
 							<ShortName>sfx_player_fts_wood_01.wav</ShortName>
 							<Path>SFX\sfx_player_fts_wood_01_10C4C929.wem</Path>
 						</File>
+						<File Id="1053262215" Language="SFX">
+							<ShortName>sfx_player_fts_grass_run_02.wav</ShortName>
+							<Path>SFX\sfx_player_fts_grass_run_02_10C4C929.wem</Path>
+						</File>
 					</IncludedMemoryFiles>
-					<DefaultSwitchValue>{876FA16C-90F1-4633-BE1D-63BE19A4DBF5}</DefaultSwitchValue>
+					<DefaultSwitchValue>{F0B5C8A3-0D92-4FEC-8976-8CA579A6FBA4}</DefaultSwitchValue>
 					<SwitchContainers>
-						<SwitchContainer SwitchValue="{876FA16C-90F1-4633-BE1D-63BE19A4DBF5}">
-							<Media>
-								<File Id="216717300"/>
-								<File Id="341993209"/>
-								<File Id="592955165"/>
-								<File Id="750065658"/>
-								<File Id="968215707"/>
-							</Media>
+						<SwitchContainer SwitchValue="{179B605B-8016-4D92-B058-53FF32E83E99}">
+							<DefaultSwitchValue>{876FA16C-90F1-4633-BE1D-63BE19A4DBF5}</DefaultSwitchValue>
+							<Children>
+								<SwitchContainer SwitchValue="{876FA16C-90F1-4633-BE1D-63BE19A4DBF5}">
+									<Media>
+										<File Id="75060220"/>
+										<File Id="115188813"/>
+										<File Id="158629373"/>
+										<File Id="286813788"/>
+										<File Id="428110081"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{F9BF6270-09AC-4AC2-BA00-E96D7E381E69}">
+									<Media>
+										<File Id="144495081"/>
+										<File Id="256507939"/>
+										<File Id="294929716"/>
+										<File Id="765015555"/>
+										<File Id="781808915"/>
+										<File Id="901282434"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{C83A6289-F4EA-451E-8D82-739A22576C55}">
+									<Media>
+										<File Id="59257449"/>
+										<File Id="121925699"/>
+										<File Id="568132926"/>
+										<File Id="636861809"/>
+										<File Id="1008082816"/>
+										<File Id="1053262215"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
 						</SwitchContainer>
-						<SwitchContainer SwitchValue="{F9BF6270-09AC-4AC2-BA00-E96D7E381E69}">
-							<Media>
-								<File Id="86936168"/>
-								<File Id="337945395"/>
-								<File Id="470861783"/>
-								<File Id="523984763"/>
-								<File Id="983213203"/>
-								<File Id="1025550419"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{C83A6289-F4EA-451E-8D82-739A22576C55}">
-							<Media>
-								<File Id="196119321"/>
-								<File Id="348220899"/>
-								<File Id="458018787"/>
-								<File Id="595275068"/>
-								<File Id="843426940"/>
-								<File Id="1007438298"/>
-							</Media>
+						<SwitchContainer SwitchValue="{F0B5C8A3-0D92-4FEC-8976-8CA579A6FBA4}">
+							<DefaultSwitchValue>{876FA16C-90F1-4633-BE1D-63BE19A4DBF5}</DefaultSwitchValue>
+							<Children>
+								<SwitchContainer SwitchValue="{876FA16C-90F1-4633-BE1D-63BE19A4DBF5}">
+									<Media>
+										<File Id="216717300"/>
+										<File Id="341993209"/>
+										<File Id="592955165"/>
+										<File Id="750065658"/>
+										<File Id="968215707"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{F9BF6270-09AC-4AC2-BA00-E96D7E381E69}">
+									<Media>
+										<File Id="86936168"/>
+										<File Id="337945395"/>
+										<File Id="470861783"/>
+										<File Id="523984763"/>
+										<File Id="983213203"/>
+										<File Id="1025550419"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{C83A6289-F4EA-451E-8D82-739A22576C55}">
+									<Media>
+										<File Id="196119321"/>
+										<File Id="348220899"/>
+										<File Id="458018787"/>
+										<File Id="595275068"/>
+										<File Id="843426940"/>
+										<File Id="1007438298"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
@@ -652,6 +782,7 @@
 			</IncludedEvents>
 			<GameParameters>
 				<GameParameter Id="103953880" Name="RTPC_Player_Footsteps" ObjectPath="\Game Parameters\Default Work Unit\player\RTPC_Player_Footsteps"/>
+				<GameParameter Id="239763308" Name="RTPC_Player_Running" ObjectPath="\Game Parameters\Default Work Unit\player\RTPC_Player_Running"/>
 				<GameParameter Id="640542493" Name="RTPC_Boat_Speed" ObjectPath="\Game Parameters\Default Work Unit\boat\RTPC_Boat_Speed"/>
 				<GameParameter Id="1337744217" Name="RTPC_Ambx_Time" ObjectPath="\Game Parameters\Default Work Unit\AMBX\RTPC_Ambx_Time"/>
 				<GameParameter Id="4226707187" Name="RTPC_Ambx_Location" ObjectPath="\Game Parameters\Default Work Unit\AMBX\RTPC_Ambx_Location"/>
@@ -680,6 +811,12 @@
 				</StateGroup>
 			</StateGroups>
 			<SwitchGroups>
+				<SwitchGroup Id="690777561" Name="walkrun" ObjectPath="\Switches\Default Work Unit\player\walkrun" GUID="{2211F808-7A93-47C4-9647-78D9AE6B1010}">
+					<Switches>
+						<Switch Id="2108779966" Name="walk" ObjectPath="\Switches\Default Work Unit\player\walkrun\walk" GUID="{F0B5C8A3-0D92-4FEC-8976-8CA579A6FBA4}"/>
+						<Switch Id="712161704" Name="run" ObjectPath="\Switches\Default Work Unit\player\walkrun\run" GUID="{179B605B-8016-4D92-B058-53FF32E83E99}"/>
+					</Switches>
+				</SwitchGroup>
 				<SwitchGroup Id="2385628198" Name="footsteps" ObjectPath="\Switches\Default Work Unit\player\footsteps" GUID="{A43464AD-067A-4F77-9BEC-615D84FC768C}">
 					<Switches>
 						<Switch Id="803837735" Name="sand" ObjectPath="\Switches\Default Work Unit\player\footsteps\sand" GUID="{876FA16C-90F1-4633-BE1D-63BE19A4DBF5}"/>

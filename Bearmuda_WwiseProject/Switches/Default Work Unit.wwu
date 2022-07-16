@@ -51,6 +51,40 @@
 								<Switch Name="water" ID="{527BB987-A684-4B9E-878D-E228813C8478}"/>
 							</ChildrenList>
 						</SwitchGroup>
+						<SwitchGroup Name="walkrun" ID="{2211F808-7A93-47C4-9647-78D9AE6B1010}">
+							<PropertyList>
+								<Property Name="UseGameParameter" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Switch Name="walk" ID="{F0B5C8A3-0D92-4FEC-8976-8CA579A6FBA4}"/>
+								<Switch Name="run" ID="{179B605B-8016-4D92-B058-53FF32E83E99}"/>
+							</ChildrenList>
+							<SwitchOnRTPC>
+								<GameParameterRef Name="RTPC_Player_Running" ID="{4FB49B74-128B-4859-83AA-8AE6BE686C77}"/>
+								<Curve Name="" ID="{985778FD-94A6-4B09-BD3F-1EDD1C121208}">
+									<PropertyList>
+										<Property Name="Flags" Type="int32" Value="65537"/>
+									</PropertyList>
+									<PointList>
+										<Point>
+											<XPos>0</XPos>
+											<YPos>1</YPos>
+											<Flags>5</Flags>
+										</Point>
+										<Point>
+											<XPos>1</XPos>
+											<YPos>2</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>2</XPos>
+											<YPos>1</YPos>
+											<Flags>37</Flags>
+										</Point>
+									</PointList>
+								</Curve>
+							</SwitchOnRTPC>
+						</SwitchGroup>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="AMBX" ID="{2CBB9B1D-42A1-4C55-A594-853107098AFC}" ShortID="159345126">

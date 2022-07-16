@@ -12,6 +12,12 @@
 								<Property Name="Min" Type="Real64" Value="1"/>
 							</PropertyList>
 						</GameParameter>
+						<GameParameter Name="RTPC_Player_Running" ID="{4FB49B74-128B-4859-83AA-8AE6BE686C77}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="2"/>
+							</PropertyList>
+						</GameParameter>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="boat" ID="{09E6AC75-BEAB-4224-956D-9EF281AC40C8}" ShortID="357732025">

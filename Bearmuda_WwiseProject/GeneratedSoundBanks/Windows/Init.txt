@@ -1,8 +1,11 @@
 Switch Group	ID	Name			Wwise Object Path	Notes
+	690777561	walkrun			\Default Work Unit\player\walkrun	
 	2385628198	footsteps			\Default Work Unit\player\footsteps	
 	3537656749	Ambx			\Default Work Unit\AMBX\Ambx	
 
 Switch	ID	Name	Switch Group			Notes
+	712161704	run	walkrun			
+	2108779966	walk	walkrun			
 	803837735	sand	footsteps			
 	2058049674	wood	footsteps			
 	4248645337	grass	footsteps			

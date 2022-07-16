@@ -38,10 +38,10 @@
 				</Event>
 				<Event Name="Play_Player_Footstep" ID="{F2C6F5D8-2E42-4D63-A608-097A8DED1C80}">
 					<ChildrenList>
-						<Action Name="" ID="{6FEC3883-486F-41F5-B5EE-54D03577B055}" ShortID="866936186">
+						<Action Name="" ID="{714445B2-D4E3-404F-A031-D1D6BC54F0B0}" ShortID="83571380">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Footstep" ID="{43FE02AF-6F71-4844-A203-801C2AA6B2B2}" WorkUnitID="{BF2D29B7-58D5-4DA9-985B-6FD720B30510}"/>
+									<ObjectRef Name="Player_Footstep" ID="{690581A7-F7CF-406A-ADE8-B899C4B8C79A}" WorkUnitID="{BF2D29B7-58D5-4DA9-985B-6FD720B30510}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -371,17 +371,21 @@
 				</Folder>
 				<Event Name="Play_build_bridge" ID="{64952A88-E7DB-4EEB-8912-6384F46FA166}">
 					<ChildrenList>
-						<Action Name="" ID="{082C1C84-D56C-472C-A939-23BEFD39E9C2}" ShortID="490437438">
+						<Action Name="" ID="{A4E96148-D533-45A7-B84C-BBA67C59E354}" ShortID="624583513">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="place_main_wood" ID="{486C540E-2146-42CD-A81A-85D081672596}" WorkUnitID="{BF2D29B7-58D5-4DA9-985B-6FD720B30510}"/>
+									<ObjectRef Name="house" ID="{C3C4F14C-92F1-4657-BF97-493568AB896B}" WorkUnitID="{BF2D29B7-58D5-4DA9-985B-6FD720B30510}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{79BE0725-D0DD-4054-98C9-1FC0A34A6BFF}" ShortID="477548404">
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_lick_icecream" ID="{9749E8E4-58B6-4123-8911-FB3DC7783E05}">
+					<ChildrenList>
+						<Action Name="" ID="{DE2765DF-0C31-436D-A4F8-3A372DDA3439}" ShortID="51186341">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="place_water" ID="{7A20A46B-7EC5-476C-BCE8-5A3CA0515BE6}" WorkUnitID="{BF2D29B7-58D5-4DA9-985B-6FD720B30510}"/>
+									<ObjectRef Name="lick" ID="{05B8264F-0AAC-4673-B641-0C3480141733}" WorkUnitID="{BF2D29B7-58D5-4DA9-985B-6FD720B30510}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

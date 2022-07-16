@@ -30,6 +30,10 @@
 							<Position X="1" Y="4"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Play_Player_Footstep" ID="{F2C6F5D8-2E42-4D63-A608-097A8DED1C80}" WorkUnitID="{535E800C-AE42-468E-A259-2A06F996CD81}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Set_Music_Boat_Calm" ID="{43CACE02-9FBF-4EDB-B8F0-DB2576E0D5CD}" WorkUnitID="{535E800C-AE42-468E-A259-2A06F996CD81}"/>
 							<Position X="2" Y="4"/>
 						</Module>
@@ -53,7 +57,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="RTPC_Player_Footsteps" ID="{592BAB48-3408-4E1A-BB77-DAAAEC7194BF}"/>
-							<Value>2</Value>
+							<Value>3.11</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="RTPC_Ambx_Time" ID="{6F441635-DEE4-4E6A-89B4-5F3E4E0E8FD8}"/>
@@ -64,7 +68,8 @@
 						<CurrentStateRef Name="Island" ID="{E4500F26-6821-4284-A405-3789EB02256A}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="grass" ID="{C83A6289-F4EA-451E-8D82-739A22576C55}"/>
+						<CurrentSwitchRef Name="run" ID="{179B605B-8016-4D92-B058-53FF32E83E99}"/>
+						<CurrentSwitchRef Name="wood" ID="{F9BF6270-09AC-4AC2-BA00-E96D7E381E69}"/>
 						<CurrentSwitchRef Name="boat" ID="{E7C7726F-3344-4F3F-903F-97C72FCAD5F4}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
