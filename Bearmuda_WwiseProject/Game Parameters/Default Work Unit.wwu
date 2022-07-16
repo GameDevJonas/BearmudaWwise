@@ -48,6 +48,12 @@
 						</GameParameter>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Audio_Levels" ID="{4318B6B5-632D-4BE9-982F-5084D3481C84}" ShortID="881956023">
+					<ChildrenList>
+						<GameParameter Name="RTPC_Level_SFX" ID="{8919B7B7-F472-4092-9940-7F643D461119}"/>
+						<GameParameter Name="RTPC_Level_Music" ID="{85398172-8B4C-4909-B5A4-C2CF68875616}"/>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

@@ -8,10 +8,13 @@
 						<StateGroup Name="Music" ID="{3F3AB7AE-24FE-4CCA-977E-D3F58079B5E8}">
 							<ChildrenList>
 								<State Name="None" ID="{00A26180-6779-4401-9E51-797874B6C869}"/>
-								<State Name="Island" ID="{E4500F26-6821-4284-A405-3789EB02256A}"/>
+								<State Name="Island_main" ID="{E4500F26-6821-4284-A405-3789EB02256A}"/>
 								<State Name="Boat_Calm" ID="{7AF742C7-6FC4-4098-8413-92C64C2A2E12}"/>
 								<State Name="Boat_Boost" ID="{1B7535B5-01B2-46B7-98A2-138C766155CD}"/>
 								<State Name="Silence" ID="{1730671E-5CEC-4AA0-98C2-515AA98186F5}"/>
+								<State Name="Building" ID="{1277E5ED-43D7-492F-9B96-6F12E5B5DCF7}"/>
+								<State Name="Island_Start" ID="{AAC36981-C674-47BE-9312-8BD504AAC4EC}"/>
+								<State Name="Island_full" ID="{97B94636-9514-4716-A031-B42B3C2DD9A0}"/>
 							</ChildrenList>
 						</StateGroup>
 					</ChildrenList>
