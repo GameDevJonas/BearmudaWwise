@@ -12,7 +12,6 @@ public class LightingManager : MonoBehaviour
     //Variables
     [SerializeField, Range(1, 24)] private float TimeOfDay;
     [SerializeField] private float TimeScale;
-    [SerializeField] private float MaterialLerpScale;
 
     private void Update()
     {

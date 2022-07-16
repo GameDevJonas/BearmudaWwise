@@ -5,9 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuScript : MonoBehaviour
 {
+    [SerializeField] private GameObject blackOverlay;
+
     private void Awake()
     {
-        SceneManager.LoadSceneAsync(1, LoadSceneMode.Additive);
+        StartCoroutine(LoadGameOperation());
     }
 
     // Start is called before the first frame update
@@ -20,6 +22,16 @@ public class MainMenuScript : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private IEnumerator LoadGameOperation()
+    {
+        AsyncOperation async = SceneManager.LoadSceneAsync(1, LoadSceneMode.Additive);
+        while (!async.isDone)
+        {
+            yield return null;
+        }
+        blackOverlay.SetActive(false);
     }
 
     [ContextMenu("Unload main menu")]

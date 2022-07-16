@@ -11,6 +11,7 @@ public class BoatSeatings : MonoBehaviour
     {
         if (seatingsTaken == seatings.Length) return;
 
+        person.GetChild(1).gameObject.SetActive(false);
         person.GetComponent<Collider>().enabled = false;
         seatings[seatingsTaken].savedPerson = person;
         person.SetParent(seatings[seatingsTaken].seat);

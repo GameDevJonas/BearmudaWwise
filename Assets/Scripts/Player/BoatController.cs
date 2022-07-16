@@ -161,7 +161,7 @@ public class BoatController : MonoBehaviour
 
     private void HoistPerson(Collider hoistie)
     {
-        Debug.Log(hoistie.name + "Was hoisted");
+        //Debug.Log(hoistie.name + "Was hoisted");
         GetComponent<BoatSeatings>().AddPerson(hoistie.transform);
     }
 
