@@ -1,9 +1,11 @@
 Event	ID	Name			Wwise Object Path	Notes
 	91038576	Set_Music_Boat_Boost			\Default Work Unit\Music\Set_Music_Boat_Boost	
 	148817996	Play_whoosh			\Default Work Unit\Play_whoosh	
+	323401795	Set_Music_Island_Main			\Default Work Unit\Music\Set_Music_Island_Main	
 	520575376	Play_UI_click_soft			\Default Work Unit\UI\Play_UI_click_soft	
 	552689038	Set_Music_Boat_Calm			\Default Work Unit\Music\Set_Music_Boat_Calm	
 	821116764	Stop_boat_sideways			\Default Work Unit\Stop_boat_sideways	
+	1036953801	Set_Music_Island_Main_Full			\Default Work Unit\Music\Set_Music_Island_Main_Full	
 	1339559671	Play_UI_hover			\Default Work Unit\UI\Play_UI_hover	
 	1346240278	Play_MainMusic			\Default Work Unit\Music\Play_MainMusic	
 	1374297326	Play_bonk			\Default Work Unit\Play_bonk	
@@ -21,6 +23,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3287383742	Play_build_bridge			\Default Work Unit\Play_build_bridge	
 	3308548503	Play_UI_select			\Default Work Unit\UI\Play_UI_select	
 	3761008630	Play_UI_click_simple			\Default Work Unit\UI\Play_UI_click_simple	
+	3814408302	Set_Music_Building			\Default Work Unit\Music\Set_Music_Building	
 	4048235234	Play_boat_sideways			\Default Work Unit\Play_boat_sideways	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
@@ -42,9 +45,12 @@ State Group	ID	Name			Wwise Object Path	Notes
 
 State	ID	Name	State Group			Notes
 	748895195	None	Music			
+	1433199062	Island_main	Music			
 	2157623951	Boat_Calm	Music			
+	2298941290	Island_full	Music			
 	3041563226	Silence	Music			
-	3199546890	Island	Music			
+	3132664923	Island_Start	Music			
+	3339761385	Building	Music			
 	3811857207	Boat_Boost	Music			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
@@ -89,6 +95,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	255825772	testttt	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\HORSE Gelding Snort_6DADE084.wem		\Actor-Mixer Hierarchy\Torb\testttt		149732
 	256507939	sfx_player_fts_wood_run_01	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\sfx_player_fts_wood_run_01_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\Player\Player_Footstep\Footstep_run\wood\sfx_player_fts_wood_run_01		34736
 	286813788	sfx_player_fts_sand_run_01	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\sfx_player_fts_sand_run_01_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\Player\Player_Footstep\Footstep_run\sand\sfx_player_fts_sand_run_01		47928
+	287359261	Ocean_1_loop	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\Ocean_1_loop_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Island\Ocean_1_loop\Ocean_1_loop		8014056
 	294929716	sfx_player_fts_wood_run_04	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\sfx_player_fts_wood_run_04_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\Player\Player_Footstep\Footstep_run\wood\sfx_player_fts_wood_run_04		31408
 	304770181	sfx_watersplashes_boat_sideways_impact_06	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\sfx_watersplashes_boat_sideways_impact_06_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\boat\sideways\duck_into_water\sfx_watersplashes_boat_sideways_impact_06		151240
 	309816871	SFX_Ball_Hit_3	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\SFX_Ball_Hit_3_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\bonk\SFX_Ball_Hit_3		14764
@@ -111,15 +118,18 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	421079538	sfx_UI_menu_click_simple_01	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\sfx_UI_menu_click_simple_01_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\UI\click_simple\sfx_UI_menu_click_simple_01		22836
 	428110081	sfx_player_fts_sand_run_05	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\sfx_player_fts_sand_run_05_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\Player\Player_Footstep\Footstep_run\sand\sfx_player_fts_sand_run_05		47928
 	433534442	SFX_Ball_whoosh_2	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\SFX_Ball_whoosh_2_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\whoosh\SFX_Ball_whoosh_2		14764
+	436049507	Building	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\Building_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Build\building\Building		8014060
 	436431992	sfx_people_lick_07	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\sfx_people_lick_07_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\people\lick\sfx_people_lick_07		78696
 	436736175	ambx_wind_on_boat_gust_07	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\ambx_wind_on_boat_gust_07_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\ambx\AMBX_Main\ambx_boat\ambx_windgusts\ambx_wind_on_boat_gust_07		1275032
 	443706508	sfx_watersplashes_boat_sideways_loop	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\sfx_watersplashes_boat_sideways_loop_D79FB2B7.wem		\Actor-Mixer Hierarchy\Torb\boat\sideways\sfx_watersplashes_boat_sideways_loop		1806200
 	444846971	sfx_coins_hit_jar_04	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\sfx_coins_hit_jar_04_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\people\coins\jar\sfx_coins_hit_jar_04		119308
+	454110422	Island_1_loop	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\Island_1_loop_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Island_Main\Island_1_loop\Island_1_loop		9701196
 	458018787	sfx_player_fts_grass_03	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\sfx_player_fts_grass_03_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\Player\Player_Footstep\Footstep_walk\grass\sfx_player_fts_grass_03		34050
 	469385317	ambx_oneshots_seaguls_10	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\ambx_oneshots_seaguls_10_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\ambx\AMBX_Main\Seaguls\ambx_oneshots_seaguls_10		241964
 	470861783	sfx_player_fts_wood_03	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\sfx_player_fts_wood_03_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\Player\Player_Footstep\Footstep_walk\wood\sfx_player_fts_wood_03		21826
 	474060865	sfx_watersplashes_boat_sideways_backup_03	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\sfx_watersplashes_boat_sideways_backup_03_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\boat\sideways\backup_from_water\sfx_watersplashes_boat_sideways_backup_03		111604
 	492503674	sfx_coins_hit_jar_02	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\sfx_coins_hit_jar_02_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\people\coins\jar\sfx_coins_hit_jar_02		141640
+	501670499	Ocean_2_loop	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\Ocean_2_loop_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Boat\Ocean_2_loop\Ocean_2_loop		8014056
 	523984763	sfx_player_fts_wood_02	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\sfx_player_fts_wood_02_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\Player\Player_Footstep\Footstep_walk\wood\sfx_player_fts_wood_02		22594
 	542809095	ambx_bed	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\ambx_waves_from_boat_main_D79FB2B7.wem		\Actor-Mixer Hierarchy\Torb\ambx\AMBX_Main\ambx_boat\ambx_bed		5632620
 	568132926	sfx_player_fts_grass_run_05	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\sfx_player_fts_grass_run_05_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\Player\Player_Footstep\Footstep_run\grass\sfx_player_fts_grass_run_05		47660
@@ -134,6 +144,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	597925539	SFX_Ball_whoosh_1	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\SFX_Ball_whoosh_1_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\whoosh\SFX_Ball_whoosh_1		14764
 	614675144	sfx_coins_hit_jar_05	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\sfx_coins_hit_jar_05_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\people\coins\jar\sfx_coins_hit_jar_05		176548
 	619255257	ambx_oneshots_seaguls_05	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\ambx_oneshots_seaguls_05_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\ambx\AMBX_Main\Seaguls\ambx_oneshots_seaguls_05		230962
+	623124455	Island_2_loop	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\Island_2_loop_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Island_Main\Island_2_loop\Island_2_loop		9701196
 	636861809	sfx_player_fts_grass_run_04	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\sfx_player_fts_grass_run_04_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\Player\Player_Footstep\Footstep_run\grass\sfx_player_fts_grass_run_04		38192
 	682897200	sfx_coins_hit_jar_08	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\sfx_coins_hit_jar_08_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\people\coins\jar\sfx_coins_hit_jar_08		99368
 	702053611	sfx_watersplashes_boat_sideways_impact_04	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\sfx_watersplashes_boat_sideways_impact_04_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\boat\sideways\duck_into_water\sfx_watersplashes_boat_sideways_impact_04		131368
@@ -150,6 +161,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	765015555	sfx_player_fts_wood_run_03	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\sfx_player_fts_wood_run_03_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\Player\Player_Footstep\Footstep_run\wood\sfx_player_fts_wood_run_03		33968
 	781808915	sfx_player_fts_wood_run_06	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\sfx_player_fts_wood_run_06_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\Player\Player_Footstep\Footstep_run\wood\sfx_player_fts_wood_run_06		32432
 	783803555	ambx_oneshots_seaguls_11	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\ambx_oneshots_seaguls_11_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\ambx\AMBX_Main\Seaguls\ambx_oneshots_seaguls_11		348036
+	789892694	Ocean_3_loop	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\Ocean_3_loop_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Boat\Ocean_3_loop\Ocean_3_loop		8014056
 	843426940	sfx_player_fts_grass_01	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\sfx_player_fts_grass_01_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\Player\Player_Footstep\Footstep_walk\grass\sfx_player_fts_grass_01		31716
 	857086744	sfx_UI_menu_click_double_02	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\sfx_UI_menu_click_double_02_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\UI\click_double\sfx_UI_menu_click_double_02		36892
 	864801515	sfx_UI_menu_back	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\sfx_UI_menu_back_47843704.wem		\Actor-Mixer Hierarchy\Torb\UI\back\sfx_UI_menu_back		39916
@@ -165,6 +177,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	934388475	sfx_coins_hit_jar_01	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\sfx_coins_hit_jar_01_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\people\coins\jar\sfx_coins_hit_jar_01		142280
 	962980403	ambx_beach_wind	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\ambx_beach_wind_D79FB2B7.wem		\Actor-Mixer Hierarchy\Torb\ambx\AMBX_Main\ambx_boat\ambx_beach_wind		6996756
 	968215707	sfx_player_fts_sand_01	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\sfx_player_fts_sand_01_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\Player\Player_Footstep\Footstep_walk\sand\sfx_player_fts_sand_01		41974
+	970003661	Island_3_loop	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\Island_3_loop_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Island_Main_full\Island_3_loop\Island_3_loop		9701196
 	976742057	sfx_people_lick_03	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\sfx_people_lick_03_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\people\lick\sfx_people_lick_03		73736
 	977533020	sfx_coin_flip_05	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\sfx_coin_flip_05_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\people\coins\flip\sfx_coin_flip_05		176544
 	981845064	sfx_people_lick_08	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\sfx_people_lick_08_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\people\lick\sfx_people_lick_08		77320
@@ -180,7 +193,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	1018650613	sfx_coins_hit_jar_07	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\sfx_coins_hit_jar_07_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\people\coins\jar\sfx_coins_hit_jar_07		220644
 	1019110358	ambx_oneshots_seaguls_08	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\ambx_oneshots_seaguls_08_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\ambx\AMBX_Main\Seaguls\ambx_oneshots_seaguls_08		519582
 	1025550419	sfx_player_fts_wood_01	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\sfx_player_fts_wood_01_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\Player\Player_Footstep\Footstep_walk\wood\sfx_player_fts_wood_01		22210
-	1041701678	Ocean loop	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\Ocean loop_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Boat\Boat_intro\Ocean loop		16027968
+	1041701678	Ocean loop	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\Ocean loop_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Silence\silenceee\Ocean loop		16027968
 	1053262215	sfx_player_fts_grass_run_02	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\sfx_player_fts_grass_run_02_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\Player\Player_Footstep\Footstep_run\grass\sfx_player_fts_grass_run_02		56748
 	1055280920	ambx_wind_on_boat_gust_04	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\ambx_wind_on_boat_gust_04_10C4C929.wem		\Actor-Mixer Hierarchy\Torb\ambx\AMBX_Main\ambx_boat\ambx_windgusts\ambx_wind_on_boat_gust_04		1221488
 	1063843644	sfx_UI_menu_click_light_02	C:\Users\Torbjørn\Desktop\Gamejamssss\BearmudaREPO\BearmudaWwise\Bearmuda_WwiseProject\.cache\Mac\SFX\sfx_UI_menu_click_light_02_F83F4045.wem		\Actor-Mixer Hierarchy\Torb\UI\click_light\sfx_UI_menu_click_light_02		26608

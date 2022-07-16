@@ -17,14 +17,23 @@ State Group	ID	Name			Wwise Object Path	Notes
 
 State	ID	Name	State Group			Notes
 	748895195	None	Music			
+	1433199062	Island_main	Music			
 	2157623951	Boat_Calm	Music			
+	2298941290	Island_full	Music			
 	3041563226	Silence	Music			
-	3199546890	Island	Music			
+	3132664923	Island_Start	Music			
+	3339761385	Building	Music			
 	3811857207	Boat_Boost	Music			
 
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1265773779	RTPC_Level_SFX			\Default Work Unit\Audio_Levels\RTPC_Level_SFX	
+	1507880879	RTPC_Level_Music			\Default Work Unit\Audio_Levels\RTPC_Level_Music	
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
 	3545700988	Reverbs			\Default Work Unit\Master Audio Bus\Reverbs	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	1401104826	Reverb_Outside_Big			\Default Work Unit\Master Audio Bus\Reverbs\Reverb_Outside_Big	

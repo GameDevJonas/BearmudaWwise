@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2586854869">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1652251345">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -19,8 +19,12 @@
 				<AuxBus Id="1401104826" Name="Reverb_Outside_Big" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs\Reverb_Outside_Big"/>
 				<AuxBus Id="2636462861" Name="Reverb_Outside_Small" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs\Reverb_Outside_Small"/>
 			</IncludedAuxBusses>
+			<GameParameters>
+				<GameParameter Id="1265773779" Name="RTPC_Level_SFX" ObjectPath="\Game Parameters\Default Work Unit\Audio_Levels\RTPC_Level_SFX"/>
+				<GameParameter Id="1507880879" Name="RTPC_Level_Music" ObjectPath="\Game Parameters\Default Work Unit\Audio_Levels\RTPC_Level_Music"/>
+			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2880737896" Language="SFX" Hash="1719381597">
+		<SoundBank Id="2880737896" Language="SFX" Hash="942948988">
 			<ObjectPath>\SoundBanks\Default Work Unit\MainBank</ObjectPath>
 			<ShortName>MainBank</ShortName>
 			<Path>MainBank.bnk</Path>
@@ -393,6 +397,34 @@
 				</Event>
 				<Event Id="1346240278" Name="Play_MainMusic" ObjectPath="\Events\Default Work Unit\Music\Play_MainMusic" DurationType="Infinite">
 					<IncludedMemoryFiles>
+						<File Id="287359261" Language="SFX">
+							<ShortName>Ocean_1_loop.wav</ShortName>
+							<Path>SFX\Ocean_1_loop_D79FB2B7.wem</Path>
+						</File>
+						<File Id="436049507" Language="SFX">
+							<ShortName>Building.wav</ShortName>
+							<Path>SFX\Building_D79FB2B7.wem</Path>
+						</File>
+						<File Id="454110422" Language="SFX">
+							<ShortName>Island_1_loop.wav</ShortName>
+							<Path>SFX\Island_1_loop_D79FB2B7.wem</Path>
+						</File>
+						<File Id="501670499" Language="SFX">
+							<ShortName>Ocean_2_loop.wav</ShortName>
+							<Path>SFX\Ocean_2_loop_D79FB2B7.wem</Path>
+						</File>
+						<File Id="623124455" Language="SFX">
+							<ShortName>Island_2_loop.wav</ShortName>
+							<Path>SFX\Island_2_loop_D79FB2B7.wem</Path>
+						</File>
+						<File Id="789892694" Language="SFX">
+							<ShortName>Ocean_3_loop.wav</ShortName>
+							<Path>SFX\Ocean_3_loop_D79FB2B7.wem</Path>
+						</File>
+						<File Id="970003661" Language="SFX">
+							<ShortName>Island_3_loop.wav</ShortName>
+							<Path>SFX\Island_3_loop_D79FB2B7.wem</Path>
+						</File>
 						<File Id="1041701678" Language="SFX">
 							<ShortName>Ocean loop.wav</ShortName>
 							<Path>SFX\Ocean loop_D79FB2B7.wem</Path>
@@ -401,12 +433,14 @@
 					<SwitchContainers>
 						<SwitchContainer SwitchValue="{7AF742C7-6FC4-4098-8413-92C64C2A2E12}">
 							<Media>
-								<File Id="1041701678"/>
+								<File Id="501670499"/>
+								<File Id="789892694"/>
 							</Media>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{E4500F26-6821-4284-A405-3789EB02256A}">
 							<Media>
-								<File Id="1041701678"/>
+								<File Id="454110422"/>
+								<File Id="623124455"/>
 							</Media>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{00A26180-6779-4401-9E51-797874B6C869}">
@@ -417,6 +451,26 @@
 						<SwitchContainer SwitchValue="{1730671E-5CEC-4AA0-98C2-515AA98186F5}">
 							<Media>
 								<File Id="1041701678"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{1277E5ED-43D7-492F-9B96-6F12E5B5DCF7}">
+							<Media>
+								<File Id="436049507"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{AAC36981-C674-47BE-9312-8BD504AAC4EC}">
+							<Media>
+								<File Id="287359261"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{97B94636-9514-4716-A031-B42B3C2DD9A0}">
+							<Media>
+								<File Id="970003661"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{1B7535B5-01B2-46B7-98A2-138C766155CD}">
+							<Media>
+								<File Id="789892694"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -749,9 +803,24 @@
 						<ActionSetStateEntry Id="2157623951" Name="Boat_Calm" ObjectPath="\States\Default Work Unit\Music\Music\Boat_Calm"/>
 					</ActionSetState>
 				</Event>
+				<Event Id="3814408302" Name="Set_Music_Building" ObjectPath="\Events\Default Work Unit\Music\Set_Music_Building" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="3339761385" Name="Building" ObjectPath="\States\Default Work Unit\Music\Music\Building"/>
+					</ActionSetState>
+				</Event>
 				<Event Id="1375079833" Name="Set_Music_Island" ObjectPath="\Events\Default Work Unit\Music\Set_Music_Island" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
 					<ActionSetState>
-						<ActionSetStateEntry Id="3199546890" Name="Island" ObjectPath="\States\Default Work Unit\Music\Music\Island"/>
+						<ActionSetStateEntry Id="3132664923" Name="Island_Start" ObjectPath="\States\Default Work Unit\Music\Music\Island_Start"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="323401795" Name="Set_Music_Island_Main" ObjectPath="\Events\Default Work Unit\Music\Set_Music_Island_Main" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="1433199062" Name="Island_main" ObjectPath="\States\Default Work Unit\Music\Music\Island_main"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="1036953801" Name="Set_Music_Island_Main_Full" ObjectPath="\Events\Default Work Unit\Music\Set_Music_Island_Main_Full" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="2298941290" Name="Island_full" ObjectPath="\States\Default Work Unit\Music\Music\Island_full"/>
 					</ActionSetState>
 				</Event>
 				<Event Id="2009308915" Name="Set_Music_Silence" ObjectPath="\Events\Default Work Unit\Music\Set_Music_Silence" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
@@ -788,13 +857,22 @@
 				<GameParameter Id="4226707187" Name="RTPC_Ambx_Location" ObjectPath="\Game Parameters\Default Work Unit\AMBX\RTPC_Ambx_Location"/>
 			</GameParameters>
 			<StateGroups>
+				<StateGroup Id="1433199062" Name="Island_main" ObjectPath="\States\Default Work Unit\Music\Music\Island_main" GUID="{E4500F26-6821-4284-A405-3789EB02256A}">
+					<States/>
+				</StateGroup>
 				<StateGroup Id="2157623951" Name="Boat_Calm" ObjectPath="\States\Default Work Unit\Music\Music\Boat_Calm" GUID="{7AF742C7-6FC4-4098-8413-92C64C2A2E12}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="2298941290" Name="Island_full" ObjectPath="\States\Default Work Unit\Music\Music\Island_full" GUID="{97B94636-9514-4716-A031-B42B3C2DD9A0}">
 					<States/>
 				</StateGroup>
 				<StateGroup Id="3041563226" Name="Silence" ObjectPath="\States\Default Work Unit\Music\Music\Silence" GUID="{1730671E-5CEC-4AA0-98C2-515AA98186F5}">
 					<States/>
 				</StateGroup>
-				<StateGroup Id="3199546890" Name="Island" ObjectPath="\States\Default Work Unit\Music\Music\Island" GUID="{E4500F26-6821-4284-A405-3789EB02256A}">
+				<StateGroup Id="3132664923" Name="Island_Start" ObjectPath="\States\Default Work Unit\Music\Music\Island_Start" GUID="{AAC36981-C674-47BE-9312-8BD504AAC4EC}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="3339761385" Name="Building" ObjectPath="\States\Default Work Unit\Music\Music\Building" GUID="{1277E5ED-43D7-492F-9B96-6F12E5B5DCF7}">
 					<States/>
 				</StateGroup>
 				<StateGroup Id="3811857207" Name="Boat_Boost" ObjectPath="\States\Default Work Unit\Music\Music\Boat_Boost" GUID="{1B7535B5-01B2-46B7-98A2-138C766155CD}">
@@ -803,10 +881,13 @@
 				<StateGroup Id="3991942870" Name="Music" ObjectPath="\States\Default Work Unit\Music\Music" GUID="{3F3AB7AE-24FE-4CCA-977E-D3F58079B5E8}">
 					<States>
 						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Music\Music\None" GUID="{00A26180-6779-4401-9E51-797874B6C869}"/>
-						<State Id="3199546890" Name="Island" ObjectPath="\States\Default Work Unit\Music\Music\Island" GUID="{E4500F26-6821-4284-A405-3789EB02256A}"/>
+						<State Id="1433199062" Name="Island_main" ObjectPath="\States\Default Work Unit\Music\Music\Island_main" GUID="{E4500F26-6821-4284-A405-3789EB02256A}"/>
 						<State Id="2157623951" Name="Boat_Calm" ObjectPath="\States\Default Work Unit\Music\Music\Boat_Calm" GUID="{7AF742C7-6FC4-4098-8413-92C64C2A2E12}"/>
 						<State Id="3811857207" Name="Boat_Boost" ObjectPath="\States\Default Work Unit\Music\Music\Boat_Boost" GUID="{1B7535B5-01B2-46B7-98A2-138C766155CD}"/>
 						<State Id="3041563226" Name="Silence" ObjectPath="\States\Default Work Unit\Music\Music\Silence" GUID="{1730671E-5CEC-4AA0-98C2-515AA98186F5}"/>
+						<State Id="3339761385" Name="Building" ObjectPath="\States\Default Work Unit\Music\Music\Building" GUID="{1277E5ED-43D7-492F-9B96-6F12E5B5DCF7}"/>
+						<State Id="3132664923" Name="Island_Start" ObjectPath="\States\Default Work Unit\Music\Music\Island_Start" GUID="{AAC36981-C674-47BE-9312-8BD504AAC4EC}"/>
+						<State Id="2298941290" Name="Island_full" ObjectPath="\States\Default Work Unit\Music\Music\Island_full" GUID="{97B94636-9514-4716-A031-B42B3C2DD9A0}"/>
 					</States>
 				</StateGroup>
 			</StateGroups>
