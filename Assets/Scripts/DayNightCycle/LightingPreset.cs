@@ -7,4 +7,8 @@ public class LightingPreset : ScriptableObject
     public Gradient AmbientColor;
     public Gradient DirectionalColor;
     public Gradient FogColor;
+    public Material NightMaterial;
+    public Material MorningMaterial;
+    public Material DayMaterial;
+    public Material SunsetMaterial;
 }
